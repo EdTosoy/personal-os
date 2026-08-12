@@ -1,44 +1,46 @@
-"use client";
-import React, { useState, createContext, useCallback, useEffect } from "react";
+'use client';
 
-type Theme = "dark" | "light";
-type ContextProps = {
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+  type ReactNode,
+} from 'react';
+
+type Theme = 'dark' | 'light';
+
+type ThemeContextValue = {
   theme: Theme;
   toggleTheme: () => void;
 };
 
-export const ThemeContext = createContext<ContextProps>({
-  theme: "dark",
-  toggleTheme: () => {},
-});
+const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
-type Props = {
-  children: React.ReactNode;
+type ThemeProviderProps = {
+  children: ReactNode;
 };
 
-export const ThemeProvider = ({ children }: Props) => {
-  // Always start with the same value on server AND first client render
-  // ("dark", matching the context default) so SSR markup and the first
-  // hydration pass are byte-identical — no mismatch possible.
-  const [theme, setTheme] = useState<Theme>("dark");
+export function ThemeProvider({ children }: ThemeProviderProps) {
+  const [theme, setTheme] = useState<Theme>('dark');
 
-  // After mount (client-only, never runs during SSR/hydration), sync from
-  // the DOM attribute the inline script in layout.tsx already set. This
-  // just updates the toggle icon; it doesn't affect page colors, since
-  // those are already driven by data-theme via CSS before paint.
   useEffect(() => {
-    const domTheme = document.documentElement.getAttribute("data-theme");
-    if (domTheme === "light" || domTheme === "dark") {
+    const domTheme = document.documentElement.getAttribute('data-theme');
+
+    if (domTheme === 'light' || domTheme === 'dark') {
       setTheme(domTheme);
     }
   }, []);
 
   const toggleTheme = useCallback(() => {
-    setTheme((prev) => {
-      const next = prev === "dark" ? "light" : "dark";
-      document.documentElement.setAttribute("data-theme", next);
-      window.localStorage.setItem("theme", next);
-      return next;
+    setTheme((currentTheme) => {
+      const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+      document.documentElement.setAttribute('data-theme', nextTheme);
+      window.localStorage.setItem('theme', nextTheme);
+
+      return nextTheme;
     });
   }, []);
 
@@ -47,4 +49,14 @@ export const ThemeProvider = ({ children }: Props) => {
       {children}
     </ThemeContext.Provider>
   );
-};
+}
+
+export function useTheme() {
+  const context = useContext(ThemeContext);
+
+  if (!context) {
+    throw new Error('useTheme must be used within a ThemeProvider');
+  }
+
+  return context;
+}
