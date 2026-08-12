@@ -2,6 +2,37 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": [],
+  "references": [
+    {
+      "path": "./apps/main-e2e"
+    },
+    {
+      "path": "./apps/main"
+    },
+    {
+      "path": "./apps/dev-e2e"
+    },
+    {
+      "path": "./apps/dev"
+    },
+    {
+      "path": "./apps/ops-e2e"
+    },
+    {
+      "path": "./apps/ops"
+    },
+    {
+      "path": "./apps/dashboard-e2e"
+    },
+    {
+      "path": "./apps/dashboard"
+    },
+    {
+      "path": "./apps/admin-e2e"
+    },
+    {
+      "path": "./apps/admin"
+    }
+  ],
   "compilerOptions": {}
 }
