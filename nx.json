@@ -1,7 +1,9 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
+
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
+
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
@@ -12,8 +14,10 @@
       "!{projectRoot}/src/test-setup.[jt]s",
       "!{projectRoot}/test-setup.[jt]s"
     ],
+
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
+
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
@@ -53,13 +57,16 @@
       }
     }
   ],
-  "nxCloudId": "6a7c6e520baa070fad50fef5",
+
+  "nxCloudId": "6a7c6ecf535cb9b47355c33b",
   "analytics": false,
+
   "targetDefaults": {
     "test": {
       "dependsOn": ["^build"]
     }
   },
+
   "generators": {
     "@nx/next": {
       "application": {
