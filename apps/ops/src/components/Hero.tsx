@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { FaGithub } from "react-icons/fa6";
-import { TfiLinkedin } from "react-icons/tfi";
-import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
+import Link from 'next/link';
+import { FaGithub } from 'react-icons/fa6';
+import { TfiLinkedin } from 'react-icons/tfi';
+import { HiOutlineDocumentArrowDown } from 'react-icons/hi2';
 
 export default function Hero() {
   return (
@@ -28,10 +28,9 @@ export default function Hero() {
 
           <p className="mt-8 max-w-2xl text-base leading-8 text-fg-muted md:text-lg">
             Software Engineer with production experience building and supporting
-            enterprise banking applications. I work across frontend, backend,
-            databases, and APIs, and have expanded into cloud-native development
-            through hands-on work with AWS, Docker, Kubernetes, Terraform,
-            CI/CD, and observability.
+            banking applications. I build full-stack systems with TypeScript and
+            Python, and have expanded into cloud infrastructure, CI/CD,
+            Kubernetes, Infrastructure as Code, Linux, and observability.
           </p>
 
           {/* CTA */}
@@ -78,40 +77,32 @@ export default function Hero() {
           <div className="scanline-fade mono mt-16 overflow-hidden border-t border-line-soft pt-6 text-xs text-fg-dim">
             <div className="flex w-max gap-x-8 marquee sm:animate-none">
               {[
-                "typescript",
-                "angular",
-                "react",
-                "nextjs",
-                "nestjs",
-                "python",
-                "FastAPI",
-                "postgresql",
-                "rest-apis",
-                "aws",
-                "docker",
-                "kubernetes",
-                "terraform",
-                "github-actions",
+                'docker',
+                'kubernetes',
+                'terraform',
+                'aws',
+                'github-actions',
+                'ci/cd',
+                'linux',
+                'prometheus',
+                'grafana',
+                'postgresql',
               ].map((tool, i) => (
                 <span key={`a-${i}`}>{tool}</span>
               ))}
 
               {/* duplicate set — creates the seamless loop */}
               {[
-                "typescript",
-                "angular",
-                "react",
-                "nextjs",
-                "nestjs",
-                "python",
-                "FastAPI",
-                "postgresql",
-                "rest-apis",
-                "aws",
-                "docker",
-                "kubernetes",
-                "terraform",
-                "github-actions",
+                'docker',
+                'kubernetes',
+                'terraform',
+                'aws',
+                'github-actions',
+                'ci/cd',
+                'linux',
+                'prometheus',
+                'grafana',
+                'postgresql',
               ].map((tool, i) => (
                 <span key={`b-${i}`} aria-hidden="true" className="sm:hidden">
                   {tool}
