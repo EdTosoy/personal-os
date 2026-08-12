@@ -1,26 +1,15 @@
 'use client';
 
-import {
-  createContext,
-  useContext,
-  useState,
-  type Dispatch,
-  type ReactNode,
-  type SetStateAction,
-} from 'react';
+import { createContext, useContext, useState, type ReactNode } from 'react';
 
 type MenuContextValue = {
   openMenu: boolean;
-  setOpenMenu: Dispatch<SetStateAction<boolean>>;
+  setOpenMenu: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const MenuContext = createContext<MenuContextValue | undefined>(undefined);
+const MenuContext = createContext<MenuContextValue | null>(null);
 
-type MenuProviderProps = {
-  children: ReactNode;
-};
-
-export function MenuProvider({ children }: MenuProviderProps) {
+export const MenuProvider = ({ children }: { children: ReactNode }) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
@@ -28,9 +17,9 @@ export function MenuProvider({ children }: MenuProviderProps) {
       {children}
     </MenuContext.Provider>
   );
-}
+};
 
-export function useMenu() {
+export const useMenu = () => {
   const context = useContext(MenuContext);
 
   if (!context) {
@@ -38,4 +27,4 @@ export function useMenu() {
   }
 
   return context;
-}
+};

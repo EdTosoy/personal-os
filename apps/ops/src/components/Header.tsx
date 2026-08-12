@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { useContext, useEffect, useState } from "react";
-import Link from "next/link";
-import { IoMenu, IoClose } from "react-icons/io5";
-import { MenuContext } from "@/context/MenuContext";
-import { navigation } from "@/constants/navigation";
-import { ThemeToggle } from "./ui/ToggleTheme";
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { IoMenu, IoClose } from 'react-icons/io5';
+import { useMenu } from '@/context/MenuContext';
+import { navigation } from '@/constants/navigation';
+import { ThemeToggle } from './ui/ToggleTheme';
 
 export default function Header() {
-  const { openMenu, setOpenMenu } = useContext(MenuContext);
+  const { openMenu, setOpenMenu } = useMenu();
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -17,10 +17,10 @@ export default function Header() {
       setScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -28,8 +28,8 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-line bg-ink/90 backdrop-blur"
-          : "border-b border-transparent bg-transparent"
+          ? 'border-b border-line bg-ink/90 backdrop-blur'
+          : 'border-b border-transparent bg-transparent'
       }`}
     >
       <div className="grid-container">

@@ -16,13 +16,9 @@ type ThemeContextValue = {
   toggleTheme: () => void;
 };
 
-const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
+const ThemeContext = createContext<ThemeContextValue | null>(null);
 
-type ThemeProviderProps = {
-  children: ReactNode;
-};
-
-export function ThemeProvider({ children }: ThemeProviderProps) {
+export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<Theme>('dark');
 
   useEffect(() => {
@@ -34,13 +30,13 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   }, []);
 
   const toggleTheme = useCallback(() => {
-    setTheme((currentTheme) => {
-      const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    setTheme((prev) => {
+      const next = prev === 'dark' ? 'light' : 'dark';
 
-      document.documentElement.setAttribute('data-theme', nextTheme);
-      window.localStorage.setItem('theme', nextTheme);
+      document.documentElement.setAttribute('data-theme', next);
+      window.localStorage.setItem('theme', next);
 
-      return nextTheme;
+      return next;
     });
   }, []);
 
@@ -49,9 +45,9 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
       {children}
     </ThemeContext.Provider>
   );
-}
+};
 
-export function useTheme() {
+export const useTheme = () => {
   const context = useContext(ThemeContext);
 
   if (!context) {
@@ -59,4 +55,4 @@ export function useTheme() {
   }
 
   return context;
-}
+};
