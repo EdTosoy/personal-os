@@ -32,6 +32,18 @@
   --ok: #12875f;
 }
 
+.brand-mark-light {
+  display: none;
+}
+
+[data-theme="light"] .brand-mark-dark {
+  display: none;
+}
+
+[data-theme="light"] .brand-mark-light {
+  display: block;
+}
+
 @theme inline {
   --color-ink: var(--ink);
   --color-panel: var(--panel);

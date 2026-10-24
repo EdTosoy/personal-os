@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="280 250 735 735" width="64" height="64">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#39a4fa"/>
+      <stop offset="1" stop-color="#3763f5"/>
+    </linearGradient>
+  </defs>
+  <path fill="#edf0f6" d="M400 414H663L574 502H407Q393 502 393 516V583H592L655 659H393V722Q393 738 409 738H635L712 821H399Q383 821 371 809L315 751Q302 738 302 720V517Q302 500 314 488L382 422Q390 414 400 414Z"/>
+  <g fill="url(#accent)">
+    <path d="M691 414H993L903 502H603Z"/>
+    <path d="M711 522H803V821H761Q711 821 711 771Z"/>
+  </g>
+</svg>

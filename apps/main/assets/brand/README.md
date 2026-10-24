@@ -42,3 +42,16 @@ build configuration was changed to work around these failures.
 The metadata configuration follows the installed Next.js 16.4.2 documentation in
 `node_modules/next/dist/docs/01-app/03-api-reference/04-functions/generate-metadata.md`
 (`icons` and `manifest` sections). No deployment or Git publication was performed.
+
+## Theme-aware header and favicon
+
+`public/brand/et-blue.svg` and `public/brand/et-sienna.svg` are transparent
+vector re-creations of the ET monogram for small display sizes. The supplied
+raster masters above remain unchanged. Dark mode uses the silver/blue mark;
+light mode uses dark lettering and the site's sienna accent (`#a0522d`).
+The header selects its variant through `data-theme`, and `ThemeFavicon` renders
+one React-owned browser icon that follows the selected theme across navigation.
+React places the icon link in the document head; see
+https://react.dev/reference/react-dom/components/link. The initial server/client
+render uses the blue icon, then follows the saved theme after hydration. Apple touch icons and
+installed-app manifest assets retain the supplied artwork.

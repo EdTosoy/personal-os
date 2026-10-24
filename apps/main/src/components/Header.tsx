@@ -2,6 +2,7 @@
 
 import { useContext, useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { MenuContext } from "@/context/MenuContext";
 import { navigation } from "@/constants/navigation";
@@ -38,7 +39,22 @@ export default function Header() {
         <div className="col-start-2 col-end-3 flex h-16 items-center justify-between">
           {/* Logo / Brand */}
           <Link href="/" className="flex items-center gap-3">
-            <span className="mono text-sm text-fg-muted">~/</span>
+            <Image
+              src="/brand/et-blue.svg"
+              alt=""
+              width={40}
+              height={40}
+              loading="eager"
+              className="brand-mark-dark shrink-0"
+            />
+            <Image
+              src="/brand/et-sienna.svg"
+              alt=""
+              width={40}
+              height={40}
+              loading="eager"
+              className="brand-mark-light shrink-0"
+            />
             <span className="text-lg font-bold tracking-tight text-fg">
               Edberto Tosoy
             </span>
