@@ -1,69 +1,41 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
-import { navigation } from "@/constants/navigation";
 import { profile } from "@/data/profile";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const linkClassName =
+    "inline-flex min-h-11 items-center rounded-sm transition hover:text-amber focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber";
 
   return (
     <footer className="border-t border-line">
-      <div className="grid-container py-12">
-        <div className="col-start-2 col-end-3">
-          <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
-            <div>
-              <h3 className="text-lg font-semibold text-fg">Edberto Tosoy</h3>
+      <div className="grid-container py-8">
+        <div className="col-start-2 col-end-3 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <p className="text-sm text-fg-dim">© {year} {profile.name}</p>
 
-              <p className="mt-2 max-w-md text-fg-muted">
-                Software Engineer · Full Stack · Cloud
-              </p>
-              <p className="text-xs text-fg-dim">
-                <span className="mr-2">© {year}</span>
-                Edberto Tosoy — built with Next.js, TypeScript &amp; Tailwind
-                CSS.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-6">
-              <nav className="mono flex flex-wrap gap-6 text-sm text-fg-muted">
-                {navigation.map((item) => (
-                  <Link key={item.name} href={item.href}>
-                    <p className="hover:text-amber transition font-bold">
-                      {item.name}
-                    </p>
-                  </Link>
-                ))}
-              </nav>
-
-              <div className="flex gap-4">
-                <Link
-                  href="https://github.com/edtosoy"
-                  target="_blank"
-                  aria-label="GitHub"
-                  className="panel panel-hover grid h-10 w-10 place-content-center rounded-full text-fg-muted hover:text-amber"
-                >
-                  <FaGithub size={16} />
-                </Link>
-
-                <Link
-                  href="https://linkedin.com/in/edtosoy"
-                  target="_blank"
-                  aria-label="LinkedIn"
-                  className="panel panel-hover grid h-10 w-10 place-content-center rounded-full text-fg-muted hover:text-amber"
-                >
-                  <FaLinkedin size={16} />
-                </Link>
-
-                <Link
-                  href={`mailto:${profile.email}`}
-                  aria-label="Email"
-                  className="panel panel-hover grid h-10 w-10 place-content-center rounded-full text-fg-muted hover:text-amber"
-                >
-                  <FaEnvelope size={16} />
-                </Link>
-              </div>
-            </div>
-          </div>
+          <nav
+            aria-label="Social links"
+            className="flex flex-wrap gap-x-6 text-sm text-fg-muted"
+          >
+            <Link
+              href={profile.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClassName}
+            >
+              GitHub
+            </Link>
+            <Link
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClassName}
+            >
+              LinkedIn
+            </Link>
+            <Link href={`mailto:${profile.email}`} className={linkClassName}>
+              Email
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>
