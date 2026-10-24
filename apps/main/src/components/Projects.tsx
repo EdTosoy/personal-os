@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaGithub } from "react-icons/fa6";
 import { FiExternalLink } from "react-icons/fi";
 import { projects } from "@/data/projects";
@@ -22,20 +23,40 @@ export default function Projects() {
         </p>
 
         <h2 className="mt-3 text-3xl font-bold text-fg md:text-4xl">
-          Learning by building.
+          Engineering work you can inspect.
         </h2>
 
         <p className="mt-6 text-lg leading-8 text-fg-muted">
-          Most of what I&apos;ve learned has come from building. These projects
-          reflect the technologies I&apos;ve explored, the problems I&apos;ve
-          tackled, and how I&apos;ve grown as a software engineer.
+          Independent engineering projects, with captured application evidence,
+          implementation decisions, and source links. Each case study explains
+          what works, what was tested, and where verification stops.
         </p>
       </div>
 
-      <div className="grid gap-6">
+      <div className="grid gap-6 md:grid-cols-2">
         {featured.map((project) => (
-          <article key={project.slug} className="panel panel-hover p-7 md:p-8">
-            <div className="flex flex-col justify-between gap-6 lg:flex-row">
+          <article
+            key={project.slug}
+            className="panel panel-hover flex min-w-0 flex-col p-6"
+          >
+            {project.caseStudy && (
+              <Link
+                href={project.caseStudy.href}
+                className="project-evidence-link mb-7"
+                aria-label={`View ${project.title} case study`}
+              >
+                <Image
+                  src={project.caseStudy.image}
+                  alt={project.caseStudy.alt}
+                  width={1440}
+                  height={1000}
+                  loading="lazy"
+                  sizes="(min-width: 1280px) 390px, (min-width: 768px) 45vw, 90vw"
+                />
+                <span>{project.caseStudy.caption}</span>
+              </Link>
+            )}
+            <div className="flex flex-1 flex-col justify-between gap-6">
               <div className="flex-1">
                 <div className="mono flex items-center gap-2 text-xs">
                   <span className={statusStyles[project.status]}>●</span>
@@ -49,19 +70,19 @@ export default function Projects() {
                 </h3>
 
                 <p className="mt-4 leading-8 text-fg-muted">
-                  {project.longDescription}
+                  {project.shortDescription}
                 </p>
-
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
-                    <span key={tech} className="chip px-3 py-1">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
               </div>
 
-              <div className="flex gap-3 self-start">
+              <div className="flex flex-wrap gap-3 self-start shrink-0">
+                {project.caseStudy && (
+                  <Link
+                    href={project.caseStudy.href}
+                    className="btn-primary flex items-center gap-2 rounded-full px-5 py-3 text-sm"
+                  >
+                    View Case Study <span aria-hidden="true">↗</span>
+                  </Link>
+                )}
                 {project.github && (
                   <Link
                     href={project.github}
@@ -87,28 +108,28 @@ export default function Projects() {
             </div>
           </article>
         ))}
+      </div>
 
-        {/* Skills — service catalog. Hidden on 2xl+ where the sticky
+      {/* Skills — service catalog. Hidden on 2xl+ where the sticky
               side Stack rail (components/Stack.tsx) takes over this role. */}
-        <div className="mt-16 xl:hidden">
-          <h3 className="text-xl font-semibold text-fg">Technologies</h3>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            {skills.map((category) => (
-              <div key={category.title} className="panel p-6">
-                <p className="mono text-xs uppercase tracking-wide text-fg-dim">
-                  {category.title}
-                </p>
+      <div className="mt-16 xl:hidden">
+        <h3 className="text-xl font-semibold text-fg">Technologies</h3>
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          {skills.map((category) => (
+            <div key={category.title} className="panel p-6">
+              <p className="mono text-xs uppercase tracking-wide text-fg-dim">
+                {category.title}
+              </p>
 
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {category.skills.map((skill) => (
-                    <span key={skill} className="chip px-3 py-1">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                  <span key={skill} className="chip px-3 py-1">
+                    {skill}
+                  </span>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

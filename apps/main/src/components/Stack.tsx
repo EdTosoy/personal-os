@@ -15,7 +15,7 @@ export default function Stack() {
               key={group.category}
               className="flex flex-col items-center gap-1.5"
             >
-              <p className="mono text-[10px] tracking-widest text-fg-dim/60 uppercase">
+              <p className="mono text-[10px] tracking-widest text-fg-dim uppercase">
                 {group.category}
               </p>
               <div className="grid grid-cols-3 gap-1 overflow-hidden">
@@ -46,6 +46,8 @@ export default function Stack() {
                     <div className="flex aspect-square w-[95%] bg-panel items-center z-10 justify-center">
                       <item.icon
                         size={22}
+                        aria-hidden="true"
+                        focusable="false"
                         style={{
                           color: hovered === item.name ? item.color : "",
                         }}

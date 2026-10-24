@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 import { navigation } from "@/constants/navigation";
+import { profile } from "@/data/profile";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -14,7 +15,12 @@ export default function Footer() {
               <h3 className="text-lg font-semibold text-fg">Edberto Tosoy</h3>
 
               <p className="mt-2 max-w-md text-fg-muted">
-                {"~"} Currently studying AWS Solutions Architect – Associate
+                Software Engineer · Full Stack · Cloud
+              </p>
+              <p className="text-xs text-fg-dim">
+                <span className="mr-2">© {year}</span>
+                Edberto Tosoy — built with Next.js, TypeScript &amp; Tailwind
+                CSS.
               </p>
             </div>
 
@@ -49,7 +55,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  href="mailto:edberto@edtosoy.com"
+                  href={`mailto:${profile.email}`}
                   aria-label="Email"
                   className="panel panel-hover grid h-10 w-10 place-content-center rounded-full text-fg-muted hover:text-amber"
                 >
@@ -57,13 +63,6 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-          </div>
-
-          <div className="mono mt-10 border-t border-line-soft pt-6">
-            <p className="text-xs text-fg-dim">
-              <span className="mr-2">© {year}</span>
-              Edberto Tosoy — built with Next.js, TypeScript &amp; Tailwind CSS.
-            </p>
           </div>
         </div>
       </div>

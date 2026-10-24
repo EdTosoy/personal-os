@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
+import { profile } from "@/data/profile";
 
 const endpoints = [
   {
     icon: FaEnvelope,
     label: "Email",
-    value: "edberto@edtosoy.com",
-    href: "mailto:edberto@edtosoy.com",
+    value: profile.email,
+    href: `mailto:${profile.email}`,
     external: false,
   },
   {
@@ -28,7 +29,7 @@ const endpoints = [
     icon: HiOutlineDocumentArrowDown,
     label: "Resume",
     value: "Download Resume",
-    href: "/Edberto_Tosoy_Resume.pdf",
+    href: profile.resume,
     external: true,
   },
 ];

@@ -11,8 +11,8 @@ export default function Experiences() {
         </h2>
 
         <p className="mt-6 text-lg leading-8 text-fg-muted">
-          A collection of the roles, teams, and experiences that have shaped how
-          I think, collaborate, and build software.
+          A collection of the roles, teams, and experiences that have shaped how I
+          think, collaborate, and build software.
         </p>
       </div>
 

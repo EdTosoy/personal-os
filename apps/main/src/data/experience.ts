@@ -24,11 +24,11 @@ export const experiences: Experience[] = [
     highlights: [
       {
         description:
-          "Developed and maintained production banking applications supporting teller and administrative workflows.",
+          "Built and maintained production React and TypeScript banking interfaces for teller and administrative workflows.",
       },
       {
         description:
-          "Delivered frontend features using React and TypeScript, integrating REST APIs with Redux, Ant Design, React Hook Form, and SCSS.",
+          "Integrated REST APIs and implemented forms with Redux, Ant Design, React Hook Form, and SCSS.",
       },
       {
         description:
@@ -40,11 +40,11 @@ export const experiences: Experience[] = [
       },
       {
         description:
-          "Collaborated with developers, QA engineers, and business analysts in an Agile environment, participating in code reviews and technical discussions.",
+          "Worked with QA engineers, business analysts, and developers on requirements, defect resolution, code reviews, and delivery.",
       },
       {
         description:
-          "Refactored an FX transaction charge component from approximately 1,600 to just over 700 lines by consolidating requirements, reworking form-state handling, and introducing debouncing to reduce unnecessary recalculation.",
+          "Consolidated FX transaction charge logic and form-state handling, reducing the component from approximately 1,600 to just over 700 lines of code. This is a code-size reduction; no runtime performance improvement was measured.",
       },
     ],
   },

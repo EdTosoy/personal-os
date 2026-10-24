@@ -2,7 +2,17 @@ import { SkillCategory } from "@/types";
 
 export const skills: SkillCategory[] = [
   {
-    title: "Cloud & DevOps",
+    title: "Frontend",
+    skills: ["React", "TypeScript", "Next.js", "Angular"],
+  },
+
+  {
+    title: "Backend",
+    skills: ["Node.js", "NestJS", "FastAPI", "REST APIs", "RabbitMQ"],
+  },
+
+  {
+    title: "Cloud & Infrastructure",
     skills: [
       "AWS",
       "Docker",
@@ -12,16 +22,6 @@ export const skills: SkillCategory[] = [
       "Prometheus",
       "Grafana",
     ],
-  },
-
-  {
-    title: "Backend",
-    skills: ["Node.js", "NestJS", "FastAPI", "RabbitMQ", "REST APIs"],
-  },
-
-  {
-    title: "Frontend",
-    skills: ["Angular", "React", "Next.js", "TypeScript"],
   },
 
   {

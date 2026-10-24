@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Edberto Tosoy">
+    <meta name="description" content="Full-stack and backend software engineer with production React and TypeScript banking experience.">
+    <title>Edberto Tosoy — Full-Stack / Backend Software Engineer</title>
+    <style>
+      @page { size: Letter; margin: 0.48in 0.52in; }
+      * { box-sizing: border-box; }
+      body { margin: 0; color: #171717; background: #fff; font: 10.5pt/1.2 Arial, Helvetica, sans-serif; }
+      h1 { margin: 0; font-size: 21pt; line-height: 1.1; letter-spacing: 0.02em; }
+      .role { margin: 4pt 0 5pt; font-size: 11.5pt; font-weight: 600; }
+      .contact { margin: 2pt 0; font-size: 9.5pt; }
+      a { color: #174f82; text-decoration: underline; text-underline-offset: 2px; }
+      h2 { margin: 8pt 0 4pt; border-bottom: 0.6pt solid #a1a1a1; padding-bottom: 2pt; font-size: 10.5pt; letter-spacing: 0.05em; text-transform: uppercase; }
+      h3 { margin: 6pt 0 2pt; font-size: 10.5pt; }
+      p { margin: 2pt 0; }
+      ul { margin: 4pt 0 0; padding-left: 14pt; }
+      li { margin: 0 0 2pt; padding-left: 1pt; }
+      .project-links { font-size: 9.5pt; }
+      .muted { color: #454545; }
+      section, article, li { break-inside: avoid; }
+      @media screen { body { max-width: 8.5in; margin: 24px auto; padding: 28px; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Edberto Tosoy</h1>
+      <p class="role">Full-Stack / Backend Software Engineer</p>
+      <p class="contact">Metro Manila, Philippines · <a href="mailto:edberto@edtosoy.com">edberto@edtosoy.com</a> · <a href="tel:+639608223122">+63 960 822 3122</a></p>
+      <p class="contact"><a href="https://edtosoy.com">edtosoy.com</a> · <a href="https://github.com/edtosoy">github.com/edtosoy</a> · <a href="https://linkedin.com/in/edtosoy">linkedin.com/in/edtosoy</a></p>
+    </header>
+    <main>
+      <section aria-labelledby="summary">
+        <h2 id="summary">Professional Summary</h2>
+        <p>Software engineer with production React and TypeScript banking experience at Metrobank via 98Labs. Builds independent full-stack and backend systems with Node.js, Next.js, PostgreSQL, Python, and AWS, emphasizing financial correctness and verifiable engineering decisions.</p>
+      </section>
+      <section aria-labelledby="skills">
+        <h2 id="skills">Technical Skills</h2>
+        <p><strong>Languages:</strong> TypeScript, JavaScript, Python, SQL</p>
+        <p><strong>Frontend:</strong> React, Next.js, Redux, Ant Design, React Hook Form, SCSS</p>
+        <p><strong>Backend &amp; Data:</strong> Node.js, NestJS, FastAPI, REST APIs, PostgreSQL, database transactions</p>
+        <p><strong>Testing &amp; Infrastructure:</strong> Cypress, Vitest, Playwright, Git, Docker, AWS, Terraform, GitHub Actions</p>
+      </section>
+      <section aria-labelledby="experience">
+        <h2 id="experience">Professional Experience</h2>
+        <h3>Software Engineer — Metrobank (via 98Labs Inc.)</h3>
+        <p class="muted">February 2021 – July 2022</p>
+        <ul>
+          <li>Developed React and TypeScript interfaces for production teller and administrative banking workflows, integrating REST APIs with Redux and Ant Design.</li>
+          <li>Built forms with React Hook Form and SCSS; investigated production defects across application logic and user workflows.</li>
+          <li>Maintained Cypress end-to-end tests for critical banking workflows and regression scenarios.</li>
+          <li>Collaborated with QA engineers, business analysts, and developers on requirements, debugging, code reviews, and delivery.</li>
+          <li>Consolidated FX transaction charge logic and form-state handling, reducing the component from approximately 1,600 to just over 700 lines of code.</li>
+        </ul>
+      </section>
+      <section aria-labelledby="projects">
+        <h2 id="projects">Selected Independent Engineering Projects</h2>
+        <article>
+          <h3>Flow — Financial Reconciliation System</h3>
+          <p class="project-links">TypeScript, Node.js, PostgreSQL, Next.js · <a href="https://github.com/EdTosoy/flow/blob/d18efb3d65c7b164c45ca3f4571150cb8ce15a25/docs/phase12/README.md">Technical evidence</a> · <a href="https://github.com/EdTosoy/flow">Repository</a></p>
+          <ul>
+            <li>Implemented exact-integer money, an immutable double-entry ledger, deterministic reconciliation, and recoverable worker processing to make financial discrepancies explainable.</li>
+            <li>Built a read-only Next.js investigation interface using bounded PostgreSQL reads. Selected integration tests passed with synthetic data; local evidence does not establish a live deployment or production readiness.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>FATS — PDF Tools</h3>
+          <p class="project-links">Next.js, React, TypeScript, PDF.js, pdf-lib · <a href="https://github.com/EdTosoy/FATS/blob/8afbf3da66baa06a7ea03c93af46fbbc46d34eb1/docs/PDF_TOOLS_2_PHASE_4B_VERIFICATION.md">Technical evidence</a> · <a href="https://github.com/EdTosoy/FATS">Repository</a></p>
+          <ul>
+            <li>Built local PDF processing with stable page identity, edit history, signature placement, extraction, splitting, and export-reopening checks within a job-search platform.</li>
+            <li>Kept v2 development-only. Independent Poppler checks verify selected synthetic exports; one source-hash assertion and five browser-overlay checks remain failing in the recorded broader runs.</li>
+          </ul>
+        </article>
+      </section>
+      <section aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <p><strong>FEU Roosevelt Marikina</strong> — Bachelor of Science in Information Technology · June 2025</p>
+      </section>
+      <section aria-labelledby="certification">
+        <h2 id="certification">Certification</h2>
+        <p><strong>AWS Certified AI Practitioner</strong> — Amazon Web Services Training and Certification</p>
+        <p>Earned September 2026 · Expires September 29, 2029 · <a href="https://www.credly.com/badges/5d45cb63-c873-4a9c-84e2-3a93b31af914/linked_in_profile">Verify on Credly</a></p>
+      </section>
+    </main>
+  </body>
+</html>

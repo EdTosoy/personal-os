@@ -54,15 +54,20 @@ export interface Project {
   github?: string;
 
   demo?: string;
+
+  caseStudy?: { href: string; image: string; alt: string; caption: string };
 }
 
 interface TaskItem {
   description: string;
+  emphasis?: string;
   url?: string;
   label?: string;
 }
 
 export interface JourneyItem {
+  /** ISO date or month, retaining the precision of the known starting date. */
+  startDate: string;
   period: string;
   title: string;
   tasks: TaskItem[];

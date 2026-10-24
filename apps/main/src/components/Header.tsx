@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { IoMenu, IoClose } from 'react-icons/io5';
-import { useMenu } from '@/context/MenuContext';
-import { navigation } from '@/constants/navigation';
-import { ThemeToggle } from './ui/ToggleTheme';
+import { useContext, useEffect, useState } from "react";
+import Link from "next/link";
+import { IoMenu, IoClose } from "react-icons/io5";
+import { MenuContext } from "@/context/MenuContext";
+import { navigation } from "@/constants/navigation";
+import { ThemeToggle } from "./ui/ToggleTheme";
 
 export default function Header() {
-  const { openMenu, setOpenMenu } = useMenu();
+  const { openMenu, setOpenMenu } = useContext(MenuContext);
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -17,19 +17,21 @@ export default function Header() {
       setScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
+    <>
+    <a href="#main-content" className="case-skip">Skip to content</a>
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'border-b border-line bg-ink/90 backdrop-blur'
-          : 'border-b border-transparent bg-transparent'
+          ? "border-b border-line bg-ink/90 backdrop-blur"
+          : "border-b border-transparent bg-transparent"
       }`}
     >
       <div className="grid-container">
@@ -70,6 +72,8 @@ export default function Header() {
             <button
               className="text-2xl text-fg"
               aria-label="Toggle navigation"
+              aria-expanded={openMenu}
+              aria-controls="mobile-navigation"
               onClick={() => setOpenMenu((prev) => !prev)}
             >
               {openMenu ? <IoClose /> : <IoMenu />}
@@ -80,7 +84,7 @@ export default function Header() {
         {/* Mobile Navigation */}
         {openMenu && (
           <div className="col-start-2 col-end-3 border-t border-line bg-ink md:hidden">
-            <nav className="flex flex-col py-3">
+            <nav id="mobile-navigation" aria-label="Mobile navigation" className="flex flex-col py-3">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -106,5 +110,6 @@ export default function Header() {
         )}
       </div>
     </header>
+    </>
   );
 }

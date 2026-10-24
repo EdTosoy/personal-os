@@ -1,0 +1,7 @@
+{
+  "source": "resume/Edberto_Tosoy_Resume.html",
+  "sourceSha256": "bda8cfbffd58041ab28fcb2c78a364776310272874e21a95b8ac912e6efe7f59",
+  "pdf": "public/Edberto_Tosoy_Resume.pdf",
+  "pdfSha256": "62eeef987d8a2028b945a6da09f695784d43df8d5635f0111583ec7bf7611db9",
+  "renderer": "Playwright 1.63.0 / 153.0.8010.52"
+}

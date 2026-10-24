@@ -1,30 +1,30 @@
-'use client';
+"use client";
+import React, { useState, createContext } from "react";
 
-import { createContext, useContext, useState, type ReactNode } from 'react';
-
-type MenuContextValue = {
+type ContextProps = {
   openMenu: boolean;
   setOpenMenu: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const MenuContext = createContext<MenuContextValue | null>(null);
+export const MenuContext = createContext<ContextProps>({
+  openMenu: false,
+  setOpenMenu: () => undefined,
+});
 
-export const MenuProvider = ({ children }: { children: ReactNode }) => {
-  const [openMenu, setOpenMenu] = useState(false);
+type Props = {
+  children: React.ReactNode;
+};
+export const MenuProvider = ({ children }: Props) => {
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
 
   return (
-    <MenuContext.Provider value={{ openMenu, setOpenMenu }}>
+    <MenuContext.Provider
+      value={{
+        openMenu,
+        setOpenMenu,
+      }}
+    >
       {children}
     </MenuContext.Provider>
   );
-};
-
-export const useMenu = () => {
-  const context = useContext(MenuContext);
-
-  if (!context) {
-    throw new Error('useMenu must be used within a MenuProvider');
-  }
-
-  return context;
 };

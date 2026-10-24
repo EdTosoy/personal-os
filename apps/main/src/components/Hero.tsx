@@ -2,14 +2,15 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
 import { TfiLinkedin } from "react-icons/tfi";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
+import { profile } from "@/data/profile";
 
 export default function Hero() {
   return (
     <section className="relative grid-container overflow-hidden border-b border-line">
       <div className="grid-bg absolute inset-0" aria-hidden />
 
-      <main className="relative col-start-2 col-end-3">
-        <div className="py-20 md:py-28">
+      <div className="relative col-start-2 col-end-3">
+        <div className="py-14 md:py-28">
           {/* Status banner — signature element */}
           <div className="panel mono inline-flex items-center gap-2.5 rounded-full px-4 py-2 text-xs text-fg-muted">
             <span className="status-dot" />
@@ -23,19 +24,15 @@ export default function Hero() {
           </h1>
 
           <p className="eyebrow mt-4 text-sm uppercase">
-            Software Engineer · Full Stack · Cloud & DevOps
+            {profile.headline}
           </p>
 
-          <p className="mt-8 max-w-2xl text-base leading-8 text-fg-muted md:text-lg">
-            Software Engineer with production experience building and supporting
-            enterprise banking applications. I work across frontend, backend,
-            databases, and APIs, and have expanded into cloud-native development
-            through hands-on work with AWS, Docker, Kubernetes, Terraform,
-            CI/CD, and observability.
+          <p className="mt-5 max-w-2xl text-base leading-8 text-fg-muted md:text-lg">
+            {profile.summary}
           </p>
 
           {/* CTA */}
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="#projects"
               className="btn-primary rounded-full px-7 py-3"
@@ -44,7 +41,7 @@ export default function Hero() {
             </Link>
 
             <Link
-              href="/Edberto_Tosoy_Resume.pdf"
+              href={profile.resume}
               target="_blank"
               className="btn-outline flex items-center gap-2 rounded-full px-7 py-3"
             >
@@ -54,7 +51,7 @@ export default function Hero() {
           </div>
 
           {/* Socials */}
-          <div className="mt-10 flex items-center gap-3">
+          <div className="mt-8 flex items-center gap-3">
             <Link
               href="https://github.com/edtosoy"
               target="_blank"
@@ -75,7 +72,7 @@ export default function Hero() {
           </div>
 
           {/* Stack strip — treated like a service catalog readout */}
-          <div className="scanline-fade mono mt-16 overflow-hidden border-t border-line-soft pt-6 text-xs text-fg-dim">
+          <div className="scanline-fade mono mt-10 md:mt-16 overflow-hidden border-t border-line-soft pt-6 text-xs text-fg-dim">
             <div className="flex w-max gap-x-8 marquee sm:animate-none">
               {[
                 "typescript",
@@ -120,7 +117,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </section>
   );
 }

@@ -3,21 +3,20 @@ import { Profile } from "@/types";
 export const profile: Profile = {
   name: "Edberto Tosoy",
 
-  title: "Software Engineer",
+  title: "Full-Stack Software Engineer",
 
-  headline: "Full Stack & Cloud Engineering.",
+  headline: "Software Engineer · Full Stack · Cloud",
 
   summary:
-    "Software Engineer with production experience building and supporting banking applications. I build full-stack systems with TypeScript and Python and have expanded into cloud-native engineering through hands-on work with AWS, Docker, Kubernetes, Terraform, CI/CD, Linux, and observability.",
+    "Software Engineer with production experience building and supporting enterprise banking applications. I work across frontend, backend, databases, and APIs, and have expanded into cloud-native development through hands-on work with AWS, Docker, Kubernetes, Terraform, CI/CD, and observability.",
 
-  email: "[edberto@edtosoy.com](mailto:edberto@tosoy.com)",
+  email: "edberto@edtosoy.com",
 
   github: "https://github.com/edtosoy",
 
-  linkedin:
-    "[https://linkedin.com/in/edtosoy](https://linkedin.com/in/edtosoy)",
+  linkedin: "https://linkedin.com/in/edtosoy",
 
-  website: "[https://edtosoy.com](https://edtosoy.com)",
+  website: "https://edtosoy.com",
 
   location: "Metro Manila, Philippines",
 

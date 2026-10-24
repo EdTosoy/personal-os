@@ -1,17 +1,19 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
 import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi";
 
+const subscribe = () => () => undefined;
+const clientSnapshot = () => true;
+const serverSnapshot = () => false;
+
 export function ThemeToggle({ className }: { className?: string }) {
   const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => setMounted(true), []);
+  const mounted = useSyncExternalStore(subscribe, clientSnapshot, serverSnapshot);
 
   if (!mounted) {
     // Same markup shape on server and first client paint — no mismatch.
-    return <button className={className} aria-label="Toggle theme" />;
+    return <button disabled className={className} aria-label="Toggle theme" />;
   }
 
   const isDark = resolvedTheme === "dark";

@@ -1,0 +1,62 @@
+{
+  "method": "Images moved byte-for-byte; duplicate aliases removed only after byte comparison. Supplied manifest retained alongside source assets; served manifest adds root install identity/start/scope.",
+  "assets": [
+    {
+      "supplied": "favicon.ico",
+      "installed": "public/favicon.ico",
+      "bytes": 3173,
+      "sha256": "cfa7743de6a57c6f37f2bd72b158c3bb10a12b3cdac708ab5322665174905abe"
+    },
+    {
+      "supplied": "favicon-16x16.png",
+      "installed": "public/favicon-16x16.png",
+      "bytes": 472,
+      "sha256": "5a2c99cbe7179826cd4f0bfdf65d9d8b11123092393238443bf7a8f4df3b2885"
+    },
+    {
+      "supplied": "favicon-32x32.png",
+      "installed": "public/favicon-32x32.png",
+      "bytes": 1004,
+      "sha256": "74d714880509398859d45c2147c11a165318952db591c82c00b5295142a10b64"
+    },
+    {
+      "supplied": "favicon-48x48.png",
+      "installed": "public/favicon-48x48.png",
+      "bytes": 1643,
+      "sha256": "b20a678c6bed003b7deb77941b00d3e2594bd54a93e9b04bcef882470cdd53f1"
+    },
+    {
+      "supplied": "apple-touch-icon.png",
+      "installed": "public/apple-touch-icon.png",
+      "bytes": 20426,
+      "sha256": "4586e8c43b68a90f944bba1e85cd03f579a2642d768e09da88cb91c62a699900"
+    },
+    {
+      "supplied": "android-chrome-192x192.png",
+      "installed": "public/android-chrome-192x192.png",
+      "bytes": 23600,
+      "sha256": "d76061331098c6ffe3158fc2b333c7ed82c9734ebc54e68c315a3575c7a1924c"
+    },
+    {
+      "supplied": "android-chrome-512x512.png",
+      "installed": "public/android-chrome-512x512.png",
+      "bytes": 195109,
+      "sha256": "1f3fa37ee0516dc342b58717eaf4c1fce5b3d324f1fa3f0fd5f53957a393814e"
+    },
+    {
+      "supplied": "app/ET-Monogram.png",
+      "identicalTo": "assets/brand/ET-original.png",
+      "sha256": "541b93c61d0ce940ddaf6ae80896c9b1daf8b5a6d40d8673b25d775ca03d9b0b"
+    },
+    {
+      "supplied": "icon-192.png",
+      "identicalTo": "public/android-chrome-192x192.png",
+      "sha256": "d76061331098c6ffe3158fc2b333c7ed82c9734ebc54e68c315a3575c7a1924c"
+    },
+    {
+      "supplied": "icon-512.png",
+      "identicalTo": "public/android-chrome-512x512.png",
+      "sha256": "1f3fa37ee0516dc342b58717eaf4c1fce5b3d324f1fa3f0fd5f53957a393814e"
+    }
+  ]
+}

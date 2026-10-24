@@ -4,6 +4,7 @@ import "./globals.css";
 import { MenuProvider } from "@/context/MenuContext";
 import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/next";
+import { pageMetadata } from "@/lib/metadata";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -19,9 +20,23 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Edberto Tosoy — Software Engineer, Cloud & DevOps",
-  description:
-    "Software Engineer with production banking experience, now focused on Cloud, DevOps, and Platform Engineering. Based in Metro Manila, Philippines.",
+  ...pageMetadata(
+    "Edberto Tosoy — Full-Stack Software Engineer",
+    "Full-stack software engineer with production React and TypeScript banking experience and independent backend, financial systems, and AWS projects. Based in Metro Manila, Philippines.",
+    "/",
+  ),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon", sizes: "16x16 32x32 48x48" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-48x48.png", type: "image/png", sizes: "48x48" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" },
+    ],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -42,7 +57,7 @@ export default function RootLayout({
         <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
           <MenuProvider>{children}</MenuProvider>
         </ThemeProvider>
-        <Analytics />
+        {process.env.VERCEL === "1" && <Analytics />}
       </body>
     </html>
   );
