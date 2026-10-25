@@ -59,7 +59,7 @@ export default function Projects({
             {project.caseStudy && (
               <Link
                 href={project.caseStudy.href}
-                className="project-evidence-link"
+                className="project-evidence-link mt-0"
                 aria-label={`Inspect ${project.title}`}
               >
                 <Image
@@ -113,27 +113,6 @@ export default function Projects({
         href={(number) => `?projectsPage=${number}#projects`}
         label="Featured project pages"
       />
-      {older.length > 0 && (
-        <details className="older-projects">
-          <summary>Earlier engineering work</summary>
-          {older.map((project) => (
-            <article key={project.slug}>
-              <h3>{project.title}</h3>
-              <p>{project.shortDescription}</p>
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Inspect source for {project.title}
-                  <span className="sr-only"> (opens in a new tab)</span>
-                </a>
-              )}
-            </article>
-          ))}
-        </details>
-      )}
       <div className="mt-16 xl:hidden">
         <h3 className="text-xl font-semibold text-fg">Technologies</h3>
         <div className="mt-6 grid gap-4 md:grid-cols-2">

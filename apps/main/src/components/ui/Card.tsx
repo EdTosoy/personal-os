@@ -1,4 +1,4 @@
-import { cn } from "@/lib/cn";
+import { cn } from '@/lib/cn';
 
 interface CardProps {
   children: React.ReactNode;
@@ -7,6 +7,6 @@ interface CardProps {
 
 export function Card({ children, className }: CardProps) {
   return (
-    <div className={cn("panel panel-hover p-6", className)}>{children}</div>
+    <div className={cn('panel panel-hover p-6', className)}>{children}</div>
   );
 }
