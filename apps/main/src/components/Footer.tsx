@@ -1,16 +1,18 @@
-import Link from "next/link";
-import { profile } from "@/data/profile";
+import Link from 'next/link';
+import { profile } from '@/data/profile';
 
 export default function Footer() {
   const year = new Date().getFullYear();
   const linkClassName =
-    "inline-flex min-h-11 items-center rounded-sm transition hover:text-amber focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber";
+    'inline-flex min-h-11 items-center rounded-sm transition hover:text-amber focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber';
 
   return (
     <footer className="border-t border-line">
       <div className="grid-container py-8">
         <div className="col-start-2 col-end-3 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <p className="text-sm text-fg-dim">© {year} {profile.name}</p>
+          <p className="text-sm text-fg-dim">
+            © {year} {profile.name}
+          </p>
 
           <nav
             aria-label="Social links"
