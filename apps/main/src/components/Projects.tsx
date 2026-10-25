@@ -1,126 +1,145 @@
-import Link from "next/link";
-import Image from "next/image";
-import { FaGithub } from "react-icons/fa6";
-import { FiExternalLink } from "react-icons/fi";
-import { projects } from "@/data/projects";
-import { ProjectStatus } from "@/types";
-import { skills } from "@/data/skills";
-const statusStyles: Record<ProjectStatus, string> = {
-  Completed: "text-ok",
-  "In Progress": "text-amber",
-  "Actively Maintained": "text-amber",
-  Archived: "text-fg-dim",
-};
+import Link from 'next/link';
+import Image from 'next/image';
+import { projects } from '@/data/projects';
+import { skills } from '@/data/skills';
+import { DEFAULT_PAGE_SIZE, paginate } from '@/lib/pagination';
+import { Pagination } from '@/components/ui/Pagination';
 
-export default function Projects() {
-  const featured = projects.filter((p) => p.featured);
-
+export default function Projects({
+  requestedPage,
+}: {
+  requestedPage?: string;
+}) {
+  const featured = projects.filter((project) => project.featured);
+  const { page, pageCount, items } = paginate(featured, requestedPage);
+  const older = projects.filter((project) => !project.featured);
   return (
-    <section id="projects" className=" border-b border-line py-24 md:py-28">
-      <div className="mb-16 max-w-3xl">
-        <p className="eyebrow text-xs font-bold uppercase ">
-          Featured Projects
-        </p>
-
-        <h2 className="mt-3 text-3xl font-bold text-fg md:text-4xl">
-          Engineering work you can inspect.
-        </h2>
-
-        <p className="mt-6 text-lg leading-8 text-fg-muted">
-          Independent engineering projects, with captured application evidence,
-          implementation decisions, and source links. Each case study explains
-          what works, what was tested, and where verification stops.
-        </p>
+    <section
+      id="projects"
+      className="featured-projects border-b border-line py-24 md:py-28"
+      aria-labelledby="projects-title"
+    >
+      <div className="project-section-heading">
+        <div>
+          <h2
+            id="projects-title"
+            className="text-3xl font-bold text-fg md:text-4xl"
+          >
+            Software with a purpose.
+          </h2>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-fg-muted">
+            Independent products. Explore the working interfaces, the
+            engineering behind them, and the evidence that defines their limits.
+          </p>
+        </div>
+        <span className="project-count">
+          {featured.length} featured projects
+        </span>
       </div>
-
-      <div className="grid gap-6 md:grid-cols-2">
-        {featured.map((project) => (
+      <div className="projects-grid" data-project-page={page}>
+        {items.map((project, index) => (
           <article
             key={project.slug}
-            className="panel panel-hover flex min-w-0 flex-col p-6"
+            className="project-card"
+            data-project={project.slug}
           >
+            <div className="project-card-copy">
+              <div className="project-card-meta">
+                <span>
+                  {String((page - 1) * DEFAULT_PAGE_SIZE + index + 1).padStart(
+                    2,
+                    '0',
+                  )}
+                </span>
+                <span>{project.status}</span>
+              </div>
+              <h3>{project.title}</h3>
+              <p>{project.shortDescription}</p>
+            </div>
             {project.caseStudy && (
               <Link
                 href={project.caseStudy.href}
-                className="project-evidence-link mb-7"
-                aria-label={`View ${project.title} case study`}
+                className="project-evidence-link"
+                aria-label={`Inspect ${project.title}`}
               >
                 <Image
                   src={project.caseStudy.image}
                   alt={project.caseStudy.alt}
                   width={1440}
                   height={1000}
-                  loading="lazy"
+                  loading="eager"
+                  unoptimized
                   sizes="(min-width: 1280px) 390px, (min-width: 768px) 45vw, 90vw"
                 />
                 <span>{project.caseStudy.caption}</span>
               </Link>
             )}
-            <div className="flex flex-1 flex-col justify-between gap-6">
-              <div className="flex-1">
-                <div className="mono flex items-center gap-2 text-xs">
-                  <span className={statusStyles[project.status]}>●</span>
-                  <span className="text-fg-dim uppercase tracking-wide">
-                    {project.status}
+            <div className="project-card-links">
+              {project.caseStudy && (
+                <Link href={project.caseStudy.href}>
+                  Explore case study
+                  <span className="sr-only">: {project.title}</span>
+                </Link>
+              )}
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Source
+                  <span className="sr-only">
+                    {' '}
+                    for {project.title} (opens in a new tab)
                   </span>
-                </div>
-
-                <h3 className="mt-3 text-2xl font-semibold text-fg">
-                  {project.title}
-                </h3>
-
-                <p className="mt-4 leading-8 text-fg-muted">
-                  {project.shortDescription}
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-3 self-start shrink-0">
-                {project.caseStudy && (
-                  <Link
-                    href={project.caseStudy.href}
-                    className="btn-primary flex items-center gap-2 rounded-full px-5 py-3 text-sm"
-                  >
-                    View Case Study <span aria-hidden="true">↗</span>
-                  </Link>
-                )}
-                {project.github && (
-                  <Link
-                    href={project.github}
-                    target="_blank"
-                    className="btn-outline flex items-center gap-2 rounded-full px-5 py-2 text-sm"
-                  >
-                    <FaGithub />
-                    Code
-                  </Link>
-                )}
-
-                {project.demo && (
-                  <Link
-                    href={project.demo}
-                    target="_blank"
-                    className="btn-primary flex items-center gap-2 rounded-full px-5 py-2 text-sm"
-                  >
-                    <FiExternalLink />
-                    Demo
-                  </Link>
-                )}
-              </div>
+                </a>
+              )}
+              {project.demo && (
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo<span className="sr-only"> (opens in a new tab)</span>
+                </a>
+              )}
             </div>
           </article>
         ))}
       </div>
-
-      {/* Skills — service catalog. Hidden on 2xl+ where the sticky
-              side Stack rail (components/Stack.tsx) takes over this role. */}
+      <Pagination
+        page={page}
+        pageCount={pageCount}
+        href={(number) => `?projectsPage=${number}#projects`}
+        label="Featured project pages"
+      />
+      {older.length > 0 && (
+        <details className="older-projects">
+          <summary>Earlier engineering work</summary>
+          {older.map((project) => (
+            <article key={project.slug}>
+              <h3>{project.title}</h3>
+              <p>{project.shortDescription}</p>
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Inspect source for {project.title}
+                  <span className="sr-only"> (opens in a new tab)</span>
+                </a>
+              )}
+            </article>
+          ))}
+        </details>
+      )}
       <div className="mt-16 xl:hidden">
         <h3 className="text-xl font-semibold text-fg">Technologies</h3>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {skills.map((category) => (
             <div key={category.title} className="panel p-6">
-              <p className="mono text-xs uppercase tracking-wide text-fg-dim">
-                {category.title}
-              </p>
-
+              <p className="text-sm text-fg-muted">{category.title}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
                   <span key={skill} className="chip px-3 py-1">

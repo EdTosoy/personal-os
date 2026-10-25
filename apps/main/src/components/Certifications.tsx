@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { awsAiPractitioner as certification } from "@/data/certifications";
+import Image from 'next/image';
+import { awsAiPractitioner as certification } from '@/data/certifications';
 
 export default function Certifications() {
   return (
@@ -30,10 +30,6 @@ export default function Certifications() {
           <h3 className="text-xl font-semibold text-fg">
             {certification.name}
           </h3>
-          <p className="mt-2 text-sm leading-6 text-fg-muted">
-            Foundational knowledge of AI, machine learning, and generative AI on AWS.
-          </p>
-
           <dl className="mt-4 space-y-2 text-sm leading-6 text-fg-muted">
             <div>
               <dt className="inline font-medium text-fg">Issuer: </dt>
@@ -57,7 +53,7 @@ export default function Certifications() {
             </div>
             <div>
               <dt className="inline font-medium text-fg">
-                Credential verification:{" "}
+                Credential verification:{' '}
               </dt>
               <dd className="inline">{certification.verificationProvider}</dd>
             </div>

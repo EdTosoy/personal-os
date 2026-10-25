@@ -16,5 +16,25 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
     "tailwindcss": "^4.3.3"
+  },
+  "nx": {
+    "targets": {
+      "typecheck": {
+        "command": "tsc --noEmit -p apps/main/tsconfig.json",
+        "cache": true,
+        "inputs": [
+          "default",
+          "^default"
+        ]
+      },
+      "verify-phase5": {
+        "executor": "nx:run-commands",
+        "cache": false,
+        "options": {
+          "command": "node scripts/check-phase5.mjs",
+          "cwd": "apps/main"
+        }
+      }
+    }
   }
 }

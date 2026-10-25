@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useId, useState } from "react";
-import { preload } from "react-dom";
-import { ZoomFocusViewer } from "./ZoomFocusViewer";
-import type { WalkthroughStep } from "./types";
+import { useId, useState } from 'react';
+import { preload } from 'react-dom';
+import { ZoomFocusViewer } from './ZoomFocusViewer';
+import type { WalkthroughStep } from './types';
 
 export function GuidedWalkthrough({
   steps,
@@ -16,16 +16,11 @@ export function GuidedWalkthrough({
   const id = useId();
   const step = steps[active];
   // Load each original once so navigation and zoom never swap image quality.
-  for (const { image } of steps) preload(image.src, { as: "image" });
+  for (const { image } of steps) preload(image.src, { as: 'image' });
   return (
     <section className="evidence-walkthrough panel" aria-label={label}>
       <div className="evidence-toolbar">
-        <span className="mono">
-          <span className="text-ok" aria-hidden="true">
-            ●{" "}
-          </span>{" "}
-          CAPTURED FROM THE APPLICATION
-        </span>
+        <span>Captured from the application</span>
         <span>{step.image.status}</span>
       </div>
       <div className="evidence-layout">
@@ -39,7 +34,7 @@ export function GuidedWalkthrough({
           />
         </div>
         <div className="evidence-guide">
-          <p className="eyebrow text-xs">GUIDED INSPECTION</p>
+          <p className="text-sm text-fg-muted">Guided inspection</p>
           <ol
             className="evidence-step-list"
             aria-label="Walkthrough steps"
@@ -56,7 +51,7 @@ export function GuidedWalkthrough({
                 event.preventDefault();
                 const index = keys[event.key];
                 setActive(index);
-                event.currentTarget.querySelectorAll("button")[index]?.focus();
+                event.currentTarget.querySelectorAll('button')[index]?.focus();
               }
             }}
           >
@@ -64,11 +59,11 @@ export function GuidedWalkthrough({
               <li key={item.title}>
                 <button
                   type="button"
-                  aria-current={index === active ? "step" : undefined}
+                  aria-current={index === active ? 'step' : undefined}
                   onClick={() => setActive(index)}
                 >
-                  <span className="evidence-step-number mono">
-                    {String(index + 1).padStart(2, "0")}
+                  <span className="evidence-step-number">
+                    {String(index + 1).padStart(2, '0')}
                   </span>
                   {item.title}
                 </button>
@@ -80,8 +75,8 @@ export function GuidedWalkthrough({
             aria-live="polite"
             aria-atomic="true"
           >
-            <p className="mono text-xs text-fg-muted">
-              STEP {active + 1} / {steps.length}
+            <p className="text-xs text-fg-muted">
+              Step {active + 1} of {steps.length}
             </p>
             <h3>{step.title}</h3>
             <p>{step.description}</p>

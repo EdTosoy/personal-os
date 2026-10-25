@@ -1,0 +1,49 @@
+{
+  "baselineStatus": " M apps/dev/next-env.d.ts\n M apps/main/src/components/Certifications.tsx\n M apps/ops/next-env.d.ts\n",
+  "checks": [
+    {
+      "path": "pnpm-lock.yaml",
+      "unchangedFromTaskBaseline": true
+    },
+    {
+      "path": "apps/main/public/Edberto_Tosoy_Resume.pdf",
+      "unchangedFromTaskBaseline": true
+    },
+    {
+      "path": "apps/main/src/components/Header.tsx",
+      "unchangedFromTaskBaseline": true
+    },
+    {
+      "path": "apps/main/src/app/layout.tsx",
+      "unchangedFromTaskBaseline": true
+    },
+    {
+      "path": "apps/main/src/components/ThemeFavicon.tsx",
+      "unchangedFromTaskBaseline": true
+    },
+    {
+      "path": "apps/main/src/components/Journey.tsx",
+      "unchangedFromTaskBaseline": true
+    },
+    {
+      "path": "apps/main/src/data/journey.ts",
+      "unchangedFromTaskBaseline": true
+    },
+    {
+      "path": "apps/main/src/data/certifications.ts",
+      "unchangedFromTaskBaseline": true
+    },
+    {
+      "path": "apps/dev/next-env.d.ts",
+      "unchangedFromTaskBaseline": true
+    },
+    {
+      "path": "apps/ops/next-env.d.ts",
+      "unchangedFromTaskBaseline": true
+    }
+  ],
+  "notes": [
+    "Concurrent Certifications.tsx edits preserved; this task did not edit that component.",
+    "Next.js regenerated apps/main/next-env.d.ts; initial dev/ops generated-file changes were retained."
+  ]
+}

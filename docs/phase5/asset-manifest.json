@@ -1,0 +1,182 @@
+{
+  "/evidence/flow/overview.png": {
+    "sha256": "f394e44929a01badc7e91e7ad1a9a47f1e29716f4ef7337ce44cf097c417958d",
+    "bytes": 129408
+  },
+  "/evidence/flow/settlement-inspection.png": {
+    "sha256": "74bee201d4a4ce2cc9a0513762a619574e4b3586d0a33f59c0a2b41850e361d3",
+    "bytes": 102288
+  },
+  "/evidence/flow/reconciliation.png": {
+    "sha256": "4a93d0acf3f84f1fb8c99be10298663573b0eec6c350322d89f09d648b756b72",
+    "bytes": 110910
+  },
+  "/evidence/flow/exceptions.png": {
+    "sha256": "6ee7fbe484da8e1f5c1a987e8ce36565550d0561ef3775658bdf6c5c1f4018de",
+    "bytes": 127667
+  },
+  "/evidence/flow/controls.png": {
+    "sha256": "3c6b1695cafcaae79b19ba89ada8b7b9054e0b4c7dbd4bc03fc8744c028efa57",
+    "bytes": 152012
+  },
+  "/evidence/flow/workers.png": {
+    "sha256": "423a9930bfb0a0644699e37595e738a718e6ba0b32020cedffea4e843fdd337a",
+    "bytes": 138102
+  },
+  "/evidence/pixshare/album-overview.jpg": {
+    "sha256": "b95a020037de026e4bc596837bdfbea4b2d2c621ae870f1b652d4a608a3e2671",
+    "bytes": 133636
+  },
+  "/evidence/pixshare/list-posts.png": {
+    "sha256": "547da942434fc71a61e5561a879a21b24e430783dfa9e195d1fad4af80a42d0b",
+    "bytes": 132572
+  },
+  "/evidence/pixshare/post-detail.png": {
+    "sha256": "ae8478dff439d9416fe1b8629ec960d08a4df3adb6bd053cd559daa88a0d0077",
+    "bytes": 111113
+  },
+  "/evidence/pixshare/api-overview.png": {
+    "sha256": "721e43e18d3d0322e5eb7095bfafac6926dae274a775631b4f2b2705fa3b5ecf",
+    "bytes": 63246
+  },
+  "/evidence/pixshare/album-gallery.jpg": {
+    "sha256": "78aad4c0ad08cdbc6719953f92abb103712ebf2e6dcb662ad74ab147b2ac8ff2",
+    "bytes": 112077
+  },
+  "/evidence/pixshare/filter-posts.png": {
+    "sha256": "923b135d0f9cd71a3f4ed8b405af58bb0981ba047d342ffd6908cc7d36cd8418",
+    "bytes": 73051
+  },
+  "/evidence/pixshare/album-upload.jpg": {
+    "sha256": "456d1c38faff25d5785cb880bed134beed89b13182496d95a93feddef995b534",
+    "bytes": 51469
+  },
+  "/evidence/pixshare/album-mobile.jpg": {
+    "sha256": "938c8b9c265b2d53dad79a87e2837e1c1f4dc9fc6b50a674c61da04ad5df810c",
+    "bytes": 58915
+  },
+  "/evidence/pixshare/stored-image.png": {
+    "sha256": "0225d3dbe0843d3a3d7421e87c7a040eecf71d28d3ef0ebd89a4253c79c45816",
+    "bytes": 1309821
+  },
+  "/evidence/hospital/billing-paid.png": {
+    "sha256": "e99edb60dfa3d4ac44884058ab479cdaa6c176d02c5199020a9c2c7f855f40fc",
+    "bytes": 118021
+  },
+  "/evidence/hospital/overview.png": {
+    "sha256": "9642cdd38745e7fd98220ff74e643a4249c31f945920d7323794d75c5b16118b",
+    "bytes": 124285
+  },
+  "/evidence/hospital/billing.png": {
+    "sha256": "93bc72d135374bc0d0f2e268491469e0539dfd2bdaef15edd94ae67cb67b4da8",
+    "bytes": 119321
+  },
+  "/evidence/hospital/queue.png": {
+    "sha256": "23eb3cf9cf4234b5d933fc7359152025a224eb64e5fbdd4c0d7eebb6e57acdd3",
+    "bytes": 111137
+  },
+  "/evidence/hospital/consultation.png": {
+    "sha256": "3a8b131034407e2ec7a5a0cce66d8b8acc1fa251b54be1a82ffdb9091efb6dc9",
+    "bytes": 79268
+  },
+  "/evidence/hospital/appointments.png": {
+    "sha256": "39bab21facc93af93c345e11f64d924066bfdea44262aef8221731f7c2ea3458",
+    "bytes": 135595
+  },
+  "/evidence/hospital/patients.png": {
+    "sha256": "17379097f91d505590d794c5ed61857c2d3b8cbbc8a9852b45b88b2bb102955b",
+    "bytes": 100922
+  },
+  "/evidence/fats/synthetic-completed.pdf": {
+    "sha256": "af1baacfd638a0bcf84ac49ed2109b42a4dca46dd41ce6260b3ad6722d7b94ee",
+    "bytes": 19905
+  },
+  "/evidence/fats/signature.png": {
+    "sha256": "459f64e6afad25182731ab9089421c39626cb1ab66d585d03d13864781756905",
+    "bytes": 123723
+  },
+  "/evidence/fats/extraction.png": {
+    "sha256": "29b95fe49d408a0233a62ea0a7744427387e1753f77924a8da2f16bff457bdac",
+    "bytes": 125461
+  },
+  "/evidence/fats/synthetic-split-1.pdf": {
+    "sha256": "7cca2e021f0dfaa2112212119cd60a497971b348e6ece20696d3f44c6d2c40b3",
+    "bytes": 1665
+  },
+  "/evidence/fats/synthetic-split-2.pdf": {
+    "sha256": "98a4bc33d4e027f04a1b47ffffb9531b1435a1fe5b09d02f458afab911f709dd",
+    "bytes": 18903
+  },
+  "/evidence/fats/production-editor.png": {
+    "sha256": "6c290b754e117b6e081fc9442cef6b5d5f4baf31795d821a8613603fe4f8f79c",
+    "bytes": 147435
+  },
+  "/evidence/fats/scanner-unavailable.png": {
+    "sha256": "5fa4a09183ffb4139268b673713ee8da39af1f34658a55986eefdc8e40853a08",
+    "bytes": 40207
+  },
+  "/evidence/fats/synthetic-extracted.pdf": {
+    "sha256": "91cd936d4af6df1e7b1d2c5153e1b811f6e21724bb5044f922766afceaa0a7c1",
+    "bytes": 2631
+  },
+  "/evidence/fats/dashboard.png": {
+    "sha256": "108bfa1c23ce8ea8c6bb6e9c658667268dfe9d1fab10faed9fd3888d1e6198f1",
+    "bytes": 174657
+  },
+  "/evidence/fats/interviews.png": {
+    "sha256": "af3d0b03ed67661d20fb9103edbf0bcf0932fc1890f201bc66e54aab2cbcccd7",
+    "bytes": 109912
+  },
+  "/evidence/fats/synthetic-original.pdf": {
+    "sha256": "b7b4fc2d8fd211dd733ef2111c95ba30a09ddeb0de8d649c1e38b78bbe364a9f",
+    "bytes": 3604
+  },
+  "/evidence/fats/organization.png": {
+    "sha256": "e4b26d5cfe228e62d4be999e790cad9690088517103326adef2441cb3fc408ea",
+    "bytes": 113693
+  },
+  "/evidence/fats/applications.png": {
+    "sha256": "edbd0e019eaa6b147796c949d9480f5f9f8265d80111b2c0ebc3d3bda4c4af02",
+    "bytes": 143538
+  },
+  "/evidence/fats/offers.png": {
+    "sha256": "8aafd7d42692a56ffd151258270aaed0a0bd06350ed720f5d9b78302943346e4",
+    "bytes": 214626
+  },
+  "/evidence/fats/split.png": {
+    "sha256": "ee679ea278bace48b454d02f26624f2a7801fbcabc13c199099f2846664d0f0b",
+    "bytes": 130112
+  },
+  "/evidence/fats/reopened-output.png": {
+    "sha256": "9fca9565c9b94fd6d31446c335787b6011d42af2b932efc28b882d02609ea527",
+    "bytes": 106434
+  },
+  "/evidence/fats/workspace.png": {
+    "sha256": "8cef1becfef8a7a7a7f95c13630fabc3ca7b0e431d5a97e2517174694d4dace7",
+    "bytes": 101258
+  },
+  "/evidence/fats/capture.png": {
+    "sha256": "f6101e6f606e58836c899fe046f7e19094ded14ea35d05b68c404d2401303554",
+    "bytes": 135478
+  },
+  "/evidence/marcus/lesson.png": {
+    "sha256": "5aa8f237ff6a0ec02c0941774e7e7f1cde173ca06ce7398af2bb828d129283de",
+    "bytes": 126782
+  },
+  "/evidence/marcus/practice.png": {
+    "sha256": "1b26ba2d91de890e8c9266099e2b77439ef752b7d13e0fed3e132917966d9db9",
+    "bytes": 100473
+  },
+  "/evidence/marcus/evaluation.png": {
+    "sha256": "1379abf3e2614b627d60f960c11e00a8ab57c780bf88003468c414d6ad02e35f",
+    "bytes": 154676
+  },
+  "/evidence/marcus/play.png": {
+    "sha256": "98a43a074c3fcee7e58f23bc64fdd1bfcccc22c741f1a20cb4116c955322558a",
+    "bytes": 130063
+  },
+  "/evidence/marcus/review.png": {
+    "sha256": "c304c51064b08f29cbc8410a9785900f3e9dd739057ba1f447ac775e523f9b01",
+    "bytes": 176649
+  }
+}

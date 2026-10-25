@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./projects.css";
 
 * {
   /* border: 1px dashed red; */

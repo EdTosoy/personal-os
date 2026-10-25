@@ -1,0 +1,10 @@
+{
+  "scope": "Production homepage after moving the loading boundary into the case-study branch",
+  "observed": {
+    "mainWidth": 390,
+    "projectCards": 4,
+    "hiddenStreamedSegments": 0,
+    "paginationNavigationWidth": 350
+  },
+  "verification": "Sandbox-enabled Chromium with javaScriptEnabled false; visible homepage and native pagination anchors"
+}

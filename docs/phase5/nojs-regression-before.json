@@ -1,0 +1,11 @@
+{
+  "scope": "Production homepage after query pagination was introduced, before narrowing the root loading boundary",
+  "observed": {
+    "bodyText": "Loading...",
+    "mainWidth": 0,
+    "projectCardsInHiddenMarkup": 4,
+    "hiddenStreamedSegments": 1,
+    "paginationNavigationWidth": 0
+  },
+  "verification": "Observed in sandbox-enabled Chromium with javaScriptEnabled false; see no-JavaScript regression in check-phase5.mjs for the repaired behavior"
+}

@@ -1,170 +1,173 @@
-import { Project } from "@/types";
+import type { Project } from '@/types';
 
 export const projects: Project[] = [
   {
-    slug: "flow-financial-reconciliation",
+    slug: 'flow-financial-reconciliation',
     caseStudy: {
-      href: "/projects/flow-financial-reconciliation",
-      image: "/evidence/flow/overview.png",
-      alt: "Real Flow dashboard with financial assurance and completeness checks.",
-      caption: "Running application · synthetic financial data",
+      href: '/projects/flow-financial-reconciliation',
+      image: '/evidence/flow/overview.png',
+      alt: 'Real Flow dashboard with financial assurance and completeness checks.',
+      caption: 'Local capture; synthetic records; ephemeral demo',
     },
-    title: "Flow — Financial Reconciliation System",
-
+    title: 'Flow — Financial Reconciliation',
     shortDescription:
-      "Independent financial reconciliation system with exact-money accounting, deterministic matching, recoverable workers, and a read-only Next.js investigation interface.",
-
+      'Reconcile financial transactions and investigate missing, mismatched, or incomplete records, with exact-money accounting and recoverable processing.',
     longDescription:
-      "An independent TypeScript, Node.js, and PostgreSQL system with exact-integer money, an immutable double-entry ledger, processor and bank ingestion, deterministic reconciliation, and recoverable workers. A read-only Next.js interface supports operational investigation. Selected unit and PostgreSQL integration suites passed locally against synthetic data. AWS and Terraform infrastructure is source evidence; this case study does not establish a live deployment, compliance, scale, or production readiness.",
-
-    status: "In Progress",
+      'An independent TypeScript, Node.js, and PostgreSQL system with exact-integer money, an immutable double-entry ledger, processor and bank ingestion, deterministic reconciliation, and recoverable workers. A read-only Next.js interface supports operational investigation. Selected unit and PostgreSQL integration suites passed locally against synthetic data. AWS and Terraform infrastructure is source evidence; this case study does not establish a live deployment, compliance, scale, or production readiness.',
+    status: 'In Progress',
     featured: true,
-    github: "https://github.com/EdTosoy/flow",
-
+    github: 'https://github.com/EdTosoy/flow',
     technologies: [
-      "TypeScript",
-      "Node.js",
-      "PostgreSQL",
-      "Next.js",
-      "Stripe",
-      "AWS",
-      "ECS Fargate",
-      "RDS",
-      "Terraform",
-      "Docker",
+      'TypeScript',
+      'Node.js',
+      'PostgreSQL',
+      'Next.js',
+      'Stripe',
+      'AWS',
+      'ECS Fargate',
+      'RDS',
+      'Terraform',
+      'Docker',
     ],
   },
-
   {
-    slug: "fats-job-application-platform",
+    slug: 'fats-job-application-platform',
     caseStudy: {
-      href: "/projects/fats-pdf-tools",
-      image: "/evidence/fats/signature.png",
-      alt: "FATS PDF Tools development candidate with a signature placed on a synthetic PDF.",
-      caption: "PDF Tools v2 · development candidate · real PDF processing",
+      href: '/projects/fats-pdf-tools',
+      image: '/evidence/fats/dashboard.png',
+      alt: 'FATS job-search dashboard with application stages, upcoming interviews and resume reminders.',
+      caption: 'Verified local workflows; synthetic job-search records',
     },
-    title: "FATS — Job Application Platform",
-
+    title: 'FATS — Job Search Companion',
     shortDescription:
-      "A Next.js job-search platform with browser-based PDF tools. The showcased v2 candidate performs real PDF processing and remains development-only, with known test failures disclosed.",
-
+      'Capture job listings, track applications, prepare for interviews, and organize offers. A full-stack companion for early-career job seekers.',
     longDescription:
-      "An evolving job application management platform built with Next.js, TypeScript, PostgreSQL, and Better Auth. Includes application and interview tracking, account-scoped workspaces, document uploads, and a Chrome extension handoff for job capture. Implements PDF/DOCX extraction, document versioning, consent-gated analysis workflows using the OpenAI Responses API, structured JSON Schema outputs, and evidence validation. Also includes browser-based PDF editing, page extraction, splitting, and merging tools. AI-assisted matching remains disabled by default pending live-model quality and safety evaluation. The platform is under active development, supported by automated unit and browser tests.",
-
-    status: "Actively Maintained",
+      'An evolving job application management platform built with Next.js, TypeScript, PostgreSQL, and Better Auth. Includes application and interview tracking, account-scoped workspaces, document uploads, and a Chrome extension handoff for job capture. Implements PDF/DOCX extraction, document versioning, consent-gated analysis workflows using the OpenAI Responses API, structured JSON Schema outputs, and evidence validation. Also includes browser-based PDF editing, page extraction, splitting, and merging tools. AI-assisted matching remains disabled by default pending live-model quality and safety evaluation. The platform is under active development. Resume intake currently fails closed without its required scanner; PDF v2 remains a development candidate and known test failures are disclosed.',
+    status: 'Actively Maintained',
     featured: true,
-    github: "https://github.com/EdTosoy/FATS",
-
+    github: 'https://github.com/EdTosoy/FATS',
     technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "PostgreSQL",
-      "Better Auth",
-      "OpenAI API",
-      "JSON Schema",
-      "Tailwind CSS",
-      "Playwright",
+      'Next.js',
+      'React',
+      'TypeScript',
+      'PostgreSQL',
+      'Better Auth',
+      'OpenAI API',
+      'JSON Schema',
+      'Tailwind CSS',
+      'Playwright',
     ],
   },
-
   {
-    slug: "pulse-hospital-devops-platform",
+    slug: 'pulse-hospital-devops-platform',
     caseStudy: {
-      href: "/projects/pulse-hospital-devops-platform",
-      image: "/evidence/hospital/overview.png",
-      alt: "Pulse Medical administration dashboard showing synthetic appointments, patients and queue counts.",
-      caption: "Running application · fictional patient records",
+      href: '/projects/pulse-hospital-devops-platform',
+      image: '/evidence/hospital/overview.png',
+      alt: 'Current abox hospital administration dashboard with fictional patients and genuine PostgreSQL-backed workflow counts.',
+      caption: 'Real local abox app; fictional patient records',
     },
-    title: "Hospital Management Platform",
-
+    title: 'Hospital Management Platform',
     shortDescription:
-      "A Next.js and NestJS application for patient scheduling, queues, and billing, with PostgreSQL-backed workflows and infrastructure source for AWS and Kubernetes.",
-
+      'Manage patient records, appointments, queues and billing in abox, a full-stack healthcare administration app.',
     longDescription:
-      "An independent Next.js, NestJS, and PostgreSQL application covering patient records, appointments, billing, and queue management, with REST APIs, JWT authentication, role-based authorization, and request validation. Captured local workflows use fictional records and five-second polling. Docker, Kubernetes, Terraform, GitHub Actions, monitoring, and Ansible files provide infrastructure source evidence; no live deployment or clinical compliance is established by this showcase.",
-
-    status: "Actively Maintained",
+      'abox is an independent Next.js, NestJS and PostgreSQL application with Drizzle ORM, patient records, appointments, queue management, consultation and billing. JWT-backed revocable cookie sessions and backend role guards protect workflows. Fresh local captures use fictional records and verify payment persistence. Docker/EC2 preparation, backup/restore tooling, CI/CD, Terraform and historical Kubernetes/monitoring files are inspectable engineering evidence; no current cloud runtime or clinical compliance is claimed.',
+    status: 'Actively Maintained',
     featured: true,
-
     technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "NestJS",
-      "PostgreSQL",
-      "Prisma",
-      "Docker",
-      "Kubernetes",
-      "AWS",
-      "Terraform",
-      "GitHub Actions",
-      "Prometheus",
-      "Grafana",
-      "Ansible",
+      'Next.js',
+      'React',
+      'TypeScript',
+      'NestJS',
+      'PostgreSQL',
+      'Drizzle ORM',
+      'Docker',
+      'Kubernetes',
+      'AWS',
+      'Terraform',
+      'GitHub Actions',
+      'Prometheus',
+      'Grafana',
+      'Ansible',
     ],
-
-    github: "https://github.com/EdTosoy/hospitalProject",
+    github: 'https://github.com/EdTosoy/hospitalProject',
   },
-
   {
-    slug: "pixshare",
+    slug: 'pixshare',
     caseStudy: {
-      href: "/projects/pixshare",
-      image: "/evidence/pixshare/api-overview.png",
-      alt: "PixShare’s running FastAPI documentation showing public reads and authenticated media mutation endpoints.",
-      caption: "Running API · frontend requires Clerk configuration",
+      href: '/projects/pixshare',
+      image: '/evidence/pixshare/album-overview.jpg',
+      alt: 'PixShare photo album in its Atelier theme with real bundled photographs.',
+      caption: 'Working local photo album; verified Clerk workflows',
     },
-    title: "PixShare",
-
+    title: 'PixShare',
     shortDescription:
-      "Image-management API using FastAPI and PostgreSQL, paired with a Next.js frontend. Backend evidence is available; authenticated frontend workflows still require Clerk configuration.",
-
+      'A focused online photo album built with Next.js, FastAPI and PostgreSQL, with secure owner-only media changes and responsive image delivery.',
     longDescription:
-      "A full-stack image management application combining a Next.js frontend with a Python FastAPI backend. Implements authenticated image uploads, listing, editing, and deletion workflows backed by PostgreSQL. Uses asynchronous database access with SQLAlchemy, Alembic migrations, and containerized development environments. The project explores API design, media storage, database modeling, and frontend-backend integration.",
-
-    status: "Actively Maintained",
+      'A completed local full-stack photo album with an Atelier interface, genuine Clerk authentication, asynchronous PostgreSQL persistence, validated image uploads, ownership checks, safe replacement/deletion and local or S3-compatible storage. Verified with 141 backend tests and 30 genuine browser cases. Real MinIO integration and fixture-scoped image payload measurements are documented. No deployed public live demo, production scale or AWS policy verification is claimed.',
+    status: 'Completed',
     featured: true,
-
     technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Python",
-      "FastAPI",
-      "PostgreSQL",
-      "SQLAlchemy",
-      "Alembic",
-      "Docker",
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Python',
+      'FastAPI',
+      'PostgreSQL',
+      'SQLAlchemy',
+      'Alembic',
+      'Clerk',
+      'Pillow',
+      'S3-compatible storage',
+      'Playwright',
+      'Docker',
     ],
-
-    github: "https://github.com/EdTosoy/PixShare",
+    github: 'https://github.com/EdTosoy/PixShare',
   },
-
   {
-    slug: "nestjs-microservices-platform",
-    title: "NestJS Microservices Platform",
-
+    slug: 'marcus-chess',
+    title: 'Marcus Chess',
     shortDescription:
-      "Event-driven e-commerce backend with independent services, RabbitMQ messaging, and asynchronous search indexing.",
-
+      'Learn to notice threats, practise chess decisions, play Stockfish, and reflect on a game. Technical checks are complete for Phase 2B; learning effectiveness is unproven.',
     longDescription:
-      "A distributed e-commerce backend composed of authentication, catalog, search, and media services built with NestJS. Uses RabbitMQ for asynchronous communication and event-driven workflows. The search service maintains a denormalized product index synchronized through catalog events. Implements JWT authentication, refresh tokens, role-based authorization, and shared service libraries. PostgreSQL and Prisma handle persistence, while Docker supports local multi-service development.",
-
-    status: "Completed",
+      'A browser-local chess education platform connecting guided lessons, adaptive practice, real Stockfish games and reflective review. Phase 2B records 177 unit tests and 34 Chromium cases; Phase 2C records 46 Chromium cases and a source/build receipt. Educator review, real learner pilot, physical-device validation and licensing/corresponding-source packaging remain pending. No measured learning improvement is claimed.',
+    status: 'In Progress',
+    featured: true,
+    github: 'https://github.com/EdTosoy/marcus',
+    technologies: [
+      'Next.js',
+      'TypeScript',
+      'chess.js',
+      'Stockfish',
+      'Web Workers',
+      'Vitest',
+      'Playwright',
+    ],
+    caseStudy: {
+      href: '/projects/marcus-chess',
+      image: '/evidence/marcus/lesson.png',
+      alt: 'Actual Quiet Chess lesson in the Marcus repository, with the approved knight/book symbol and a guided threat explanation.',
+      caption: 'Verified local chess platform; learning efficacy unvalidated',
+    },
+  },
+  {
+    slug: 'nestjs-microservices-platform',
+    title: 'NestJS Microservices Platform',
+    shortDescription:
+      'Event-driven e-commerce backend with independent services, RabbitMQ messaging, and asynchronous search indexing.',
+    longDescription:
+      'A distributed e-commerce backend composed of authentication, catalog, search, and media services built with NestJS. Uses RabbitMQ for asynchronous communication and event-driven workflows. The search service maintains a denormalized product index synchronized through catalog events. Implements JWT authentication, refresh tokens, role-based authorization, and shared service libraries. PostgreSQL and Prisma handle persistence, while Docker supports local multi-service development.',
+    status: 'Completed',
     featured: false,
-
     technologies: [
-      "TypeScript",
-      "Node.js",
-      "NestJS",
-      "RabbitMQ",
-      "PostgreSQL",
-      "Prisma",
-      "Docker",
-      "Cloudinary",
+      'TypeScript',
+      'Node.js',
+      'NestJS',
+      'RabbitMQ',
+      'PostgreSQL',
+      'Prisma',
+      'Docker',
+      'Cloudinary',
     ],
-
-    github: "https://github.com/EdTosoy/nestjs-microservices",
+    github: 'https://github.com/EdTosoy/nestjs-microservices',
   },
 ];

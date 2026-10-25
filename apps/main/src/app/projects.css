@@ -1,0 +1,262 @@
+/* Hallmark · v2.0.0 · theme: existing brand · scope: component · built: personal-os portfolio Phase 5 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V3 · weakest: variety; shared case-study structure makes evidence consistently inspectable. */
+/* Phase 5: shared project index and editorial case studies. */
+html,
+body {
+  overflow-x: clip;
+}
+.featured-projects {
+  scroll-margin-top: 28px;
+  min-width: 0;
+}
+.project-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.project-count {
+  font-variant-numeric: tabular-nums;
+  color: var(--fg-muted);
+  white-space: nowrap;
+  font-size: 0.8rem;
+  padding-bottom: 4px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: clip;
+}
+.project-card-copy {
+  padding: 28px 28px 24px;
+}
+.project-card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--fg-muted);
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+.project-card h3 {
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.project-card-copy > p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--fg-muted);
+  margin-top: 16px;
+}
+.project-card .project-evidence-link {
+  border: 0;
+  border-block: 1px solid var(--line);
+  border-radius: 0;
+  margin-top: auto;
+}
+.project-card .project-evidence-link img {
+  aspect-ratio: 16 / 10;
+  max-height: none;
+  object-fit: cover;
+  object-position: top;
+}
+.project-card .project-evidence-link > span {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  line-height: 1.6;
+  font-size: 0.73rem;
+}
+.project-card-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 24px;
+  gap: 8px 20px;
+  font-size: 0.85rem;
+}
+.project-card-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.project-card-links a:first-child {
+  color: var(--amber);
+}
+.featured-projects :is(a, summary):focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+}
+.project-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-block: 32px;
+}
+.project-pagination ol {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+.project-pagination :is(a, span[aria-disabled]) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding-inline: 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+.project-pagination a:hover {
+  background: var(--panel-raised);
+  border-color: var(--amber);
+}
+.project-pagination [aria-current='page'] {
+  background: var(--panel-raised);
+  border-color: var(--amber);
+  color: var(--amber);
+}
+.project-pagination [aria-disabled] {
+  color: var(--fg-muted);
+  border-color: transparent;
+}
+.project-pagination p {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+  color: var(--fg-muted);
+  font-size: 0.8rem;
+}
+.older-projects {
+  padding-block: 16px;
+  border-top: 1px solid var(--line);
+}
+.older-projects summary {
+  cursor: pointer;
+  min-height: 44px;
+  align-content: center;
+}
+.older-projects article {
+  padding-block: 16px;
+}
+.older-projects h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.older-projects p {
+  color: var(--fg-muted);
+  line-height: 1.8;
+  margin-block: 12px;
+}
+.older-projects a {
+  display: inline-block;
+  padding-block: 12px;
+  color: var(--amber);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.case-title-row h1 {
+  text-wrap: balance;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.case-category {
+  font-size: 0.8rem;
+  color: var(--fg-muted);
+  margin-top: 20px;
+}
+.case-product-brief {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  padding-block: 36px;
+  border-block: 1px solid var(--line);
+}
+.case-product-brief p {
+  margin-top: 16px;
+  line-height: 1.85;
+  color: var(--fg-muted);
+  max-width: 62ch;
+}
+.case-contribution-summary {
+  margin-block: 16px 24px;
+  color: var(--fg-muted);
+  line-height: 1.8;
+  max-width: 80ch;
+}
+.case-editorial-item {
+  border-top: 1px solid var(--line);
+  padding-top: 8px;
+}
+.case-architecture-heading {
+  margin-top: 40px;
+}
+.case-secondary-evidence {
+  margin-top: 28px;
+}
+.case-secondary-evidence > .case-scope {
+  margin-top: 20px;
+}
+.case-evidence-provenance {
+  margin-bottom: 24px;
+  max-width: 80ch;
+  line-height: 1.8;
+  color: var(--fg-muted);
+  font-size: 0.875rem;
+}
+.evidence-toolbar {
+  letter-spacing: 0;
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: minmax(660px, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .project-section-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .project-card-copy {
+    padding: 24px 20px 20px;
+  }
+  .project-card .project-evidence-link > span,
+  .project-card-links {
+    padding-inline: 20px;
+  }
+  .case-product-brief {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+}
+
+.featured-projects a:active,
+.case-study a:active {
+  color: var(--amber);
+}

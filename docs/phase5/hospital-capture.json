@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-25T16:14:46.810Z",
+  "revision": "21d9b79c85f5aa52d0d8cd696a670edc5faf37dc",
+  "brand": "abox",
+  "source": "Current standalone production frontend, cached Phase 3A backend image, genuine cookie sessions and isolated migrated PostgreSQL 17. The browser forwards the compiled localhost:3000 API origin to the isolated real API at localhost:33210; no synthetic API responses or auth bypass.",
+  "frontendBuildId": "MHd9SANZ-oAY38Lz34uIh",
+  "backendImageId": "sha256:233c49c92a18ee30c519c52e5eecf403d352155ef0293266c2f572620caf8140",
+  "captured": [
+    {
+      "route": "/dashboard",
+      "file": "overview.png"
+    },
+    {
+      "route": "/dashboard/patients",
+      "file": "patients.png"
+    },
+    {
+      "route": "/dashboard/appointment",
+      "file": "appointments.png"
+    },
+    {
+      "route": "/dashboard/queue",
+      "file": "queue.png"
+    },
+    {
+      "route": "/dashboard/consult/979e5d20-90a0-4dac-97af-05cf3c1475fd",
+      "file": "consultation.png"
+    },
+    {
+      "route": "/dashboard/billing",
+      "file": "billing.png"
+    },
+    {
+      "route": "/dashboard/billing",
+      "file": "billing-paid.png"
+    }
+  ],
+  "assertions": {
+    "billingPaidAfterReload": true,
+    "databaseCounts": [
+      4,
+      3,
+      1,
+      17
+    ],
+    "zeroRuntimeErrors": true
+  },
+  "errors": []
+}

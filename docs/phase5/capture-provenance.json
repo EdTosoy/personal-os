@@ -1,0 +1,127 @@
+[
+  {
+    "asset": "/evidence/fats/dashboard.png",
+    "source": "/mnt/storage/projects/ats/test-results/ui-theme-evidence/account/desktop/dark-dashboard-1366.png",
+    "sha256": "108bfa1c23ce8ea8c6bb6e9c658667268dfe9d1fab10faed9fd3888d1e6198f1",
+    "note": "Authentic recorded application/extension capture; synthetic records. Scanner refusal is current; other images are attributed prior verification."
+  },
+  {
+    "asset": "/evidence/fats/applications.png",
+    "source": "/mnt/storage/projects/ats/test-results/ui-theme-evidence/account/desktop/dark-applications.png",
+    "sha256": "edbd0e019eaa6b147796c949d9480f5f9f8265d80111b2c0ebc3d3bda4c4af02",
+    "note": "Authentic recorded application/extension capture; synthetic records. Scanner refusal is current; other images are attributed prior verification."
+  },
+  {
+    "asset": "/evidence/fats/interviews.png",
+    "source": "/mnt/storage/projects/ats/test-results/ui-theme-evidence/account/desktop/light-interviews.png",
+    "sha256": "af3d0b03ed67661d20fb9103edbf0bcf0932fc1890f201bc66e54aab2cbcccd7",
+    "note": "Authentic recorded application/extension capture; synthetic records. Scanner refusal is current; other images are attributed prior verification."
+  },
+  {
+    "asset": "/evidence/fats/offers.png",
+    "source": "/mnt/storage/projects/ats/test-results/ui-theme-evidence/account/desktop/light-offer-desk.png",
+    "sha256": "8aafd7d42692a56ffd151258270aaed0a0bd06350ed720f5d9b78302943346e4",
+    "note": "Authentic recorded application/extension capture; synthetic records. Scanner refusal is current; other images are attributed prior verification."
+  },
+  {
+    "asset": "/evidence/fats/capture.png",
+    "source": "/mnt/storage/projects/ats/.fats-private/product-extension-final/sidekick-real-toolbar-perm-2a578--\u2192-persistent-single-record-extension/sidekick-confirm-desktop.png",
+    "sha256": "f6101e6f606e58836c899fe046f7e19094ded14ea35d05b68c404d2401303554",
+    "note": "Authentic recorded application/extension capture; synthetic records. Scanner refusal is current; other images are attributed prior verification."
+  },
+  {
+    "asset": "/evidence/fats/scanner-unavailable.png",
+    "source": "/mnt/storage/projects/ats/.fats-private/product-focus-final/document-intake-unavailabl-0da76-nd-never-publish-a-document-desktop/scanner-unavailable.png",
+    "sha256": "5fa4a09183ffb4139268b673713ee8da39af1f34658a55986eefdc8e40853a08",
+    "note": "Authentic recorded application/extension capture; synthetic records. Scanner refusal is current; other images are attributed prior verification."
+  },
+  {
+    "asset": "/evidence/pixshare/album-overview.jpg",
+    "source": "/mnt/storage/projects/PixShare/docs/release/desktop-home-light.jpg",
+    "sha256": "b95a020037de026e4bc596837bdfbea4b2d2c621ae870f1b652d4a608a3e2671",
+    "note": "Authentic local release capture; upload account avatar was masked upstream. Genuine Clerk results are attributed to that release report."
+  },
+  {
+    "asset": "/evidence/pixshare/album-gallery.jpg",
+    "source": "/mnt/storage/projects/PixShare/docs/release/desktop-explore-dark.jpg",
+    "sha256": "78aad4c0ad08cdbc6719953f92abb103712ebf2e6dcb662ad74ab147b2ac8ff2",
+    "note": "Authentic local release capture; upload account avatar was masked upstream. Genuine Clerk results are attributed to that release report."
+  },
+  {
+    "asset": "/evidence/pixshare/album-upload.jpg",
+    "source": "/mnt/storage/projects/PixShare/docs/release/screenshots/after/desktop-light-upload.jpg",
+    "sha256": "456d1c38faff25d5785cb880bed134beed89b13182496d95a93feddef995b534",
+    "note": "Authentic local release capture; upload account avatar was masked upstream. Genuine Clerk results are attributed to that release report."
+  },
+  {
+    "asset": "/evidence/pixshare/album-mobile.jpg",
+    "source": "/mnt/storage/projects/PixShare/docs/release/mobile-explore-light.jpg",
+    "sha256": "938c8b9c265b2d53dad79a87e2837e1c1f4dc9fc6b50a674c61da04ad5df810c",
+    "note": "Authentic local release capture; upload account avatar was masked upstream. Genuine Clerk results are attributed to that release report."
+  },
+  {
+    "asset": "/evidence/marcus/lesson.png",
+    "source": "/mnt/storage/projects/marcus/artifacts/phase2c/final-light/lesson-1440.png",
+    "sha256": "5aa8f237ff6a0ec02c0941774e7e7f1cde173ca06ce7398af2bb828d129283de",
+    "note": "Authentic Phase 2C capture; synthetic session/evaluation records; no educational outcomes claimed."
+  },
+  {
+    "asset": "/evidence/marcus/practice.png",
+    "source": "/mnt/storage/projects/marcus/artifacts/phase2c/final-light/guided-practice-1440.png",
+    "sha256": "1b26ba2d91de890e8c9266099e2b77439ef752b7d13e0fed3e132917966d9db9",
+    "note": "Authentic Phase 2C capture; synthetic session/evaluation records; no educational outcomes claimed."
+  },
+  {
+    "asset": "/evidence/marcus/play.png",
+    "source": "/mnt/storage/projects/marcus/artifacts/phase2c/final-light/play-1440.png",
+    "sha256": "98a43a074c3fcee7e58f23bc64fdd1bfcccc22c741f1a20cb4116c955322558a",
+    "note": "Authentic Phase 2C capture; synthetic session/evaluation records; no educational outcomes claimed."
+  },
+  {
+    "asset": "/evidence/marcus/review.png",
+    "source": "/mnt/storage/projects/marcus/artifacts/phase2c/final-light/review-1440.png",
+    "sha256": "c304c51064b08f29cbc8410a9785900f3e9dd739057ba1f447ac775e523f9b01",
+    "note": "Authentic Phase 2C capture; synthetic session/evaluation records; no educational outcomes claimed."
+  },
+  {
+    "asset": "/evidence/marcus/evaluation.png",
+    "source": "/mnt/storage/projects/marcus/artifacts/phase2c/final-light/evaluation-1440.png",
+    "sha256": "1379abf3e2614b627d60f960c11e00a8ab57c780bf88003468c414d6ad02e35f",
+    "note": "Authentic Phase 2C capture; synthetic session/evaluation records; no educational outcomes claimed."
+  },
+  {
+    "asset": "/evidence/hospital/billing-paid.png",
+    "sha256": "e99edb60dfa3d4ac44884058ab479cdaa6c176d02c5199020a9c2c7f855f40fc",
+    "note": "Fresh real abox workflow capture; see hospital-capture.json for build/image IDs, genuine sessions, isolated PostgreSQL and loopback forwarding."
+  },
+  {
+    "asset": "/evidence/hospital/overview.png",
+    "sha256": "9642cdd38745e7fd98220ff74e643a4249c31f945920d7323794d75c5b16118b",
+    "note": "Fresh real abox workflow capture; see hospital-capture.json for build/image IDs, genuine sessions, isolated PostgreSQL and loopback forwarding."
+  },
+  {
+    "asset": "/evidence/hospital/billing.png",
+    "sha256": "93bc72d135374bc0d0f2e268491469e0539dfd2bdaef15edd94ae67cb67b4da8",
+    "note": "Fresh real abox workflow capture; see hospital-capture.json for build/image IDs, genuine sessions, isolated PostgreSQL and loopback forwarding."
+  },
+  {
+    "asset": "/evidence/hospital/queue.png",
+    "sha256": "23eb3cf9cf4234b5d933fc7359152025a224eb64e5fbdd4c0d7eebb6e57acdd3",
+    "note": "Fresh real abox workflow capture; see hospital-capture.json for build/image IDs, genuine sessions, isolated PostgreSQL and loopback forwarding."
+  },
+  {
+    "asset": "/evidence/hospital/consultation.png",
+    "sha256": "3a8b131034407e2ec7a5a0cce66d8b8acc1fa251b54be1a82ffdb9091efb6dc9",
+    "note": "Fresh real abox workflow capture; see hospital-capture.json for build/image IDs, genuine sessions, isolated PostgreSQL and loopback forwarding."
+  },
+  {
+    "asset": "/evidence/hospital/appointments.png",
+    "sha256": "39bab21facc93af93c345e11f64d924066bfdea44262aef8221731f7c2ea3458",
+    "note": "Fresh real abox workflow capture; see hospital-capture.json for build/image IDs, genuine sessions, isolated PostgreSQL and loopback forwarding."
+  },
+  {
+    "asset": "/evidence/hospital/patients.png",
+    "sha256": "17379097f91d505590d794c5ed61857c2d3b8cbbc8a9852b45b88b2bb102955b",
+    "note": "Fresh real abox workflow capture; see hospital-capture.json for build/image IDs, genuine sessions, isolated PostgreSQL and loopback forwarding."
+  }
+]

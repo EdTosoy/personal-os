@@ -1,17 +1,20 @@
-"use client";
+'use client';
 
-import { useContext } from "react";
-import { MenuContext } from "@/context/MenuContext";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import Experiences from "@/components/Experiences";
-import Certifications from "@/components/Certifications";
-import Journey from "@/components/Journey";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import Stack from "@/components/Stack";
+import { useContext } from 'react';
+import { MenuContext } from '@/context/MenuContext';
+import Hero from '@/components/Hero';
+import Experiences from '@/components/Experiences';
+import Certifications from '@/components/Certifications';
+import Journey from '@/components/Journey';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+import Stack from '@/components/Stack';
 
-export default function MainContent() {
+export default function MainContent({
+  projects,
+}: {
+  projects: React.ReactNode;
+}) {
   const { setOpenMenu } = useContext(MenuContext);
 
   return (
@@ -23,11 +26,13 @@ export default function MainContent() {
             <div>
               <Experiences />
               <Certifications />
-              <Projects />
+              {projects}
               <Journey />
               <Contact />
             </div>
-            <div className="relative"><Stack /></div>
+            <div className="relative">
+              <Stack />
+            </div>
           </div>
         </div>
       </main>

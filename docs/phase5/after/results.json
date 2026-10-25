@@ -1,0 +1,2162 @@
+{
+  "status": "PASS",
+  "pagination": [
+    {
+      "count": 0,
+      "pages": 1,
+      "lossless": true
+    },
+    {
+      "count": 1,
+      "pages": 1,
+      "lossless": true
+    },
+    {
+      "count": 4,
+      "pages": 1,
+      "lossless": true
+    },
+    {
+      "count": 5,
+      "pages": 2,
+      "lossless": true
+    },
+    {
+      "count": 8,
+      "pages": 2,
+      "lossless": true
+    },
+    {
+      "count": 9,
+      "pages": 3,
+      "lossless": true
+    },
+    {
+      "count": 17,
+      "pages": 5,
+      "lossless": true
+    }
+  ],
+  "sources": [
+    {
+      "study": "flow-financial-reconciliation",
+      "path": "libs/money/src/index.ts",
+      "revision": "d18efb3d65c7b164c45ca3f4571150cb8ce15a25",
+      "exists": true
+    },
+    {
+      "study": "flow-financial-reconciliation",
+      "path": "libs/reconciliation-domain/src/index.ts",
+      "revision": "d18efb3d65c7b164c45ca3f4571150cb8ce15a25",
+      "exists": true
+    },
+    {
+      "study": "flow-financial-reconciliation",
+      "path": "apps/ops/server/read.ts",
+      "revision": "d18efb3d65c7b164c45ca3f4571150cb8ce15a25",
+      "exists": true
+    },
+    {
+      "study": "flow-financial-reconciliation",
+      "path": "docs/phase12/README.md",
+      "revision": "d18efb3d65c7b164c45ca3f4571150cb8ce15a25",
+      "exists": true
+    },
+    {
+      "study": "flow-financial-reconciliation",
+      "path": "docs/architecture/invariants.md",
+      "revision": "d18efb3d65c7b164c45ca3f4571150cb8ce15a25",
+      "exists": true
+    },
+    {
+      "study": "flow-financial-reconciliation",
+      "path": "docs/phase15/verification.md",
+      "revision": "d18efb3d65c7b164c45ca3f4571150cb8ce15a25",
+      "exists": true
+    },
+    {
+      "study": "flow-financial-reconciliation",
+      "path": "tests/reconciliation.integration.test.ts",
+      "revision": "d18efb3d65c7b164c45ca3f4571150cb8ce15a25",
+      "exists": true
+    },
+    {
+      "study": "flow-financial-reconciliation",
+      "path": "tests/resilience.integration.test.ts",
+      "revision": "d18efb3d65c7b164c45ca3f4571150cb8ce15a25",
+      "exists": true
+    },
+    {
+      "study": "fats-pdf-tools",
+      "path": "libs/domain/src/capture.ts",
+      "revision": "8afbf3da66baa06a7ea03c93af46fbbc46d34eb1",
+      "exists": true
+    },
+    {
+      "study": "fats-pdf-tools",
+      "path": "docs/PRODUCT_INTEGRATION_VERIFICATION.md",
+      "revision": "8afbf3da66baa06a7ea03c93af46fbbc46d34eb1",
+      "exists": true
+    },
+    {
+      "study": "fats-pdf-tools",
+      "path": "apps/web/src/lib/pdf-tools-engine.ts",
+      "revision": "8afbf3da66baa06a7ea03c93af46fbbc46d34eb1",
+      "exists": true
+    },
+    {
+      "study": "fats-pdf-tools",
+      "path": "docs/PRODUCT_INTEGRATION_VERIFICATION.md",
+      "revision": "8afbf3da66baa06a7ea03c93af46fbbc46d34eb1",
+      "exists": true
+    },
+    {
+      "study": "fats-pdf-tools",
+      "path": "docs/PRIVATE_BETA_HARDENING_2_VERIFICATION.md",
+      "revision": "8afbf3da66baa06a7ea03c93af46fbbc46d34eb1",
+      "exists": true
+    },
+    {
+      "study": "fats-pdf-tools",
+      "path": "docs/UI_THEME_REFINEMENT_VERIFICATION.md",
+      "revision": "8afbf3da66baa06a7ea03c93af46fbbc46d34eb1",
+      "exists": true
+    },
+    {
+      "study": "fats-pdf-tools",
+      "path": "docs/PDF_TOOLS_2_PHASE_4B_VERIFICATION.md",
+      "revision": "8afbf3da66baa06a7ea03c93af46fbbc46d34eb1",
+      "exists": true
+    },
+    {
+      "study": "pulse-hospital-devops-platform",
+      "path": "apps/backend/src/auth/session.ts",
+      "revision": "21d9b79c85f5aa52d0d8cd696a670edc5faf37dc",
+      "exists": true
+    },
+    {
+      "study": "pulse-hospital-devops-platform",
+      "path": "apps/backend/src/queue/queue.service.ts",
+      "revision": "21d9b79c85f5aa52d0d8cd696a670edc5faf37dc",
+      "exists": true
+    },
+    {
+      "study": "pulse-hospital-devops-platform",
+      "path": "apps/backend/src/database/database.service.ts",
+      "revision": "21d9b79c85f5aa52d0d8cd696a670edc5faf37dc",
+      "exists": true
+    },
+    {
+      "study": "pulse-hospital-devops-platform",
+      "path": "deploy/aws-demo/README.md",
+      "revision": "21d9b79c85f5aa52d0d8cd696a670edc5faf37dc",
+      "exists": true
+    },
+    {
+      "study": "pulse-hospital-devops-platform",
+      "path": "docs/verification-gates.md",
+      "revision": "21d9b79c85f5aa52d0d8cd696a670edc5faf37dc",
+      "exists": true
+    },
+    {
+      "study": "pulse-hospital-devops-platform",
+      "path": "docs/brand-integration.md",
+      "revision": "21d9b79c85f5aa52d0d8cd696a670edc5faf37dc",
+      "exists": true
+    },
+    {
+      "study": "pulse-hospital-devops-platform",
+      "path": "docs/aws-demo-preparation.md",
+      "revision": "21d9b79c85f5aa52d0d8cd696a670edc5faf37dc",
+      "exists": true
+    },
+    {
+      "study": "pulse-hospital-devops-platform",
+      "path": "deploy/aws-demo/README.md",
+      "revision": "21d9b79c85f5aa52d0d8cd696a670edc5faf37dc",
+      "exists": true
+    },
+    {
+      "study": "pulse-hospital-devops-platform",
+      "path": "apps/backend/src/auth/roles/roles.guard.ts",
+      "revision": "21d9b79c85f5aa52d0d8cd696a670edc5faf37dc",
+      "exists": true
+    },
+    {
+      "study": "pulse-hospital-devops-platform",
+      "path": "apps/frontend/test/workflows.spec.ts",
+      "revision": "21d9b79c85f5aa52d0d8cd696a670edc5faf37dc",
+      "exists": true
+    },
+    {
+      "study": "pixshare",
+      "path": "app/core/upload.py",
+      "revision": "0ade8101236286c251f10fb8cfce35d4628978b3",
+      "exists": true
+    },
+    {
+      "study": "pixshare",
+      "path": "app/api/routes/posts.py",
+      "revision": "0ade8101236286c251f10fb8cfce35d4628978b3",
+      "exists": true
+    },
+    {
+      "study": "pixshare",
+      "path": "web/components/posts/PostImage.tsx",
+      "revision": "0ade8101236286c251f10fb8cfce35d4628978b3",
+      "exists": true
+    },
+    {
+      "study": "pixshare",
+      "path": "docs/FINAL_RELEASE.md",
+      "revision": "0ade8101236286c251f10fb8cfce35d4628978b3",
+      "exists": true
+    },
+    {
+      "study": "pixshare",
+      "path": "docs/ARCHITECTURE.md",
+      "revision": "0ade8101236286c251f10fb8cfce35d4628978b3",
+      "exists": true
+    },
+    {
+      "study": "pixshare",
+      "path": "docs/IMAGE_DELIVERY.md",
+      "revision": "0ade8101236286c251f10fb8cfce35d4628978b3",
+      "exists": true
+    },
+    {
+      "study": "pixshare",
+      "path": "app/api/routes/posts.py",
+      "revision": "0ade8101236286c251f10fb8cfce35d4628978b3",
+      "exists": true
+    },
+    {
+      "study": "pixshare",
+      "path": "web/components/posts/PostImage.tsx",
+      "revision": "0ade8101236286c251f10fb8cfce35d4628978b3",
+      "exists": true
+    },
+    {
+      "study": "marcus-chess",
+      "path": "src/domain/adaptive/session.ts",
+      "revision": "e7c678725295b4f2da2d5339d7608400e2eff669",
+      "exists": true
+    },
+    {
+      "study": "marcus-chess",
+      "path": "src/engine/uci-engine.ts",
+      "revision": "e7c678725295b4f2da2d5339d7608400e2eff669",
+      "exists": true
+    },
+    {
+      "study": "marcus-chess",
+      "path": "src/domain/review/decisions.ts",
+      "revision": "e7c678725295b4f2da2d5339d7608400e2eff669",
+      "exists": true
+    },
+    {
+      "study": "marcus-chess",
+      "path": "docs/PHASE_2B_VERIFICATION.md",
+      "revision": "e7c678725295b4f2da2d5339d7608400e2eff669",
+      "exists": true
+    },
+    {
+      "study": "marcus-chess",
+      "path": "docs/PHASE_2C_VERIFICATION.md",
+      "revision": "e7c678725295b4f2da2d5339d7608400e2eff669",
+      "exists": true
+    },
+    {
+      "study": "marcus-chess",
+      "path": "docs/LEARNING_SYSTEM.md",
+      "revision": "e7c678725295b4f2da2d5339d7608400e2eff669",
+      "exists": true
+    },
+    {
+      "study": "marcus-chess",
+      "path": "docs/ENGINE_INTEGRATION.md",
+      "revision": "e7c678725295b4f2da2d5339d7608400e2eff669",
+      "exists": true
+    },
+    {
+      "study": "marcus-chess",
+      "path": "docs/DEPLOYMENT_VERIFICATION.md",
+      "revision": "e7c678725295b4f2da2d5339d7608400e2eff669",
+      "exists": true
+    }
+  ],
+  "results": [
+    {
+      "kind": "project-index",
+      "width": 390,
+      "theme": "dark",
+      "cardsPerPage": [
+        4,
+        1
+      ],
+      "columns": 1,
+      "keyboard": true,
+      "history": true,
+      "numbered": true,
+      "gridHeight": 2360.328125,
+      "secondHeight": 612.65625,
+      "resume": true,
+      "olderProject": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "flow-financial-reconciliation",
+      "width": 390,
+      "theme": "dark",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "fats-pdf-tools",
+      "width": 390,
+      "theme": "dark",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "pulse-hospital-devops-platform",
+      "width": 390,
+      "theme": "dark",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "pixshare",
+      "width": 390,
+      "theme": "dark",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "marcus-chess",
+      "width": 390,
+      "theme": "dark",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "project-index",
+      "width": 390,
+      "theme": "light",
+      "cardsPerPage": [
+        4,
+        1
+      ],
+      "columns": 1,
+      "keyboard": true,
+      "history": true,
+      "numbered": true,
+      "gridHeight": 2360.328125,
+      "secondHeight": 612.65625,
+      "resume": true,
+      "olderProject": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "flow-financial-reconciliation",
+      "width": 390,
+      "theme": "light",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "fats-pdf-tools",
+      "width": 390,
+      "theme": "light",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "pulse-hospital-devops-platform",
+      "width": 390,
+      "theme": "light",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "pixshare",
+      "width": 390,
+      "theme": "light",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "marcus-chess",
+      "width": 390,
+      "theme": "light",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "project-index",
+      "width": 768,
+      "theme": "dark",
+      "cardsPerPage": [
+        4,
+        1
+      ],
+      "columns": 2,
+      "keyboard": true,
+      "history": true,
+      "numbered": true,
+      "gridHeight": 1348,
+      "secondHeight": 660,
+      "resume": true,
+      "olderProject": true
+    },
+    {
+      "kind": "project-index",
+      "width": 768,
+      "theme": "light",
+      "cardsPerPage": [
+        4,
+        1
+      ],
+      "columns": 2,
+      "keyboard": true,
+      "history": true,
+      "numbered": true,
+      "gridHeight": 1348,
+      "secondHeight": 660,
+      "resume": true,
+      "olderProject": true
+    },
+    {
+      "kind": "project-index",
+      "width": 1440,
+      "theme": "dark",
+      "cardsPerPage": [
+        4,
+        1
+      ],
+      "columns": 2,
+      "keyboard": true,
+      "history": true,
+      "numbered": true,
+      "gridHeight": 1348,
+      "secondHeight": 660,
+      "resume": true,
+      "olderProject": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "flow-financial-reconciliation",
+      "width": 1440,
+      "theme": "dark",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "fats-pdf-tools",
+      "width": 1440,
+      "theme": "dark",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "pulse-hospital-devops-platform",
+      "width": 1440,
+      "theme": "dark",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "pixshare",
+      "width": 1440,
+      "theme": "dark",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "marcus-chess",
+      "width": 1440,
+      "theme": "dark",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "project-index",
+      "width": 1440,
+      "theme": "light",
+      "cardsPerPage": [
+        4,
+        1
+      ],
+      "columns": 2,
+      "keyboard": true,
+      "history": true,
+      "numbered": true,
+      "gridHeight": 1348,
+      "secondHeight": 660,
+      "resume": true,
+      "olderProject": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "flow-financial-reconciliation",
+      "width": 1440,
+      "theme": "light",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "fats-pdf-tools",
+      "width": 1440,
+      "theme": "light",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "pulse-hospital-devops-platform",
+      "width": 1440,
+      "theme": "light",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "pixshare",
+      "width": 1440,
+      "theme": "light",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "case-study",
+      "slug": "marcus-chess",
+      "width": 1440,
+      "theme": "light",
+      "sections": true,
+      "screenshotBytes": true,
+      "sourceAssets": true
+    },
+    {
+      "kind": "project-index",
+      "width": 1920,
+      "theme": "dark",
+      "cardsPerPage": [
+        4,
+        1
+      ],
+      "columns": 2,
+      "keyboard": true,
+      "history": true,
+      "numbered": true,
+      "gridHeight": 1348,
+      "secondHeight": 660,
+      "resume": true,
+      "olderProject": true
+    },
+    {
+      "kind": "project-index",
+      "width": 1920,
+      "theme": "light",
+      "cardsPerPage": [
+        4,
+        1
+      ],
+      "columns": 2,
+      "keyboard": true,
+      "history": true,
+      "numbered": true,
+      "gridHeight": 1348,
+      "secondHeight": 660,
+      "resume": true,
+      "olderProject": true
+    },
+    {
+      "kind": "no-JavaScript",
+      "width": 390,
+      "pagination": true,
+      "allTranscripts": true
+    },
+    {
+      "kind": "no-JavaScript",
+      "width": 1440,
+      "pagination": true,
+      "allTranscripts": true
+    }
+  ],
+  "accessibility": [
+    {
+      "label": "home-390-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 10,
+          "targets": [
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "page2-390-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 10,
+          "targets": [
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flow-financial-reconciliation-390-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fats-pdf-tools-390-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              "#_R_39lfiv5ujb_-annotation > .mono[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pulse-hospital-devops-platform-390-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pixshare-390-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "marcus-chess-390-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "home-390-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 10,
+          "targets": [
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "page2-390-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 10,
+          "targets": [
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flow-financial-reconciliation-390-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fats-pdf-tools-390-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              "#_R_39lfiv5ujb_-annotation > .mono[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pulse-hospital-devops-platform-390-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pixshare-390-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "marcus-chess-390-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "home-768-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 14,
+          "targets": [
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "page2-768-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 14,
+          "targets": [
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "home-768-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 14,
+          "targets": [
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "page2-768-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 14,
+          "targets": [
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "home-1440-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 20,
+          "targets": [
+            [
+              "a[href$=\"#contact\"] > .hover\\:text-amber.text-sm.mono"
+            ],
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ],
+            [
+              "span:nth-child(10)"
+            ],
+            [
+              "span:nth-child(11)"
+            ],
+            [
+              "span:nth-child(12)"
+            ],
+            [
+              "span:nth-child(13)"
+            ],
+            [
+              "span:nth-child(14)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "page2-1440-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 20,
+          "targets": [
+            [
+              "a[href$=\"#contact\"] > .hover\\:text-amber.text-sm.mono"
+            ],
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ],
+            [
+              "span:nth-child(10)"
+            ],
+            [
+              "span:nth-child(11)"
+            ],
+            [
+              "span:nth-child(12)"
+            ],
+            [
+              "span:nth-child(13)"
+            ],
+            [
+              "span:nth-child(14)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flow-financial-reconciliation-1440-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fats-pdf-tools-1440-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              "#_R_39lfiv5ujb_-annotation > .mono[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pulse-hospital-devops-platform-1440-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pixshare-1440-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "marcus-chess-1440-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "home-1440-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 20,
+          "targets": [
+            [
+              "a[href$=\"#contact\"] > .hover\\:text-amber.text-sm.mono"
+            ],
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ],
+            [
+              "span:nth-child(10)"
+            ],
+            [
+              "span:nth-child(11)"
+            ],
+            [
+              "span:nth-child(12)"
+            ],
+            [
+              "span:nth-child(13)"
+            ],
+            [
+              "span:nth-child(14)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "page2-1440-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 20,
+          "targets": [
+            [
+              "a[href$=\"#contact\"] > .hover\\:text-amber.text-sm.mono"
+            ],
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ],
+            [
+              "span:nth-child(10)"
+            ],
+            [
+              "span:nth-child(11)"
+            ],
+            [
+              "span:nth-child(12)"
+            ],
+            [
+              "span:nth-child(13)"
+            ],
+            [
+              "span:nth-child(14)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flow-financial-reconciliation-1440-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fats-pdf-tools-1440-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              "#_R_39lfiv5ujb_-annotation > .mono[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pulse-hospital-devops-platform-1440-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pixshare-1440-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "marcus-chess-1440-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".mono"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "home-1920-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 20,
+          "targets": [
+            [
+              "a[href$=\"#contact\"] > .hover\\:text-amber.text-sm.mono"
+            ],
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ],
+            [
+              "span:nth-child(10)"
+            ],
+            [
+              "span:nth-child(11)"
+            ],
+            [
+              "span:nth-child(12)"
+            ],
+            [
+              "span:nth-child(13)"
+            ],
+            [
+              "span:nth-child(14)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "page2-1920-dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 20,
+          "targets": [
+            [
+              "a[href$=\"#contact\"] > .hover\\:text-amber.text-sm.mono"
+            ],
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ],
+            [
+              "span:nth-child(10)"
+            ],
+            [
+              "span:nth-child(11)"
+            ],
+            [
+              "span:nth-child(12)"
+            ],
+            [
+              "span:nth-child(13)"
+            ],
+            [
+              "span:nth-child(14)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "home-1920-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 20,
+          "targets": [
+            [
+              "a[href$=\"#contact\"] > .hover\\:text-amber.text-sm.mono"
+            ],
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ],
+            [
+              "span:nth-child(10)"
+            ],
+            [
+              "span:nth-child(11)"
+            ],
+            [
+              "span:nth-child(12)"
+            ],
+            [
+              "span:nth-child(13)"
+            ],
+            [
+              "span:nth-child(14)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "page2-1920-light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 20,
+          "targets": [
+            [
+              "a[href$=\"#contact\"] > .hover\\:text-amber.text-sm.mono"
+            ],
+            [
+              ".text-line"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".eyebrow.mt-4.text-sm"
+            ],
+            [
+              ".text-base"
+            ],
+            [
+              ".btn-outline.px-7[href$=\"Edberto_Tosoy_Resume.pdf\"]"
+            ],
+            [
+              ".w-max > span:nth-child(1)"
+            ],
+            [
+              ".w-max > span:nth-child(2)"
+            ],
+            [
+              ".w-max > span:nth-child(3)"
+            ],
+            [
+              ".w-max > span:nth-child(4)"
+            ],
+            [
+              ".w-max > span:nth-child(5)"
+            ],
+            [
+              ".w-max > span:nth-child(6)"
+            ],
+            [
+              ".w-max > span:nth-child(7)"
+            ],
+            [
+              ".w-max > span:nth-child(8)"
+            ],
+            [
+              "span:nth-child(9)"
+            ],
+            [
+              "span:nth-child(10)"
+            ],
+            [
+              "span:nth-child(11)"
+            ],
+            [
+              "span:nth-child(12)"
+            ],
+            [
+              "span:nth-child(13)"
+            ],
+            [
+              "span:nth-child(14)"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "runtime": [
+    {
+      "width": 390,
+      "theme": "dark",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "errors": []
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "errors": []
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "errors": []
+    }
+  ],
+  "pixels": [
+    {
+      "slug": "flow-financial-reconciliation",
+      "width": 390,
+      "mode": "full",
+      "outsideRatio": 0.5467198757250683,
+      "insideDelta": 0,
+      "outsideCount": 65353,
+      "insideCount": 7215
+    },
+    {
+      "slug": "flow-financial-reconciliation",
+      "width": 390,
+      "mode": "zoom",
+      "outsideRatio": 0.5470467745227361,
+      "insideDelta": 0,
+      "outsideCount": 19527,
+      "insideCount": 52569
+    },
+    {
+      "slug": "fats-pdf-tools",
+      "width": 390,
+      "mode": "full",
+      "outsideRatio": 0.5460942668707895,
+      "insideDelta": 0,
+      "outsideCount": 95675,
+      "insideCount": 26429
+    },
+    {
+      "slug": "fats-pdf-tools",
+      "width": 390,
+      "mode": "zoom",
+      "outsideRatio": 0.5461807212190125,
+      "insideDelta": 0,
+      "outsideCount": 80165,
+      "insideCount": 40299
+    },
+    {
+      "slug": "pulse-hospital-devops-platform",
+      "width": 390,
+      "mode": "full",
+      "outsideRatio": 0.5461230755211135,
+      "insideDelta": 0,
+      "outsideCount": 86438,
+      "insideCount": 270
+    },
+    {
+      "slug": "pulse-hospital-devops-platform",
+      "width": 390,
+      "mode": "zoom",
+      "outsideRatio": 0.5461851568234571,
+      "insideDelta": 0,
+      "outsideCount": 75058,
+      "insideCount": 4698
+    },
+    {
+      "slug": "pixshare",
+      "width": 390,
+      "mode": "full",
+      "outsideRatio": 0.5730201908494209,
+      "insideDelta": 0,
+      "outsideCount": 4852,
+      "insideCount": 19019
+    },
+    {
+      "slug": "pixshare",
+      "width": 390,
+      "mode": "zoom",
+      "outsideRatio": 0.568359387352802,
+      "insideDelta": 0,
+      "outsideCount": 5158,
+      "insideCount": 29391
+    },
+    {
+      "slug": "marcus-chess",
+      "width": 390,
+      "mode": "full",
+      "outsideRatio": 0.5467256394542808,
+      "insideDelta": 0,
+      "outsideCount": 87872,
+      "insideCount": 13216
+    },
+    {
+      "slug": "marcus-chess",
+      "width": 390,
+      "mode": "zoom",
+      "outsideRatio": 0.5475083379854163,
+      "insideDelta": 0,
+      "outsideCount": 26035,
+      "insideCount": 64989
+    },
+    {
+      "slug": "flow-financial-reconciliation",
+      "width": 1440,
+      "mode": "full",
+      "outsideRatio": 0.54591880927012,
+      "insideDelta": 0,
+      "outsideCount": 418691,
+      "insideCount": 52510
+    },
+    {
+      "slug": "flow-financial-reconciliation",
+      "width": 1440,
+      "mode": "zoom",
+      "outsideRatio": 0.545342248711088,
+      "insideDelta": 0,
+      "outsideCount": 156045,
+      "insideCount": 363475
+    },
+    {
+      "slug": "fats-pdf-tools",
+      "width": 1440,
+      "mode": "full",
+      "outsideRatio": 0.5457265710206817,
+      "insideDelta": 0,
+      "outsideCount": 626311,
+      "insideCount": 182115
+    },
+    {
+      "slug": "fats-pdf-tools",
+      "width": 1440,
+      "mode": "zoom",
+      "outsideRatio": 0.5459001250276022,
+      "insideDelta": 0,
+      "outsideCount": 528795,
+      "insideCount": 272569
+    },
+    {
+      "slug": "pulse-hospital-devops-platform",
+      "width": 1440,
+      "mode": "full",
+      "outsideRatio": 0.5458702829331196,
+      "insideDelta": 0,
+      "outsideCount": 552932,
+      "insideCount": 4256
+    },
+    {
+      "slug": "pulse-hospital-devops-platform",
+      "width": 1440,
+      "mode": "zoom",
+      "outsideRatio": 0.5458653519144995,
+      "insideDelta": 0,
+      "outsideCount": 495860,
+      "insideCount": 43898
+    },
+    {
+      "slug": "pixshare",
+      "width": 1440,
+      "mode": "full",
+      "outsideRatio": 0.5684089105957562,
+      "insideDelta": 0,
+      "outsideCount": 35076,
+      "insideCount": 134829
+    },
+    {
+      "slug": "pixshare",
+      "width": 1440,
+      "mode": "zoom",
+      "outsideRatio": 0.5701776374216754,
+      "insideDelta": 0,
+      "outsideCount": 38673,
+      "insideCount": 201498
+    },
+    {
+      "slug": "marcus-chess",
+      "width": 1440,
+      "mode": "full",
+      "outsideRatio": 0.5462736414882619,
+      "insideDelta": 0,
+      "outsideCount": 566114,
+      "insideCount": 93572
+    },
+    {
+      "slug": "marcus-chess",
+      "width": 1440,
+      "mode": "zoom",
+      "outsideRatio": 0.5461290836892395,
+      "insideDelta": 0,
+      "outsideCount": 196982,
+      "insideCount": 438634
+    }
+  ],
+  "features": [
+    {
+      "width": 390,
+      "theme": "dark",
+      "journey": true,
+      "credentialLinkAndBadge": true,
+      "resumeHash": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "journey": true,
+      "credentialLinkAndBadge": true,
+      "resumeHash": true
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "journey": true,
+      "credentialLinkAndBadge": true,
+      "resumeHash": true
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "journey": true,
+      "credentialLinkAndBadge": true,
+      "resumeHash": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "journey": true,
+      "credentialLinkAndBadge": true,
+      "resumeHash": true
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "journey": true,
+      "credentialLinkAndBadge": true,
+      "resumeHash": true
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "journey": true,
+      "credentialLinkAndBadge": true,
+      "resumeHash": true
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "journey": true,
+      "credentialLinkAndBadge": true,
+      "resumeHash": true
+    }
+  ]
+}
