@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/next";
 import { pageMetadata } from "@/lib/metadata";
 import ThemeFavicon from "@/components/ThemeFavicon";
+import PixSharePrewarm from "@/components/PixSharePrewarm";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -49,6 +50,7 @@ export default function RootLayout({
         className="min-h-full flex flex-col bg-ink text-fg"
         suppressHydrationWarning
       >
+        <PixSharePrewarm />
         <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
           <ThemeFavicon />
           <MenuProvider>{children}</MenuProvider>

@@ -17,7 +17,7 @@ export function Pagination({
     <nav className="project-pagination" aria-label={label}>
       {page > 1 ? (
         <Link href={href(page - 1)} rel="prev">
-          Prev
+          Previous
         </Link>
       ) : (
         <span aria-disabled="true">Previous</span>
