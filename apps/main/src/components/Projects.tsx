@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { projects } from '@/data/projects';
 import { skills } from '@/data/skills';
-import { DEFAULT_PAGE_SIZE, paginate } from '@/lib/pagination';
+import { paginate } from '@/lib/pagination';
 import { Pagination } from '@/components/ui/Pagination';
 
 export default function Projects({
@@ -24,11 +24,11 @@ export default function Projects({
             id="projects-title"
             className="text-3xl font-bold text-fg md:text-4xl"
           >
-            Software with a purpose.
+            Personal projects
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-fg-muted">
-            Independent products. Explore the working interfaces, the
-            engineering behind them, and the evidence that defines their limits.
+            Explore the working interfaces, the engineering behind them, and the
+            evidence that defines their limits.
           </p>
         </div>
         <span className="project-count">
@@ -43,22 +43,13 @@ export default function Projects({
             data-project={project.slug}
           >
             <div className="project-card-copy">
-              <div className="project-card-meta">
-                <span>
-                  {String((page - 1) * DEFAULT_PAGE_SIZE + index + 1).padStart(
-                    2,
-                    '0',
-                  )}
-                </span>
-                <span>{project.status}</span>
-              </div>
               <h3>{project.title}</h3>
               <p>{project.shortDescription}</p>
             </div>
             {project.caseStudy && (
               <Link
                 href={project.caseStudy.href}
-                className="project-evidence-link"
+                className="project-evidence-link mt-0"
                 aria-label={`Inspect ${project.title}`}
               >
                 <Image
@@ -86,7 +77,7 @@ export default function Projects({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Source
+                  Source code
                   <span className="sr-only">
                     {' '}
                     for {project.title} (opens in a new tab)
