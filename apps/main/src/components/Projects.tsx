@@ -12,7 +12,6 @@ export default function Projects({
 }) {
   const featured = projects.filter((project) => project.featured);
   const { page, pageCount, items } = paginate(featured, requestedPage);
-  const older = projects.filter((project) => !project.featured);
   return (
     <section
       id="projects"
@@ -59,7 +58,7 @@ export default function Projects({
             {project.caseStudy && (
               <Link
                 href={project.caseStudy.href}
-                className="project-evidence-link mt-0"
+                className="project-evidence-link"
                 aria-label={`Inspect ${project.title}`}
               >
                 <Image

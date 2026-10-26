@@ -234,7 +234,7 @@ body {
 @media (min-width: 768px) {
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: minmax(660px, 1fr);
+    grid-auto-rows: minmax(610px, 1fr);
   }
 }
 @media (max-width: 767px) {
