@@ -4,8 +4,8 @@ export const projects: Project[] = [
   {
     slug: 'vigil-financial-reconciliation',
     caseStudy: {
-      href: '/projects/vigil-financial-reconciliation',
-      image: '/evidence/phase5d/vigil/overview-desktop.webp',
+      href: '/projects/flow-financial-reconciliation',
+      image: '/evidence/phase5d/flow/overview-desktop.webp',
       alt: 'Real vigil dashboard with financial assurance and completeness checks.',
       caption: 'Local capture; synthetic records; ephemeral demo',
     },
