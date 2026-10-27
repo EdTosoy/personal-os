@@ -2,21 +2,21 @@ import type { Project } from '@/types';
 
 export const projects: Project[] = [
   {
-    slug: 'flow-financial-reconciliation',
+    slug: 'vigil-financial-reconciliation',
     caseStudy: {
-      href: '/projects/flow-financial-reconciliation',
-      image: '/evidence/phase5d/flow/overview-desktop.webp',
-      alt: 'Real Flow dashboard with financial assurance and completeness checks.',
+      href: '/projects/vigil-financial-reconciliation',
+      image: '/evidence/phase5d/vigil/overview-desktop.webp',
+      alt: 'Real vigil dashboard with financial assurance and completeness checks.',
       caption: 'Local capture; synthetic records; ephemeral demo',
     },
-    title: 'Vigil / Flow — Financial Reconciliation',
+    title: 'Vigil — Financial Reconciliation',
     shortDescription:
       'Reconcile financial transactions and investigate missing, mismatched, or incomplete records, with exact-money accounting and recoverable processing.',
     longDescription:
       'An independent TypeScript, Node.js, and PostgreSQL system with exact-integer money, an immutable double-entry ledger, processor and bank ingestion, deterministic reconciliation, and recoverable workers. A read-only Next.js interface supports operational investigation. Selected unit and PostgreSQL integration suites passed locally against synthetic data. AWS and Terraform infrastructure is source evidence; this case study does not establish a live deployment, compliance, scale, or production readiness.',
     status: 'In Progress',
     featured: true,
-    github: 'https://github.com/EdTosoy/flow',
+    github: 'https://github.com/EdTosoy/vigil',
     technologies: [
       'TypeScript',
       'Node.js',
@@ -147,7 +147,8 @@ export const projects: Project[] = [
       href: '/projects/marcus-chess',
       image: '/evidence/phase5d/marcus/lesson-desktop.webp',
       alt: 'Current public Marcus lesson with its chessboard and guided threat explanation.',
-      caption: 'Public lesson and Stockfish verified; learning efficacy unvalidated',
+      caption:
+        'Public lesson and Stockfish verified; learning efficacy unvalidated',
     },
   },
   {
