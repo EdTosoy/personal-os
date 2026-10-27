@@ -1,0 +1,81 @@
+{
+  "capturedAt": "2026-10-27T05:16:12.555Z",
+  "base": "https://marcus.edtosoy.com",
+  "production": true,
+  "results": [
+    {
+      "size": "desktop",
+      "status": "FAIL",
+      "screens": [
+        {
+          "file": "lesson-desktop.png",
+          "path": "/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "lesson-feedback-desktop.png",
+          "path": "/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Read the current Is Your Piece Safe? lesson and inspect the threat on the board.",
+        "Start the lesson and identify the attacking piece.",
+        "Select the black rook on d8 and read the actual lesson feedback."
+      ],
+      "errors": [],
+      "httpErrors": [
+        {
+          "path": "/practice",
+          "status": 404
+        }
+      ],
+      "reason": "Expected values to be strictly equal:  404 !== 200"
+    },
+    {
+      "size": "mobile",
+      "status": "FAIL",
+      "screens": [
+        {
+          "file": "lesson-mobile.png",
+          "path": "/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "lesson-feedback-mobile.png",
+          "path": "/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Read the current Is Your Piece Safe? lesson and inspect the threat on the board.",
+        "Start the lesson and identify the attacking piece.",
+        "Select the black rook on d8 and read the actual lesson feedback."
+      ],
+      "errors": [],
+      "httpErrors": [
+        {
+          "path": "/practice",
+          "status": 404
+        }
+      ],
+      "reason": "Expected values to be strictly equal:  404 !== 200"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "revision": "bc14db0739d16edc2c2d1dd960e1246b3f81d2af",
+  "source": "Existing production build, original simulator inputs, isolated migrated PostgreSQL; genuine ingestion and reconciliation pipeline, read-only UI. No UI reconciliation command exists.",
+  "seeds": [
+    71200,
+    71201
+  ]
+}

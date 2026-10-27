@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "unchangedPriorMedia": 48,
+  "unchangedProtectedFiles": [
+    "pnpm-lock.yaml",
+    "apps/main/public/Edberto_Tosoy_Resume.pdf",
+    "apps/main/src/components/Certifications.tsx",
+    "apps/main/src/components/Journey.tsx",
+    "apps/main/src/components/Contact.tsx",
+    "apps/main/src/data/journey.ts",
+    "apps/main/src/components/ui/Pagination.tsx"
+  ],
+  "publicAssetsVerified": 78,
+  "newTextSecretPatternScan": "PASS",
+  "note": "Screenshots and sampled video/poster frames also visually inspected; regex is not a complete secret detector."
+}

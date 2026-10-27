@@ -1,7 +1,6 @@
 'use client';
 
 import { useId, useState } from 'react';
-import { preload } from 'react-dom';
 import { ZoomFocusViewer } from './ZoomFocusViewer';
 import type { WalkthroughStep } from './types';
 
@@ -15,8 +14,6 @@ export function GuidedWalkthrough({
   const [active, setActive] = useState(0);
   const id = useId();
   const step = steps[active];
-  // Load each original once so navigation and zoom never swap image quality.
-  for (const { image } of steps) preload(image.src, { as: 'image' });
   return (
     <section className="evidence-walkthrough panel" aria-label={label}>
       <div className="evidence-toolbar">

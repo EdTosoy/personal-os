@@ -48,7 +48,7 @@ export function ZoomFocusViewer({
               alt={image.alt}
               width={image.width}
               height={image.height}
-              loading="eager"
+              loading="lazy"
               unoptimized
               className="evidence-image"
             />

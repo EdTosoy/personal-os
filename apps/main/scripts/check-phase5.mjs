@@ -156,8 +156,10 @@ async function scan(page, label) {
   assert.deepEqual(audit.violations, [], label);
 }
 async function decode(page, selector) {
-  for (const image of await page.locator(selector).all())
+  for (const image of await page.locator(selector).all()) {
+    await image.scrollIntoViewIfNeeded();
     await image.evaluate((el) => el.decode());
+  }
 }
 async function captureProjects(page, path) {
   await page.waitForLoadState('networkidle');
@@ -202,6 +204,7 @@ try {
         theme,
       );
       const page = await context.newPage();
+      page.setDefaultTimeout(15000);
       const errors = [];
       page.on('pageerror', (e) => errors.push(e.message));
       page.on('console', (m) => {
@@ -234,12 +237,12 @@ try {
       } else {
         assert.ok(bounds.every((b) => Math.abs(b.x - bounds[0].x) < 1));
       }
-      assert.equal(
-        await page
-          .locator('[data-project="fats-job-application-platform"] img')
-          .getAttribute('src'),
-        '/evidence/fats/dashboard.png',
-      );
+      const featuredImage = new URL(await page
+        .locator('[data-project="fats-job-application-platform"] img')
+        .getAttribute('src'), base);
+      assert.equal(featuredImage.searchParams.get('url') || featuredImage.pathname,
+        expected[1].caseStudy.image);
+
       const nav = page.getByRole('navigation', {
         name: 'Featured project pages',
       });
@@ -528,6 +531,7 @@ try {
       viewport: { width, height: 1000 },
     });
     const page = await context.newPage();
+      page.setDefaultTimeout(15000);
     await page.goto(base + '/#projects');
     await expect(page.locator('#projects')).toBeVisible();
     await expect(page.locator('.projects-grid > article')).toHaveCount(4);
@@ -558,6 +562,7 @@ try {
   }
   const context = await browser.newContext();
   const page = await context.newPage();
+      page.setDefaultTimeout(15000);
   for (const input of ['bad', '0', '-1', '1.5', '999']) {
     await page.goto(base + `/?projectsPage=${input}#projects`);
     await expect(page.locator('.projects-grid')).toHaveAttribute(

@@ -1,0 +1,22 @@
+
+> nx run @org/main:verify-phase5d
+
+> node scripts/check-media.mjs
+
+(node:49969) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"status":"PASS","scenarios":20,"axeScans":24,"pixelComparisons":20,"keyboardPlayback":true,"noEagerVideo":true}
+
+
+
+ NX   Successfully ran target verify-phase5d for project @org/main
+
+
+  Run duration:      1m 44s
+  Cache:             0/1 hit (0%)
+  Critical path:     1m 44s (1 task)
+  Recoverable time:  <1ms
+
+  Recommendations:
+    - Speed up or split the longest tasks on the critical path:
+        @org/main:verify-phase5d    1m 44s

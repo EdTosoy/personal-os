@@ -1,0 +1,109 @@
+{
+  "capturedAt": "2026-10-27T05:16:40.726Z",
+  "base": "http://127.0.0.1:33301",
+  "production": false,
+  "results": [
+    {
+      "size": "desktop",
+      "status": "FAIL",
+      "screens": [
+        {
+          "file": "dashboard-desktop.png",
+          "path": "/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "applications-desktop.png",
+          "path": "/applications",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "details-desktop.png",
+          "path": "/applications/c78d909a-a95f-4248-b49d-02ea764392cb",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "updated-desktop.png",
+          "path": "/applications/c78d909a-a95f-4248-b49d-02ea764392cb",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review the main job-search dashboard with a fictional saved job.",
+        "Find the saved job in the application tracker.",
+        "Review the job description and application details.",
+        "Update the application to Applied and verify it persists after reload. This does not submit a job application."
+      ],
+      "errors": [],
+      "httpErrors": [],
+      "reason": "expect(locator).not.toBeVisible() failed  Locator:  getByRole('dialog')"
+    },
+    {
+      "size": "mobile",
+      "status": "FAIL",
+      "screens": [
+        {
+          "file": "dashboard-mobile.png",
+          "path": "/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "applications-mobile.png",
+          "path": "/applications",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "details-mobile.png",
+          "path": "/applications/517080a3-66bf-421c-890d-ddda84d2469b",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "updated-mobile.png",
+          "path": "/applications/517080a3-66bf-421c-890d-ddda84d2469b",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review the main job-search dashboard with a fictional saved job.",
+        "Find the saved job in the application tracker.",
+        "Review the job description and application details.",
+        "Update the application to Applied and verify it persists after reload. This does not submit a job application."
+      ],
+      "errors": [],
+      "httpErrors": [],
+      "reason": "expect(locator).not.toBeVisible() failed  Locator:  getByRole('dialog')"
+    }
+  ]
+}

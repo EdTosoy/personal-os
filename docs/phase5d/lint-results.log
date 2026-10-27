@@ -1,0 +1,17 @@
+
+> nx run @org/main:lint
+
+> eslint .
+
+(node:51483) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+
+ NX   Successfully ran target lint for project @org/main
+
+
+  Run duration:      1.8s
+  Cache:             0/1 hit (0%)
+  Critical path:     1.8s (1 task)
+  Recoverable time:  <1ms

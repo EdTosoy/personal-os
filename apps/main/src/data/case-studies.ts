@@ -31,7 +31,7 @@ export interface CaseStudy {
 
 export const flowStudy: CaseStudy = {
   slug: 'flow-financial-reconciliation',
-  name: 'Flow',
+  name: 'Vigil / Flow',
   category: 'Financial reconciliation',
   audience:
     'Financial operations teams investigating payment, processor, settlement and bank records. This independent system demonstrates that workflow with synthetic data.',
@@ -96,7 +96,7 @@ export const flowStudy: CaseStudy = {
     {
       title: 'Read financial assurance',
       image: {
-        src: '/evidence/flow/overview.png',
+        src: '/evidence/phase5d/flow/overview-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Flow dashboard with FAIL financial assurance, PASS structural integrity and UNKNOWN completeness checks.',
@@ -111,7 +111,7 @@ export const flowStudy: CaseStudy = {
     {
       title: 'Inspect reconciliation results',
       image: {
-        src: '/evidence/flow/reconciliation.png',
+        src: '/evidence/phase5d/flow/reconciliation-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Two completed reconciliation runs with matched, unmatched and ineligible outcomes and active current proof.',
@@ -119,12 +119,7 @@ export const flowStudy: CaseStudy = {
           'Reconciliation runs · frozen outcomes alongside current allocation proof.',
         status: 'Functional app · synthetic data',
       },
-      focus: {
-        x: 0.5,
-        y: 0.41,
-        width: 0.34,
-        height: 0.3,
-      },
+      focus: { x: 0.2, y: 0.3, width: 0.72, height: 0.3 },
       description:
         'Run summaries preserve processor and bank populations separately. The anomalous run contains matched, unmatched and ineligible items instead of presenting a misleading all-green summary.',
       annotation:
@@ -133,7 +128,7 @@ export const flowStudy: CaseStudy = {
     {
       title: 'Trace settlement evidence',
       image: {
-        src: '/evidence/flow/settlement-inspection.png',
+        src: '/evidence/phase5d/flow/settlement-inspection-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Reconciliation detail showing rule version, PHP currency, window, processor and bank populations and population hash.',
@@ -141,12 +136,7 @@ export const flowStudy: CaseStudy = {
           'Run detail · frozen population, rule version and source provenance.',
         status: 'Functional app · synthetic data',
       },
-      focus: {
-        x: 0.58,
-        y: 0.39,
-        width: 0.25,
-        height: 0.2,
-      },
+      focus: { x: 0.2, y: 0.27, width: 0.66, height: 0.38 },
       description:
         'A completed run retains its rule version, time window, currency, member counts and population hash. The next section links the decision to processor provenance.',
       annotation:
@@ -155,7 +145,7 @@ export const flowStudy: CaseStudy = {
     {
       title: 'Check completeness controls',
       image: {
-        src: '/evidence/flow/controls.png',
+        src: '/evidence/phase5d/flow/controls-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Flow completeness and integrity controls over synthetic financial records.',
@@ -177,7 +167,7 @@ export const flowStudy: CaseStudy = {
     {
       title: 'Investigate exceptions',
       image: {
-        src: '/evidence/flow/exceptions.png',
+        src: '/evidence/phase5d/flow/exceptions-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Exception queue with open unreconciled cases and a resolved accepted-risk case that is still unreconciled.',
@@ -185,33 +175,23 @@ export const flowStudy: CaseStudy = {
           'Exception queue · operational closure remains separate from financial state.',
         status: 'Functional app · synthetic data',
       },
-      focus: {
-        x: 0.18,
-        y: 0.725,
-        width: 0.265,
-        height: 0.08,
-      },
+      focus: { x: 0.2, y: 0.32, width: 0.7, height: 0.3 },
       description:
         'The exception queue exposes classification, assignment and linked runs. Accepting a risk can close the operational case while the missing bank movement remains financially unreconciled.',
       annotation:
-        'The final row is RESOLVED / ACCEPTED RISK and still UNRECONCILED. Its PHP amount is a case value, not an extra amount to add to total exposure.',
+        'The accepted-risk case is RESOLVED / ACCEPTED RISK and still UNRECONCILED. Its PHP amount is a case value, not an extra amount to add to total exposure.',
     },
     {
       title: 'Inspect retained failures',
       image: {
-        src: '/evidence/flow/workers.png',
+        src: '/evidence/phase5d/flow/workers-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Worker operations showing durable processing states and retained retryable and terminal failures.',
         caption: 'Worker operations · explicit synthetic failure injection.',
         status: 'Functional app · synthetic data',
       },
-      focus: {
-        x: 0.58,
-        y: 0.35,
-        width: 0.4,
-        height: 0.1,
-      },
+      focus: { x: 0.6, y: 0.26, width: 0.32, height: 0.15 },
       description:
         'The demo provisioner deliberately introduces transient and poison work. Retaining these states makes recovery needs visible without treating worker success as financial reconciliation.',
       annotation:
@@ -320,13 +300,13 @@ export const fatsStudy: CaseStudy = {
     {
       title: 'See the next job-search action',
       description:
-        'The dashboard brings application stages, upcoming interviews and submitted-resume reminders into one workspace.',
+        'The fresh guest dashboard brings application stages and next actions into one workspace. Its fictional saved job is stored in this browser; no account document acceptance is demonstrated.',
       annotation:
         'The counts are synthetic test records, not user adoption or hiring outcomes.',
       image: {
-        src: '/evidence/fats/dashboard.png',
-        width: 1366,
-        height: 1551,
+        src: '/evidence/phase5d/fats/dashboard-desktop.webp',
+        width: 1440,
+        height: 1000,
         alt: 'See the next job-search action in the actual FATS application with fictional records.',
         caption: 'Authentic local application capture; synthetic records.',
         status: 'Verified local workflow; synthetic data',
@@ -343,8 +323,9 @@ export const fatsStudy: CaseStudy = {
         width: 1440,
         height: 1470,
         alt: 'Capture and confirm a job in the actual FATS application with fictional records.',
-        caption: 'Authentic local application capture; synthetic records.',
-        status: 'Verified local workflow; synthetic data',
+        caption:
+          'Retained prior local capture; synthetic records; not freshly rerun.',
+        status: 'Historical workflow evidence',
       },
       focus: {
         x: 0.21,
@@ -356,23 +337,34 @@ export const fatsStudy: CaseStudy = {
     {
       title: 'Track applications through their stages',
       description:
-        'Keep saved jobs, descriptions and manual application stages together. Account workspaces persist through the PostgreSQL-backed server path.',
+        'Keep saved jobs, descriptions and manual application stages together. The fresh guest capture verifies a stage change after reload in local storage; account persistence is described by the earlier evidence.',
       annotation:
         'Guest data stays browser-local. Stage changes are user decisions, separate from interview and offer events.',
       image: {
-        src: '/evidence/fats/applications.png',
-        width: 820,
-        height: 1261,
+        src: '/evidence/phase5d/fats/applications-desktop.webp',
+        width: 1440,
+        height: 1000,
         alt: 'Track applications through their stages in the actual FATS application with fictional records.',
         caption: 'Authentic local application capture; synthetic records.',
         status: 'Verified local workflow; synthetic data',
       },
-      focus: {
-        x: 0.28,
-        y: 0.3,
-        width: 0.66,
-        height: 0.33,
+      focus: { x: 0.2, y: 0.32, width: 0.7, height: 0.22 },
+    },
+    {
+      title: 'Review the saved job and persist an update',
+      description:
+        'Read the fictional job description, set its manual stage to Applied and reload. The recorded guest workflow verifies local persistence.',
+      annotation:
+        'Changing the tracker stage never submits an application to an employer.',
+      image: {
+        src: '/evidence/phase5d/fats/updated-desktop.webp',
+        width: 1440,
+        height: 1000,
+        alt: 'FATS application details after a real persisted Applied status update.',
+        caption: 'Fresh local guest workflow; synthetic job.',
+        status: 'Local browser persistence verified',
       },
+      focus: { x: 0.74, y: 0.2, width: 0.23, height: 0.3 },
     },
     {
       title: 'Prepare for each interview',
@@ -381,19 +373,30 @@ export const fatsStudy: CaseStudy = {
       annotation:
         'Completing an interview does not automatically advance an application.',
       image: {
-        src: '/evidence/fats/interviews.png',
-        width: 820,
-        height: 1180,
+        src: '/evidence/phase5d/fats/interviews-desktop.webp',
+        width: 1440,
+        height: 1000,
         alt: 'Prepare for each interview in the actual FATS application with fictional records.',
         caption: 'Authentic local application capture; synthetic records.',
         status: 'Verified local workflow; synthetic data',
       },
-      focus: {
-        x: 0.3,
-        y: 0.37,
-        width: 0.63,
-        height: 0.23,
+      focus: { x: 0.2, y: 0.32, width: 0.7, height: 0.24 },
+    },
+    {
+      title: 'Inspect interview preparation',
+      description:
+        'A fictional technical interview is scheduled in Asia/Manila. Its detail view keeps the preparation notes beside the interview information.',
+      annotation:
+        'This is a local planning record; no meeting invitation or email is sent.',
+      image: {
+        src: '/evidence/phase5d/fats/interview-preparation-desktop.webp',
+        width: 1440,
+        height: 1000,
+        alt: 'FATS interview details with fictional preparation notes.',
+        caption: 'Fresh local guest interview; fictional meeting.',
+        status: 'Local synthetic workflow',
       },
+      focus: { x: 0.2, y: 0.24, width: 0.52, height: 0.45 },
     },
     {
       title: 'Keep document versions behind safety checks',
@@ -406,8 +409,9 @@ export const fatsStudy: CaseStudy = {
         width: 600,
         height: 640,
         alt: 'Keep document versions behind safety checks in the actual FATS application with fictional records.',
-        caption: 'Authentic local application capture; synthetic records.',
-        status: 'Verified local workflow; synthetic data',
+        caption:
+          'Retained prior local capture; synthetic records; not freshly rerun.',
+        status: 'Historical workflow evidence',
       },
       focus: {
         x: 0.05,
@@ -415,6 +419,22 @@ export const fatsStudy: CaseStudy = {
         width: 0.9,
         height: 0.12,
       },
+    },
+    {
+      title: 'Inspect private workspace prerequisites',
+      description:
+        'The current resume workspace requires sign-in for private document management. The recording also shows the Offer Desk sign-in prerequisite; neither is represented as successful authenticated operation.',
+      annotation:
+        'Prior scanner refusal and authenticated offer evidence remain labeled historical. AI matching stays disabled; PDF v2 remains a development candidate.',
+      image: {
+        src: '/evidence/phase5d/fats/resumes-desktop.webp',
+        width: 1440,
+        height: 1000,
+        alt: 'FATS resume and document workspace with the genuine private-library sign-in prerequisite.',
+        caption: 'Fresh local workspace; private documents require an account.',
+        status: 'Authentication prerequisite',
+      },
+      focus: { x: 0.2, y: 0.24, width: 0.73, height: 0.36 },
     },
     {
       title: 'Compare offers and choose next steps',
@@ -427,8 +447,9 @@ export const fatsStudy: CaseStudy = {
         width: 820,
         height: 2563,
         alt: 'Compare offers and choose next steps in the actual FATS application with fictional records.',
-        caption: 'Authentic local application capture; synthetic records.',
-        status: 'Verified local workflow; synthetic data',
+        caption:
+          'Retained prior local capture; synthetic records; not freshly rerun.',
+        status: 'Historical workflow evidence',
       },
       focus: {
         x: 0.3,
@@ -632,7 +653,7 @@ export const hospitalStudy: CaseStudy = {
   overview:
     'abox connects patient registration, appointments, queue coordination, consultation notes and billing through a Next.js workspace and a NestJS/PostgreSQL API.',
   scope:
-    'Fresh captures from the current abox production frontend, a local API container and isolated migrated PostgreSQL 17. Login, records, queue transitions and payment persistence use real application paths. All patient records are fictional. No cloud runtime is implied.',
+    'Fresh captures from the current abox production frontend, a local API container and isolated migrated PostgreSQL 17. Login, records, queue transitions and payment persistence use real application paths. All patient records are fictional. The consultation image is retained from the prior Phase 5 capture and is labeled separately. No cloud runtime is implied.',
   stack: [
     'Next.js',
     'NestJS',
@@ -682,7 +703,7 @@ export const hospitalStudy: CaseStudy = {
     {
       title: 'Coordinate the visit',
       image: {
-        src: '/evidence/hospital/overview.png',
+        src: '/evidence/phase5d/hospital/overview-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'abox administration overview with three fictional appointments, two waiting patients, one in care and four registered records.',
@@ -698,7 +719,7 @@ export const hospitalStudy: CaseStudy = {
     {
       title: 'Find the patient record',
       image: {
-        src: '/evidence/hospital/patients.png',
+        src: '/evidence/phase5d/hospital/patients-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Patient directory showing Alex Demo, John Doe, Riley Example and Sam Synthetic, with search, queue and consultation actions.',
@@ -730,7 +751,7 @@ export const hospitalStudy: CaseStudy = {
         height: 0.22,
       },
       image: {
-        src: '/evidence/hospital/appointments.png',
+        src: '/evidence/phase5d/hospital/appointments-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Actual abox scheduling screen with three confirmed appointments for fictional patients and the appointment form.',
@@ -742,7 +763,7 @@ export const hospitalStudy: CaseStudy = {
     {
       title: 'Move from waiting to care',
       image: {
-        src: '/evidence/hospital/queue.png',
+        src: '/evidence/phase5d/hospital/queue-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Patient queue with Alex Demo in progress, Sam Synthetic and Riley Example waiting, and controls to call next or complete a visit.',
@@ -757,9 +778,9 @@ export const hospitalStudy: CaseStudy = {
         height: 0.07,
       },
       description:
-        'The API called the next waiting patient before this capture. Alex Demo is now in progress, while the other two visits remain waiting. Foreground polling refreshes the mounted view every five seconds.',
+        'The fresh queue separates waiting visits, care in progress and completed visits. Two fictional visits are waiting in this capture. Foreground polling refreshes the mounted view every five seconds.',
       annotation:
-        'The active row shows IN PROGRESS and a Complete action. Capturing one successful transition does not establish concurrent-load safety; the transaction design is separately inspectable in source.',
+        'Call Next and per-patient actions belong to the actual queue. This capture shows the waiting state; the separate earlier transition evidence and transaction design remain inspectable.',
     },
     {
       title: 'Inspect the consultation',
@@ -769,7 +790,7 @@ export const hospitalStudy: CaseStudy = {
         height: 1000,
         alt: 'Read-only consultation view for Alex Demo with a persisted SOAP note containing explicitly synthetic text.',
         caption:
-          'Consultation record · persisted SOAP sections, read through an admin session.',
+          'Earlier Phase 5 capture · persisted fictional SOAP sections read through an admin session.',
         status: 'Functional local app · fictional patient records',
       },
       focus: {
@@ -786,7 +807,7 @@ export const hospitalStudy: CaseStudy = {
     {
       title: 'Record a payment received',
       image: {
-        src: '/evidence/hospital/billing-paid.png',
+        src: '/evidence/phase5d/hospital/billing-paid-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Billing screen showing a synthetic PHP 1250 charge paid and PHP 750 overdue, with one outstanding bill and one paid bill.',
@@ -882,7 +903,7 @@ export const pixshareStudy: CaseStudy = {
   contributionSummary:
     'Built and verified the album interface, media validation and variants, authenticated ownership boundaries, and safe local/S3-compatible storage lifecycle.',
   scope:
-    'Actual local production-build captures with bundled demo photographs and isolated PostgreSQL data. The full suite uses dedicated Clerk development users. The upload screenshot masks the account avatar. This is completed local application evidence, not a deployed live demo.',
+    'Fresh current standalone frontend captures with bundled demo photographs, a cached release API and isolated PostgreSQL. The retained authenticated upload screenshot comes from the earlier real Clerk release suite and masks the avatar. The public frontend returned HTTP 200 on 27 October 2026, but its gallery could not reach the API.',
   stack: [
     'Next.js',
     'FastAPI',
@@ -928,7 +949,7 @@ export const pixshareStudy: CaseStudy = {
     {
       title: 'Open the photo album',
       image: {
-        src: '/evidence/pixshare/album-overview.jpg',
+        src: '/evidence/phase5d/pixshare/home-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'PixShare Atelier homepage showing real demo photos and the upload action.',
@@ -942,24 +963,36 @@ export const pixshareStudy: CaseStudy = {
     },
     {
       title: 'Browse full compositions',
-      focus: {
-        x: 0.12,
-        y: 0.3,
-        width: 0.72,
-        height: 0.35,
-      },
+      focus: { x: 0.06, y: 0.34, width: 0.86, height: 0.46 },
       image: {
-        src: '/evidence/pixshare/album-gallery.jpg',
+        src: '/evidence/phase5d/pixshare/gallery-desktop.webp',
         width: 1440,
         height: 1000,
-        alt: 'The dark Explore album displaying portrait, landscape and square photographs.',
-        caption: 'Dark mode; real PostgreSQL-backed album.',
+        alt: 'Current light Explore gallery displaying original bundled photographs.',
+        caption:
+          'Fresh light-mode capture; real isolated PostgreSQL-backed album.',
         status: 'Verified local app; demo photographs',
       },
       description:
         'Dimension-aware rows preserve the source order and whole photograph. Filtering, sorting and pagination keep their existing API behavior.',
       annotation:
         'Images are public. Mutation ownership is a backend authorization boundary, separate from public image URLs.',
+    },
+    {
+      title: 'Inspect an image and its metadata',
+      description:
+        'Open a real image from the local gallery and inspect its caption, format and original file metadata.',
+      annotation:
+        'The photograph comes from the repository demo fixtures and is served by the real isolated backend.',
+      image: {
+        src: '/evidence/phase5d/pixshare/details-desktop.webp',
+        width: 1440,
+        height: 1000,
+        alt: 'PixShare photograph detail view with real demo-image metadata.',
+        caption: 'Fresh local frontend interaction; bundled demo photograph.',
+        status: 'Local real API and PostgreSQL',
+      },
+      focus: { x: 0.16, y: 0.15, width: 0.68, height: 0.64 },
     },
     {
       title: 'Add a photograph and caption',
@@ -973,9 +1006,10 @@ export const pixshareStudy: CaseStudy = {
         src: '/evidence/pixshare/album-upload.jpg',
         width: 1440,
         height: 1000,
-        alt: 'Authenticated PixShare upload form with a file picker beside the optional caption.',
-        caption: 'Genuine Clerk session; account avatar masked.',
-        status: 'Verified local app; demo photographs',
+        alt: 'Historical authenticated PixShare upload form with a file picker beside the optional caption.',
+        caption:
+          'Prior release capture; genuine Clerk session; account avatar masked. Fresh upload capture is blocked.',
+        status: 'Historical authenticated release evidence',
       },
       description:
         'The real picker and caption form retain validation, progress, error focus and public-visibility guidance.',
@@ -991,7 +1025,7 @@ export const pixshareStudy: CaseStudy = {
         height: 0.44,
       },
       image: {
-        src: '/evidence/pixshare/album-mobile.jpg',
+        src: '/evidence/phase5d/pixshare/gallery-mobile.webp',
         width: 390,
         height: 844,
         alt: 'Mobile PixShare album with readable filters and a full portrait photo.',
@@ -1019,7 +1053,7 @@ export const pixshareStudy: CaseStudy = {
     },
   ],
   limitations: [
-    'No public live demo or cloud infrastructure was deployed. Local MinIO compatibility does not establish AWS IAM, CDN or recovery behavior.',
+    'This task made no deployment. The public frontend URL responds, but its gallery was unavailable during browser verification even when API health returned 200. Local MinIO compatibility does not establish AWS IAM, CDN or recovery behavior.',
     'Media is public and originals retain metadata. Private albums, moderation and account-deletion workflows are outside scope.',
     'PostgreSQL and storage are not one atomic transaction. Crashes or failed cleanup can leave orphans; reconciliation is operator-invoked.',
     'Axe and keyboard checks do not establish complete WCAG/screen-reader conformance. Chromium viewport captures are not physical-device certification.',
@@ -1065,7 +1099,7 @@ export const marcusStudy: CaseStudy = {
   contributionSummary:
     'Built the lesson and adaptive-practice experience, browser-local progress, Stockfish worker integration, playable games, coached review and source-separated evaluation exports.',
   scope:
-    'Authentic captures from the verified Phase 2C production build, which preserves the Phase 2B learning and engine domain. The visible title remains Quiet Chess. Saved games and assessment records are synthetic test material; no learner outcomes or deployment are claimed.',
+    'Fresh screenshots and recording from the public Marcus deployment verified on 27 October 2026. Lesson and real Stockfish play use a new browser-local session. Technical references and earlier suite results remain pinned to Phase 2C; no learner outcomes are claimed.',
   stack: [
     'Next.js',
     'TypeScript',
@@ -1126,14 +1160,14 @@ export const marcusStudy: CaseStudy = {
       description:
         'The guided lesson explains a rook threat visually, then asks the learner to practise and check a new position.',
       annotation:
-        'The real application retains the Quiet Chess working title and approved knight/book symbol. Marcus is the repository/project name; the screenshot was not rebranded.',
+        'The public deployment now uses Marcus branding. This fresh capture shows its actual lesson; progress is confined to a new browser context.',
       image: {
-        src: '/evidence/marcus/lesson.png',
+        src: '/evidence/phase5d/marcus/lesson-desktop.webp',
         width: 1440,
-        height: 1186,
-        alt: 'Notice a threat before moving in the local Marcus Phase 2C application.',
+        height: 1000,
+        alt: 'Notice a threat before moving in the public Marcus application; fresh browser-local session.',
         caption:
-          'Authentic Phase 2C production-build capture; synthetic session.',
+          'Fresh public deployment capture; isolated browser-local session.',
         status: 'Technical demonstration; efficacy unvalidated',
       },
     },
@@ -1144,20 +1178,15 @@ export const marcusStudy: CaseStudy = {
       annotation:
         'Hint-assisted retries and familiar boards are not treated as independent evidence of mastery.',
       image: {
-        src: '/evidence/marcus/practice.png',
+        src: '/evidence/phase5d/marcus/practice-desktop.webp',
         width: 1440,
-        height: 1202,
-        alt: 'Actual Marcus guided attack-recognition exercise, with an interactive board, optional hints and an explicit distinction between retries and independent success.',
+        height: 1000,
+        alt: 'Current Marcus learning-practice entry with its baseline check and independent-evidence guidance.',
         caption:
-          'Authentic Phase 2C production-build capture; synthetic session.',
+          'Fresh public deployment capture; isolated browser-local session.',
         status: 'Technical demonstration; efficacy unvalidated',
       },
-      focus: {
-        x: 0.1,
-        y: 0.46,
-        width: 0.36,
-        height: 0.41,
-      },
+      focus: { x: 0.12, y: 0.27, width: 0.7, height: 0.36 },
     },
     {
       title: 'Play an actual Stockfish game',
@@ -1166,12 +1195,12 @@ export const marcusStudy: CaseStudy = {
       annotation:
         'Presets bound engine resources and native skill. They are not calibrated human Elo levels.',
       image: {
-        src: '/evidence/marcus/play.png',
+        src: '/evidence/phase5d/marcus/play-desktop.webp',
         width: 1440,
-        height: 1117,
-        alt: 'Play an actual Stockfish game in the local Marcus Phase 2C application.',
+        height: 1000,
+        alt: 'Play an actual Stockfish game in the public Marcus application; fresh browser-local session.',
         caption:
-          'Authentic Phase 2C production-build capture; synthetic session.',
+          'Fresh public deployment capture; isolated browser-local session.',
         status: 'Technical demonstration; efficacy unvalidated',
       },
       focus: {
@@ -1186,14 +1215,14 @@ export const marcusStudy: CaseStudy = {
       description:
         'Coached review reconstructs a game, selects decisions and offers reflection, candidate moves and qualified tactical feedback.',
       annotation:
-        'This capture uses an explicitly synthetic saved game. Bounded proof does not establish strategic understanding or human coaching quality.',
+        'This fresh capture reviews the actual browser-local demonstration game after a real Stockfish reply and resignation. Bounded proof does not establish strategic understanding or human coaching quality.',
       image: {
-        src: '/evidence/marcus/review.png',
+        src: '/evidence/phase5d/marcus/review-desktop.webp',
         width: 1440,
-        height: 1670,
-        alt: 'Reflect on a game decision in the local Marcus Phase 2C application.',
+        height: 1000,
+        alt: 'Reflect on a game decision in the public Marcus application; fresh browser-local session.',
         caption:
-          'Authentic Phase 2C production-build capture; synthetic session.',
+          'Fresh public deployment capture; isolated browser-local session.',
         status: 'Technical demonstration; efficacy unvalidated',
       },
       focus: {
@@ -1206,16 +1235,16 @@ export const marcusStudy: CaseStudy = {
     {
       title: 'Keep learning evidence interpretable',
       description:
-        'Local results keep assessment sources, exposure and optional foreground time separate in the export.',
+        'The fresh Local results screen requires a completed baseline before showing results. Source-separated assessment export is supported by the earlier attributed verification.',
       annotation:
-        'These are synthetic evaluation records from the upstream capture scenario. Source-separated measurements are implemented, but no real pilot or learning-effectiveness result is claimed.',
+        'This fresh session has no completed assessment; the screen truthfully asks the learner to finish the check. No evaluation totals, real pilot or learning-effectiveness result is invented.',
       image: {
-        src: '/evidence/marcus/evaluation.png',
+        src: '/evidence/phase5d/marcus/evaluation-desktop.webp',
         width: 1440,
-        height: 1442,
-        alt: 'Keep learning evidence interpretable in the local Marcus Phase 2C application.',
+        height: 1000,
+        alt: 'Keep learning evidence interpretable in the public Marcus application; fresh browser-local session.',
         caption:
-          'Authentic Phase 2C production-build capture; synthetic session.',
+          'Fresh public deployment capture; isolated browser-local session.',
         status: 'Technical demonstration; efficacy unvalidated',
       },
       focus: {
@@ -1244,7 +1273,7 @@ export const marcusStudy: CaseStudy = {
     'Educator review and a real learner pilot have not been completed. No measured learning improvement, calibrated Elo or validated 10× effectiveness is claimed.',
     'Physical Android/iPhone, Firefox/WebKit, spoken screen-reader and battery/thermal validation remain pending. Chromium viewport checks do not substitute for those checks.',
     'Bounded tactical proofs cover a constrained set of outcomes. Strategic exchange value, deeper tactics and beginner difficulty calibration need further review.',
-    'Stockfish corresponding-source packaging and application licensing/release review remain unfinished. No public distribution or production deployment is established.',
+    'Earlier release evidence left Stockfish corresponding-source packaging and application licensing review unfinished. Public lesson and Stockfish playback now work at the verified URL; this capture does not establish closure of those release-compliance gaps.',
     'Phase 2C adds a local source/build receipt and release configuration. Complete recipient-accessible Stockfish source/build inputs and an approved application licensing treatment remain unresolved; those preparation artifacts are not a completed public release.',
   ],
   repository: 'https://github.com/EdTosoy/marcus',

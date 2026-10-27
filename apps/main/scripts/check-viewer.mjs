@@ -23,15 +23,6 @@ export async function checkViewer({
     });
   await image.evaluate((el) => el.decode());
   assert.equal(await zoom.isDisabled(), true);
-  await page.waitForFunction(
-    (urls) =>
-      urls.every((url) =>
-        performance
-          .getEntriesByName(url)
-          .some((entry) => entry.responseEnd > 0),
-      ),
-    study.steps.map((s) => base + s.image.src),
-  );
   const additional = [];
   const track = (request) => {
     if (new URL(request.url()).pathname.startsWith('/evidence/'))

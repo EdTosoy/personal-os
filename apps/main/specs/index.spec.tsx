@@ -59,6 +59,17 @@ describe('Portfolio homepage', () => {
     expect(container.querySelectorAll('.projects-grid > article')).toHaveLength(
       1,
     );
+    const live = screen.getByRole('link', { name: /^Live App\s*:/ });
+    expect(live.getAttribute('href')).toBe('https://marcus.edtosoy.com');
+    expect(live.getAttribute('target')).toBe('_blank');
+    expect(
+      container.querySelector('.project-evidence-link')?.getAttribute('href'),
+    ).toBe('https://marcus.edtosoy.com');
+    expect(
+      screen
+        .getByRole('link', { name: /^View Case Study\s*:/ })
+        .getAttribute('href'),
+    ).toBe('/projects/marcus-chess');
     expect(
       screen.getByRole('heading', { name: 'Marcus Chess', exact: true }),
     ).toBeTruthy();

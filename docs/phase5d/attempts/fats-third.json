@@ -1,0 +1,169 @@
+{
+  "capturedAt": "2026-10-27T05:19:54.188Z",
+  "base": "http://127.0.0.1:33301",
+  "production": false,
+  "results": [
+    {
+      "size": "desktop",
+      "status": "FAIL",
+      "screens": [
+        {
+          "file": "dashboard-desktop.png",
+          "path": "/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "applications-desktop.png",
+          "path": "/applications",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "details-desktop.png",
+          "path": "/applications/678245ac-a214-4b47-9da9-7c892838a1fe",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "updated-desktop.png",
+          "path": "/applications/678245ac-a214-4b47-9da9-7c892838a1fe",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "interview-preparation-desktop.png",
+          "path": "/applications/678245ac-a214-4b47-9da9-7c892838a1fe",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "interviews-desktop.png",
+          "path": "/interviews",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "resumes-desktop.png",
+          "path": "/resumes",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review the main job-search dashboard with a fictional saved job.",
+        "Find the saved job in the application tracker.",
+        "Review the job description and application details.",
+        "Update the application to Applied and verify it persists after reload. This does not submit a job application.",
+        "Schedule a fictional technical interview and inspect its preparation notes.",
+        "Review interview management.",
+        "Inspect the resume workspace. Private documents require an account and the safety scanner."
+      ],
+      "errors": [],
+      "httpErrors": [],
+      "reason": "locator.selectOption: Timeout 20000ms exceeded. Call log: \u001b[2m  - waiting for getByRole('combobox', { name: 'Application status', exact: true })\u001b[22m"
+    },
+    {
+      "size": "mobile",
+      "status": "FAIL",
+      "screens": [
+        {
+          "file": "dashboard-mobile.png",
+          "path": "/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "applications-mobile.png",
+          "path": "/applications",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "details-mobile.png",
+          "path": "/applications/a9f47c3f-2f8e-4b08-bd03-c24f65d6ebf2",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "updated-mobile.png",
+          "path": "/applications/a9f47c3f-2f8e-4b08-bd03-c24f65d6ebf2",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "interview-preparation-mobile.png",
+          "path": "/interviews/ed5715fe-b946-4119-85be-45a32aec93aa",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "interviews-mobile.png",
+          "path": "/interviews",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "resumes-mobile.png",
+          "path": "/resumes",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review the main job-search dashboard with a fictional saved job.",
+        "Find the saved job in the application tracker.",
+        "Review the job description and application details.",
+        "Update the application to Applied and verify it persists after reload. This does not submit a job application.",
+        "Schedule a fictional technical interview and inspect its preparation notes.",
+        "Review interview management.",
+        "Inspect the resume workspace. Private documents require an account and the safety scanner."
+      ],
+      "errors": [],
+      "httpErrors": [],
+      "reason": "locator.selectOption: Timeout 20000ms exceeded. Call log: \u001b[2m  - waiting for getByRole('combobox', { name: 'Application status', exact: true })\u001b[22m"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+
+> nx run @org/main:test --runInBand
+
+> jest --runInBand
+
+(node:46549) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ FAIL   @org/main  specs/index.spec.tsx
+  ● Portfolio homepage › renders Marcus alone on its independently linkable second page and retains older work
+
+    expect(received).toContain(expected) // indexOf
+
+    Matcher error: received value must not be null nor undefined
+
+    Received has value: undefined
+
+      84 |         .getAttribute('href'),
+      85 |     ).toBe('?projectsPage=1#projects');
+    > 86 |     expect(container.querySelector('.older-projects')?.textContent).toContain(
+         |                                                                     ^
+      87 |       'NestJS Microservices Platform',
+      88 |     );
+      89 |   });
+
+      at Object.toContain (specs/index.spec.tsx:86:69)
+
+
+Test Suites: 1 failed, 2 passed, 3 total
+Tests:       1 failed, 32 passed, 33 total
+Snapshots:   0 total
+Time:        1.839 s, estimated 2 s
+Ran all test suites.
+Warning: command "jest --runInBand" exited with non-zero status code
+
+
+ NX   Running target test for project @org/main failed
+
+Failed tasks:
+
+- @org/main:test
+
+Hint: run the command with --verbose for more details.
+
+  Run duration:      2.8s
+  Critical path:     2.8s (1 task)
+  Recoverable time:  <1ms

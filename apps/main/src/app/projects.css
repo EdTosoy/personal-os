@@ -260,3 +260,50 @@ body {
 .case-study a:active {
   color: var(--amber);
 }
+
+.project-card-meta a {
+  color: var(--amber);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.project-card-meta a:hover {
+  text-decoration-thickness: 2px;
+}
+.case-demo video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 1000;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.case-demo video:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 4px;
+}
+.case-demo figcaption {
+  color: var(--fg-muted);
+  font-size: 0.8rem;
+  margin-top: 12px;
+}
+.case-demo-transcript {
+  margin-top: 24px;
+  line-height: 1.8;
+}
+.case-demo-transcript ol {
+  list-style: decimal;
+  padding-left: 24px;
+  margin-top: 12px;
+}
+.case-mobile-captures {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 390px));
+  gap: 24px;
+  margin-top: 24px;
+}
+@media (max-width: 600px) {
+  .case-mobile-captures {
+    grid-template-columns: minmax(0, 390px);
+  }
+}

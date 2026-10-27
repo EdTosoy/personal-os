@@ -36,29 +36,49 @@ export default function Projects({
         </span>
       </div>
       <div className="projects-grid" data-project-page={page}>
-        {items.map((project, index) => (
+        {items.map((project) => (
           <article
             key={project.slug}
             className="project-card"
             data-project={project.slug}
           >
             <div className="project-card-copy">
+              <div className="project-card-meta">
+                <span>{project.status}</span>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live App
+                    <span className="sr-only">
+                      : {project.title} (opens in a new tab)
+                    </span>
+                  </a>
+                )}
+              </div>
               <h3>{project.title}</h3>
               <p>{project.shortDescription}</p>
             </div>
             {project.caseStudy && (
               <Link
-                href={project.caseStudy.href}
+                href={project.demo || project.caseStudy.href}
+                target={project.demo ? '_blank' : undefined}
+                rel={project.demo ? 'noopener noreferrer' : undefined}
                 className="project-evidence-link mt-0"
-                aria-label={`Inspect ${project.title}`}
+                aria-label={
+                  project.demo
+                    ? `Open ${project.title} live app (opens in a new tab)`
+                    : `Inspect ${project.title}`
+                }
               >
                 <Image
                   src={project.caseStudy.image}
                   alt={project.caseStudy.alt}
                   width={1440}
                   height={1000}
-                  loading="eager"
-                  unoptimized
+                  loading="lazy"
                   sizes="(min-width: 1280px) 390px, (min-width: 768px) 45vw, 90vw"
                 />
                 <span>{project.caseStudy.caption}</span>
@@ -67,7 +87,7 @@ export default function Projects({
             <div className="project-card-links">
               {project.caseStudy && (
                 <Link href={project.caseStudy.href}>
-                  Explore case study
+                  View Case Study
                   <span className="sr-only">: {project.title}</span>
                 </Link>
               )}
@@ -77,20 +97,11 @@ export default function Projects({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Source code
+                  Code
                   <span className="sr-only">
                     {' '}
                     for {project.title} (opens in a new tab)
                   </span>
-                </a>
-              )}
-              {project.demo && (
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Demo<span className="sr-only"> (opens in a new tab)</span>
                 </a>
               )}
             </div>

@@ -1,0 +1,89 @@
+{
+  "capturedAt": "2026-10-27T05:20:56.635Z",
+  "base": "http://127.0.0.1:33321",
+  "production": false,
+  "results": [
+    {
+      "size": "desktop",
+      "status": "FAIL",
+      "screens": [
+        {
+          "file": "home-desktop.png",
+          "path": "/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "gallery-desktop.png",
+          "path": "/explore",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "details-desktop.png",
+          "path": "/posts/e0ad8b9a-c203-4516-8260-47d833c9e34f",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review a genuine local PixShare album backed by disposable PostgreSQL and bundled demo photographs.",
+        "Open the public gallery.",
+        "Open a photograph and read its actual details."
+      ],
+      "errors": [],
+      "httpErrors": [],
+      "reason": "locator.selectOption: Timeout 20000ms exceeded. Call log: \u001b[2m  - waiting for getByLabel('Format', { exact: true })\u001b[22m"
+    },
+    {
+      "size": "mobile",
+      "status": "FAIL",
+      "screens": [
+        {
+          "file": "home-mobile.png",
+          "path": "/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "gallery-mobile.png",
+          "path": "/explore",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "details-mobile.png",
+          "path": "/posts/e0ad8b9a-c203-4516-8260-47d833c9e34f",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review a genuine local PixShare album backed by disposable PostgreSQL and bundled demo photographs.",
+        "Open the public gallery.",
+        "Open a photograph and read its actual details."
+      ],
+      "errors": [],
+      "httpErrors": [],
+      "reason": "locator.selectOption: Timeout 20000ms exceeded. Call log: \u001b[2m  - waiting for getByLabel('Format', { exact: true })\u001b[22m"
+    }
+  ]
+}

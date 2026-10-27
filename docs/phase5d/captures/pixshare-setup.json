@@ -1,0 +1,5 @@
+{
+  "source": "Current standalone frontend and cached release API build, isolated migrated PostgreSQL, original bundled photographs and upstream seed script. Compiled media/API origins forwarded to real local API without response mocks. No external Clerk sessions or production mutations.",
+  "apiImageId": "sha256:e992b9a13c317ee6fc01dce02402a98382111633df4dafe2d27418893cc6adc8",
+  "authenticatedCapture": "BLOCKED: no authorized local-only Clerk session; retained prior release upload evidence is explicitly historical."
+}

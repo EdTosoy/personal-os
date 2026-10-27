@@ -1,0 +1,147 @@
+{
+  "capturedAt": "2026-10-27T05:18:30.762Z",
+  "base": "http://127.0.0.1:33302",
+  "production": false,
+  "results": [
+    {
+      "size": "desktop",
+      "status": "PASS",
+      "screens": [
+        {
+          "file": "overview-desktop.png",
+          "path": "/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "reconciliation-desktop.png",
+          "path": "/reconciliation",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "settlement-inspection-desktop.png",
+          "path": "/reconciliation/62ab34cd-34c9-45c1-9a85-e82a943b182f",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "exceptions-desktop.png",
+          "path": "/exceptions",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "controls-desktop.png",
+          "path": "/controls",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "workers-desktop.png",
+          "path": "/workers",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Inspect the synthetic financial dashboard and its assurance status.",
+        "Review actual matched and unmatched reconciliation outcomes.",
+        "Open a reconciliation run and inspect settlement and bank evidence.",
+        "Inspect discrepancies and operational exceptions.",
+        "Review independent completeness and assurance controls. UNKNOWN remains distinct from PASS.",
+        "Inspect processing workers and recoverable delivery state."
+      ],
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "size": "mobile",
+      "status": "PASS",
+      "screens": [
+        {
+          "file": "overview-mobile.png",
+          "path": "/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "reconciliation-mobile.png",
+          "path": "/reconciliation",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "settlement-inspection-mobile.png",
+          "path": "/reconciliation/62ab34cd-34c9-45c1-9a85-e82a943b182f",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "exceptions-mobile.png",
+          "path": "/exceptions",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "controls-mobile.png",
+          "path": "/controls",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "workers-mobile.png",
+          "path": "/workers",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Inspect the synthetic financial dashboard and its assurance status.",
+        "Review actual matched and unmatched reconciliation outcomes.",
+        "Open a reconciliation run and inspect settlement and bank evidence.",
+        "Inspect discrepancies and operational exceptions.",
+        "Review independent completeness and assurance controls. UNKNOWN remains distinct from PASS.",
+        "Inspect processing workers and recoverable delivery state."
+      ],
+      "errors": [],
+      "httpErrors": []
+    }
+  ]
+}

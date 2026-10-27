@@ -5,11 +5,11 @@ export const projects: Project[] = [
     slug: 'flow-financial-reconciliation',
     caseStudy: {
       href: '/projects/flow-financial-reconciliation',
-      image: '/evidence/flow/overview.png',
+      image: '/evidence/phase5d/flow/overview-desktop.webp',
       alt: 'Real Flow dashboard with financial assurance and completeness checks.',
       caption: 'Local capture; synthetic records; ephemeral demo',
     },
-    title: 'Flow — Financial Reconciliation',
+    title: 'Vigil / Flow — Financial Reconciliation',
     shortDescription:
       'Reconcile financial transactions and investigate missing, mismatched, or incomplete records, with exact-money accounting and recoverable processing.',
     longDescription:
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     slug: 'fats-job-application-platform',
     caseStudy: {
       href: '/projects/fats-pdf-tools',
-      image: '/evidence/fats/dashboard.png',
+      image: '/evidence/phase5d/fats/dashboard-desktop.webp',
       alt: 'FATS job-search dashboard with application stages, upcoming interviews and resume reminders.',
       caption: 'Verified local workflows; synthetic job-search records',
     },
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     slug: 'pulse-hospital-devops-platform',
     caseStudy: {
       href: '/projects/pulse-hospital-devops-platform',
-      image: '/evidence/hospital/overview.png',
+      image: '/evidence/phase5d/hospital/overview-desktop.webp',
       alt: 'Current abox hospital administration dashboard with fictional patients and genuine PostgreSQL-backed workflow counts.',
       caption: 'Real local abox app; fictional patient records',
     },
@@ -95,9 +95,9 @@ export const projects: Project[] = [
     slug: 'pixshare',
     caseStudy: {
       href: '/projects/pixshare',
-      image: '/evidence/pixshare/album-overview.jpg',
+      image: '/evidence/phase5d/pixshare/home-desktop.webp',
       alt: 'PixShare photo album in its Atelier theme with real bundled photographs.',
-      caption: 'Working local photo album; verified Clerk workflows',
+      caption: 'Local demo; public frontend responds, gallery unavailable',
     },
     title: 'PixShare',
     shortDescription:
@@ -125,6 +125,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'marcus-chess',
+    demo: 'https://marcus.edtosoy.com',
     title: 'Marcus Chess',
     shortDescription:
       'Learn to notice threats, practise chess decisions, play Stockfish, and reflect on a game. Technical checks are complete for Phase 2B; learning effectiveness is unproven.',
@@ -144,9 +145,9 @@ export const projects: Project[] = [
     ],
     caseStudy: {
       href: '/projects/marcus-chess',
-      image: '/evidence/marcus/lesson.png',
-      alt: 'Actual Quiet Chess lesson in the Marcus repository, with the approved knight/book symbol and a guided threat explanation.',
-      caption: 'Verified local chess platform; learning efficacy unvalidated',
+      image: '/evidence/phase5d/marcus/lesson-desktop.webp',
+      alt: 'Current public Marcus lesson with its chessboard and guided threat explanation.',
+      caption: 'Public lesson and Stockfish verified; learning efficacy unvalidated',
     },
   },
   {

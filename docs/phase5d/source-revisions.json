@@ -1,0 +1,37 @@
+[
+  {
+    "name": "flow",
+    "path": "/mnt/storage/projects/flow",
+    "revision": "bc14db0739d16edc2c2d1dd960e1246b3f81d2af",
+    "workingTreeClean": false,
+    "buildId": "L-r8M7dFABjgUJ_8osVib"
+  },
+  {
+    "name": "fats",
+    "path": "/mnt/storage/projects/ats",
+    "revision": "8afbf3da66baa06a7ea03c93af46fbbc46d34eb1",
+    "workingTreeClean": true,
+    "buildId": "RU0DNAlBKUNrGX6OuWCkz"
+  },
+  {
+    "name": "hospital",
+    "path": "/mnt/storage/projects/hospitalProject",
+    "revision": "81f60b30a8d247aec30f38c21f0e01537648cea4",
+    "workingTreeClean": true,
+    "buildId": "Axxn4zq70gZEd-eIHNC0P"
+  },
+  {
+    "name": "pixshare",
+    "path": "/mnt/storage/projects/PixShare",
+    "revision": "606f4d9e348f972c9b8c12235678c2afa2d57b61",
+    "workingTreeClean": true,
+    "buildId": "l6upbHxrkSolzVKyQLnvv"
+  },
+  {
+    "name": "marcus",
+    "path": "/mnt/storage/projects/marcus",
+    "revision": "104d7542673e7dc4d47b2bd3d6554aac31a92cfd",
+    "workingTreeClean": true,
+    "buildId": "sKUTPR3obTSeC6Pno9jzZ"
+  }
+]

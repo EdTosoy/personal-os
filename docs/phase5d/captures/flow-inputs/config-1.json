@@ -1,0 +1,1 @@
+{"seed":71201,"paymentCount":12,"batchSizeRange":[1,1],"anomalies":{"missing-bank-transaction":{"count":2},"duplicate-bank-observation":{"count":2},"incorrect-amount":{"count":2}}}

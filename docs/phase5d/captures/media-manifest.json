@@ -1,0 +1,523 @@
+[
+  {
+    "source": "docs/phase5d/captures/flow/controls-desktop.png",
+    "asset": "/evidence/phase5d/flow/controls-desktop.webp",
+    "originalBytes": 113761,
+    "bytes": 49300,
+    "sha256": "68ada14efb39460367bad9f5dd34f579102cd05bc61095828997c3b2926afa21"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/controls-mobile.png",
+    "asset": "/evidence/phase5d/flow/controls-mobile.webp",
+    "originalBytes": 56463,
+    "bytes": 25622,
+    "sha256": "b121936e2bdf08695600e4ab0edc2f42d5c6d1b78d84f9e9129e51345332b079"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/exceptions-desktop.png",
+    "asset": "/evidence/phase5d/flow/exceptions-desktop.webp",
+    "originalBytes": 140913,
+    "bytes": 47518,
+    "sha256": "9655f995822b44c736f1f523f8aa8a8df884977401a7d4de26c3260ca1c0902c"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/exceptions-mobile.png",
+    "asset": "/evidence/phase5d/flow/exceptions-mobile.webp",
+    "originalBytes": 45082,
+    "bytes": 19896,
+    "sha256": "4d3bb3ea48f5c98e9873c8d072e67734813167ee8c557f5d6180609df4498076"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/overview-desktop.png",
+    "asset": "/evidence/phase5d/flow/overview-desktop.webp",
+    "originalBytes": 155199,
+    "bytes": 63748,
+    "sha256": "70f51e48e34f43e70cb48a1e83a2c9d8e09ab453ed6b44d0f77e9da278426376"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/overview-mobile.png",
+    "asset": "/evidence/phase5d/flow/overview-mobile.webp",
+    "originalBytes": 62369,
+    "bytes": 29124,
+    "sha256": "2616ad8412a14f378dfc8bb6ec6d74a08e2adeacbdfeb6fc91f22e7eb5bd8e30"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/reconciliation-desktop.png",
+    "asset": "/evidence/phase5d/flow/reconciliation-desktop.webp",
+    "originalBytes": 123782,
+    "bytes": 47236,
+    "sha256": "721014e3e44e4a53de492781b0f958dbc91a8c9d8b0aa8a26b6b3c1c1e265d01"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/reconciliation-mobile.png",
+    "asset": "/evidence/phase5d/flow/reconciliation-mobile.webp",
+    "originalBytes": 50662,
+    "bytes": 23260,
+    "sha256": "5854ffa5cb4f2f4b89bc4523465c89519baea0bc4cb5b5022db55198421f0c31"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/settlement-inspection-desktop.png",
+    "asset": "/evidence/phase5d/flow/settlement-inspection-desktop.webp",
+    "originalBytes": 116433,
+    "bytes": 43940,
+    "sha256": "d98d25e3c6904a00109efafd57fb8540419457f0e57c58b42ed793754cdd1cab"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/settlement-inspection-mobile.png",
+    "asset": "/evidence/phase5d/flow/settlement-inspection-mobile.webp",
+    "originalBytes": 56586,
+    "bytes": 25634,
+    "sha256": "7e4f34aa0d590b1e1b61d4d2dd77eee3a574ac45252acc4d0c393a92fba3eb11"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/workers-desktop.png",
+    "asset": "/evidence/phase5d/flow/workers-desktop.webp",
+    "originalBytes": 124561,
+    "bytes": 42642,
+    "sha256": "9b2c62d3285dfc39a6790a5c3bd3c76b67e6c32eae5253a3b62b157041c7a9f9"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/workers-mobile.png",
+    "asset": "/evidence/phase5d/flow/workers-mobile.webp",
+    "originalBytes": 46638,
+    "bytes": 21258,
+    "sha256": "de476a87800251b3f0410793a4ac73343179e8d5d7cd624ebc685de5abcff8c2"
+  },
+  {
+    "source": "docs/phase5d/captures/flow/original/flow-desktop.webm",
+    "asset": "/evidence/phase5d/flow/demo.mp4",
+    "originalBytes": 1885919,
+    "bytes": 542451,
+    "originalDuration": 21.64,
+    "trimStart": 0.4,
+    "optimizedDuration": 21.240000000000002
+  },
+  {
+    "source": "docs/phase5d/captures/fats/applications-desktop.png",
+    "asset": "/evidence/phase5d/fats/applications-desktop.webp",
+    "originalBytes": 102850,
+    "bytes": 45782,
+    "sha256": "190d558a30123c4119d3f651831992a2719eb9a05a3343f5785c4323800ecee9"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/applications-mobile.png",
+    "asset": "/evidence/phase5d/fats/applications-mobile.webp",
+    "originalBytes": 50045,
+    "bytes": 24272,
+    "sha256": "83602fcc0aa4a21a28b8add5b756da3337da5c29a80c98476a7e5357d7e4fa91"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/dashboard-desktop.png",
+    "asset": "/evidence/phase5d/fats/dashboard-desktop.webp",
+    "originalBytes": 123627,
+    "bytes": 54142,
+    "sha256": "4fc8c2221e3ad9551cef94758c8d4a4cac7367ab2d070c0a2eeb87fa4683555c"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/dashboard-mobile.png",
+    "asset": "/evidence/phase5d/fats/dashboard-mobile.webp",
+    "originalBytes": 48978,
+    "bytes": 23240,
+    "sha256": "39b3229d2b10c4b477bf46593321efba106e1617f5f9b1ac135b46fae2fcc76c"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/details-desktop.png",
+    "asset": "/evidence/phase5d/fats/details-desktop.webp",
+    "originalBytes": 133615,
+    "bytes": 58928,
+    "sha256": "1476edc27e172e6445e79db92687a034aec18e27de0476d47a276dddd7f71646"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/details-mobile.png",
+    "asset": "/evidence/phase5d/fats/details-mobile.webp",
+    "originalBytes": 46304,
+    "bytes": 21946,
+    "sha256": "4edcf4997ff96f950d2d8d68eb7e7c94ce4f776f0b9850e9c2d895c1069f7a00"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/interview-preparation-desktop.png",
+    "asset": "/evidence/phase5d/fats/interview-preparation-desktop.webp",
+    "originalBytes": 137787,
+    "bytes": 59528,
+    "sha256": "c0d4ba18058202a0f85b963dc3d9837dc62ff31b85e31761c95d01d2fbc7c1b3"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/interview-preparation-mobile.png",
+    "asset": "/evidence/phase5d/fats/interview-preparation-mobile.webp",
+    "originalBytes": 58005,
+    "bytes": 27284,
+    "sha256": "e1108f801a23a7731ccba46b16624e2b55532b2bf3ec02e9c9c5e19ed6b6ff89"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/interviews-desktop.png",
+    "asset": "/evidence/phase5d/fats/interviews-desktop.webp",
+    "originalBytes": 102278,
+    "bytes": 46626,
+    "sha256": "ae0136356972b6ec0510a9f1d8a1faa0e9cf592bddeb27f76e22fec13267c286"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/interviews-mobile.png",
+    "asset": "/evidence/phase5d/fats/interviews-mobile.webp",
+    "originalBytes": 50036,
+    "bytes": 24332,
+    "sha256": "8c2ef0557235a344312f8551401491025b792e27d025f18235196726d04e6692"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/offers-desktop.png",
+    "asset": "/evidence/phase5d/fats/offers-desktop.webp",
+    "originalBytes": 143877,
+    "bytes": 63220,
+    "sha256": "ef48f2adb6e91c57616331fb81cb2ccf39969a129787cc80aa796ffacde68161"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/offers-mobile.png",
+    "asset": "/evidence/phase5d/fats/offers-mobile.webp",
+    "originalBytes": 52893,
+    "bytes": 25652,
+    "sha256": "8acdffe022e76e314e49a963446544595e934afc2dd6614502e332c2d1dde291"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/pdf-tools-desktop.png",
+    "asset": "/evidence/phase5d/fats/pdf-tools-desktop.webp",
+    "originalBytes": 108599,
+    "bytes": 48976,
+    "sha256": "b10401ff6dcf27cf5937b9baecda8326b29e295839c5f0d30e7821cd730deb1e"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/pdf-tools-mobile.png",
+    "asset": "/evidence/phase5d/fats/pdf-tools-mobile.webp",
+    "originalBytes": 50439,
+    "bytes": 24978,
+    "sha256": "33541e7e5c5eb3dc828da12a15c5bcdeb5469d90b1aca2d80026796de9d8aecf"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/resumes-desktop.png",
+    "asset": "/evidence/phase5d/fats/resumes-desktop.webp",
+    "originalBytes": 120705,
+    "bytes": 53002,
+    "sha256": "445889ebaf628911d74a77c9272f189e2611d31b8afe4e35bb656796304f82d2"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/resumes-mobile.png",
+    "asset": "/evidence/phase5d/fats/resumes-mobile.webp",
+    "originalBytes": 52500,
+    "bytes": 25208,
+    "sha256": "c895c6393d8868511c6bea4e86bc4065cb3a94b00e2ed27d3de651d29b3194b2"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/updated-desktop.png",
+    "asset": "/evidence/phase5d/fats/updated-desktop.webp",
+    "originalBytes": 133571,
+    "bytes": 58970,
+    "sha256": "536f8e56d87032ffeb9d019db8774652973c7e121bbe12f759850d78038e81f5"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/updated-mobile.png",
+    "asset": "/evidence/phase5d/fats/updated-mobile.webp",
+    "originalBytes": 46220,
+    "bytes": 21878,
+    "sha256": "3ae5b8177f15c15dc48f8c52039dfc65d9e3dcbbc1bfd5585a2c568d793f0098"
+  },
+  {
+    "source": "docs/phase5d/captures/fats/original/fats-desktop.webm",
+    "asset": "/evidence/phase5d/fats/demo.mp4",
+    "originalBytes": 2150340,
+    "bytes": 808790,
+    "originalDuration": 26.04,
+    "trimStart": 0.4,
+    "optimizedDuration": 25.64
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/appointments-desktop.png",
+    "asset": "/evidence/phase5d/hospital/appointments-desktop.webp",
+    "originalBytes": 126107,
+    "bytes": 47742,
+    "sha256": "4e5686d1f997c2fc552e3121b221bccefdd8409119f6dcaa448d7f8225cd5a4c"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/appointments-mobile.png",
+    "asset": "/evidence/phase5d/hospital/appointments-mobile.webp",
+    "originalBytes": 51894,
+    "bytes": 24286,
+    "sha256": "086ec4a5231fae189137f9dcf30fba616bff36ad6f25f62a3bd7ec1078f0e20a"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/billing-desktop.png",
+    "asset": "/evidence/phase5d/hospital/billing-desktop.webp",
+    "originalBytes": 120920,
+    "bytes": 48458,
+    "sha256": "e22ebb70ace5941eae8365c0c4041e6b7c63feb28afc3313f3d4300a8b66e1df"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/billing-mobile.png",
+    "asset": "/evidence/phase5d/hospital/billing-mobile.webp",
+    "originalBytes": 44511,
+    "bytes": 18050,
+    "sha256": "5e28239d24eef41a97b4c674acec6d6249884cca792d4e71038a33ef2ccd7e5a"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/billing-paid-desktop.png",
+    "asset": "/evidence/phase5d/hospital/billing-paid-desktop.webp",
+    "originalBytes": 120017,
+    "bytes": 50370,
+    "sha256": "0fe679768dfe80e73d3ce845167ee70c0bea8ffa50d3d350b9508c5540c4ffe0"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/billing-paid-mobile.png",
+    "asset": "/evidence/phase5d/hospital/billing-paid-mobile.webp",
+    "originalBytes": 46954,
+    "bytes": 14518,
+    "sha256": "0b0c78fe7c6d3f6f9d73ee8f35c9278eb605595b491252cf90ef5bef47583a06"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/overview-desktop.png",
+    "asset": "/evidence/phase5d/hospital/overview-desktop.webp",
+    "originalBytes": 114329,
+    "bytes": 47780,
+    "sha256": "184dfc801b389cd54db861cb56066b9877bd5c7b80675f1ec104faa2de532eb8"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/overview-mobile.png",
+    "asset": "/evidence/phase5d/hospital/overview-mobile.webp",
+    "originalBytes": 44440,
+    "bytes": 17882,
+    "sha256": "b5596b0305c91a89b9dd5abb18297f470d20141634af3cf1773c41c75dfa84dd"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/patients-desktop.png",
+    "asset": "/evidence/phase5d/hospital/patients-desktop.webp",
+    "originalBytes": 87990,
+    "bytes": 30182,
+    "sha256": "b2f75791b7dacacae8905b008cc0e449d07c1486a22e9b9d480f91328acdab6e"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/patients-mobile.png",
+    "asset": "/evidence/phase5d/hospital/patients-mobile.webp",
+    "originalBytes": 50723,
+    "bytes": 17920,
+    "sha256": "995e4f281f5b4e04d0dab4fac954c285e292bedf1550103d79e5282a3b2908fc"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/queue-desktop.png",
+    "asset": "/evidence/phase5d/hospital/queue-desktop.webp",
+    "originalBytes": 93253,
+    "bytes": 37606,
+    "sha256": "0f48417f33ece75f82792e862d3a2dec9a56d46d2ac2a92934ad1b08b2136b5f"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/queue-mobile.png",
+    "asset": "/evidence/phase5d/hospital/queue-mobile.webp",
+    "originalBytes": 40127,
+    "bytes": 16356,
+    "sha256": "942a429f078d38cc99d3b4fbf92bdbf56e39ca9b5a71065588b883ed1f604099"
+  },
+  {
+    "source": "docs/phase5d/captures/hospital/original/hospital-desktop.webm",
+    "asset": "/evidence/phase5d/hospital/demo.mp4",
+    "originalBytes": 1593597,
+    "bytes": 478313,
+    "originalDuration": 20.04,
+    "trimStart": 0.4,
+    "optimizedDuration": 19.64
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/details-desktop.png",
+    "asset": "/evidence/phase5d/pixshare/details-desktop.webp",
+    "originalBytes": 740026,
+    "bytes": 541882,
+    "sha256": "fa14b7bd9a8f213fe311789e5c8dc72bdb99dfd0491d0536e5db5dea713ac5d4"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/details-mobile.png",
+    "asset": "/evidence/phase5d/pixshare/details-mobile.webp",
+    "originalBytes": 109659,
+    "bytes": 78022,
+    "sha256": "fb016dab14e53a1f0dc9da10d984ae0ec257bbac721b35bdf0058fb22f20cf44"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/filtered-desktop.png",
+    "asset": "/evidence/phase5d/pixshare/filtered-desktop.webp",
+    "originalBytes": 229372,
+    "bytes": 157244,
+    "sha256": "ba836b1e8e710d9624234720753842a74c373e003b92b6e4783dd3867f175a9f"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/filtered-mobile.png",
+    "asset": "/evidence/phase5d/pixshare/filtered-mobile.webp",
+    "originalBytes": 121727,
+    "bytes": 83178,
+    "sha256": "7e0f50c5d4dd6e05d016c0c227c31554e8c477492fc9394e17dbac82cf9ad012"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/gallery-desktop.png",
+    "asset": "/evidence/phase5d/pixshare/gallery-desktop.webp",
+    "originalBytes": 557683,
+    "bytes": 374320,
+    "sha256": "3767003b228e7438a6e03600100cee1f4a40efec77eeb4b237e8ddf7b5bc5bc4"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/gallery-mobile.png",
+    "asset": "/evidence/phase5d/pixshare/gallery-mobile.webp",
+    "originalBytes": 151436,
+    "bytes": 107228,
+    "sha256": "cd1a76e31a96e53df6bbd9298003c7ea8b31acd33aff96af5941f5ef655aa228"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/home-desktop.png",
+    "asset": "/evidence/phase5d/pixshare/home-desktop.webp",
+    "originalBytes": 582406,
+    "bytes": 388338,
+    "sha256": "2c5ac405a633db6c597d81f7bd8af54cf3a705237f909c4379467af9f7beb84e"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/home-mobile.png",
+    "asset": "/evidence/phase5d/pixshare/home-mobile.webp",
+    "originalBytes": 124376,
+    "bytes": 85346,
+    "sha256": "293f7b46f42bfe559cdcc4f054ccbe8aef2fcf54da7c811cbbf501344de9c8a3"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/management-prerequisite-desktop.png",
+    "asset": "/evidence/phase5d/pixshare/management-prerequisite-desktop.webp",
+    "originalBytes": 37684,
+    "bytes": 12340,
+    "sha256": "b6397b2e8c5308f589d2d99162d60198f9df9baa48dc99702846197125a6cc8d"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/management-prerequisite-mobile.png",
+    "asset": "/evidence/phase5d/pixshare/management-prerequisite-mobile.webp",
+    "originalBytes": 32408,
+    "bytes": 10852,
+    "sha256": "55dab754d1e227b6a33e3d8a97fbfe786065b448c3e49554ff5f16187f239384"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/upload-prerequisite-desktop.png",
+    "asset": "/evidence/phase5d/pixshare/upload-prerequisite-desktop.webp",
+    "originalBytes": 37899,
+    "bytes": 12396,
+    "sha256": "fa60fe18e705ac7bf3172bd82703770768254a8618e70b39e4499e2c1c67898f"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/upload-prerequisite-mobile.png",
+    "asset": "/evidence/phase5d/pixshare/upload-prerequisite-mobile.webp",
+    "originalBytes": 32363,
+    "bytes": 10862,
+    "sha256": "ed5d5f4f9c8c31d285e7c8996bdcbee9d9bfde98a740584fbbff9ece60ce36c7"
+  },
+  {
+    "source": "docs/phase5d/captures/pixshare/original/pixshare-desktop.webm",
+    "asset": "/evidence/phase5d/pixshare/demo.mp4",
+    "originalBytes": 1579277,
+    "bytes": 544998,
+    "originalDuration": 23.76,
+    "trimStart": 0.4,
+    "optimizedDuration": 23.360000000000003
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/evaluation-desktop.png",
+    "asset": "/evidence/phase5d/marcus/evaluation-desktop.webp",
+    "originalBytes": 51317,
+    "bytes": 19608,
+    "sha256": "4ac011321841fd7a2cccbfe523bca84295f4226605cccdc8338ed26db686b173"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/evaluation-mobile.png",
+    "asset": "/evidence/phase5d/marcus/evaluation-mobile.webp",
+    "originalBytes": 36226,
+    "bytes": 14674,
+    "sha256": "3b0a8ebb53384c32bdf0359b9ac0734fee79b05bf76bc61f3d66934c1321eecc"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/lesson-desktop.png",
+    "asset": "/evidence/phase5d/marcus/lesson-desktop.webp",
+    "originalBytes": 111922,
+    "bytes": 40996,
+    "sha256": "9be636383377b902b54911e538537ed495ab683aa2224b45469820bebcd685ee"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/lesson-feedback-desktop.png",
+    "asset": "/evidence/phase5d/marcus/lesson-feedback-desktop.webp",
+    "originalBytes": 96908,
+    "bytes": 37218,
+    "sha256": "56972e654a545274553df3f3bd8deb8918bc3639b1f2b0b80af08a033c672fe2"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/lesson-feedback-mobile.png",
+    "asset": "/evidence/phase5d/marcus/lesson-feedback-mobile.webp",
+    "originalBytes": 46137,
+    "bytes": 20732,
+    "sha256": "0b2396ea2cfa56896443a2436cc1af85165b39d991f578035962b30a4c17be21"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/lesson-mobile.png",
+    "asset": "/evidence/phase5d/marcus/lesson-mobile.webp",
+    "originalBytes": 48889,
+    "bytes": 21716,
+    "sha256": "0e077b5d900137ee882bb705e22befb2f33bc435dcd47934a6dd32aeed19ecbe"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/play-desktop.png",
+    "asset": "/evidence/phase5d/marcus/play-desktop.webp",
+    "originalBytes": 126009,
+    "bytes": 49976,
+    "sha256": "49423309824d1c3f0f7df7e57f08859a35a8a5b966252b5931e0146d01eb102f"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/play-mobile.png",
+    "asset": "/evidence/phase5d/marcus/play-mobile.webp",
+    "originalBytes": 67886,
+    "bytes": 31620,
+    "sha256": "489835e89e63d1fc88d60ecd479b662ac05dfb58c086b05936fdb8275c684149"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/play-start-desktop.png",
+    "asset": "/evidence/phase5d/marcus/play-start-desktop.webp",
+    "originalBytes": 124736,
+    "bytes": 51096,
+    "sha256": "f28de37732f0519810533e5b5dd41dfffe68329b1b4f0fc3ffd12ce3e79fd7f5"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/play-start-mobile.png",
+    "asset": "/evidence/phase5d/marcus/play-start-mobile.webp",
+    "originalBytes": 66390,
+    "bytes": 31182,
+    "sha256": "c07c950e4ddfa5d80456d459f966fcbb22ff2b65d98594fc4bdcf8c3becf31d8"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/practice-desktop.png",
+    "asset": "/evidence/phase5d/marcus/practice-desktop.webp",
+    "originalBytes": 86559,
+    "bytes": 32480,
+    "sha256": "bea475fca28483b1a1de8d0dab8f763da36a7853c20bab67f49952a9abe1a889"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/practice-mobile.png",
+    "asset": "/evidence/phase5d/marcus/practice-mobile.webp",
+    "originalBytes": 56922,
+    "bytes": 24216,
+    "sha256": "0dcd09a77619592ff9bccf6f3dbaaf53979229cd7b5341b8f8306c70cfb7ca1b"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/review-desktop.png",
+    "asset": "/evidence/phase5d/marcus/review-desktop.webp",
+    "originalBytes": 119714,
+    "bytes": 44970,
+    "sha256": "4d2a023055d6216655c7dcacb8c634074fc9d1007b810fc6f9d457a47fd50962"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/review-mobile.png",
+    "asset": "/evidence/phase5d/marcus/review-mobile.webp",
+    "originalBytes": 63660,
+    "bytes": 27832,
+    "sha256": "1903ad6fbd5f6ffddb40de7a067cbeb9e684e36a79b8f35fd8b33c4cf39a076a"
+  },
+  {
+    "source": "docs/phase5d/captures/marcus/original/marcus-desktop.webm",
+    "asset": "/evidence/phase5d/marcus/demo.mp4",
+    "originalBytes": 1811589,
+    "bytes": 505120,
+    "originalDuration": 24.12,
+    "trimStart": 0.4,
+    "optimizedDuration": 23.720000000000002
+  }
+]

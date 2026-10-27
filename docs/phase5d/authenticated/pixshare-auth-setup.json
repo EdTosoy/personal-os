@@ -1,0 +1,4 @@
+{
+  "status": "BLOCKED",
+  "reason": "Dedicated development configuration exists and unchanged frontend builds successfully, but a genuine Clerk setup/session could not be established within the bounded capture attempt. No authentication bypass, new user, or production write was used."
+}

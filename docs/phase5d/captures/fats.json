@@ -1,0 +1,207 @@
+{
+  "capturedAt": "2026-10-27T05:25:38.694Z",
+  "base": "http://127.0.0.1:33301",
+  "production": false,
+  "results": [
+    {
+      "size": "desktop",
+      "status": "PASS",
+      "screens": [
+        {
+          "file": "dashboard-desktop.png",
+          "path": "/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "applications-desktop.png",
+          "path": "/applications",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "details-desktop.png",
+          "path": "/applications/037cd90d-c70e-440a-a827-2f9a6cc1cfac",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "updated-desktop.png",
+          "path": "/applications/037cd90d-c70e-440a-a827-2f9a6cc1cfac",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "interview-preparation-desktop.png",
+          "path": "/interviews/47f68ae2-cf3c-40a1-b6ea-0f471aa05fe1",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "interviews-desktop.png",
+          "path": "/interviews",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "resumes-desktop.png",
+          "path": "/resumes",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "offers-desktop.png",
+          "path": "/applications/037cd90d-c70e-440a-a827-2f9a6cc1cfac",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "pdf-tools-desktop.png",
+          "path": "/resumes/pdf-tools",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review the main job-search dashboard with a fictional saved job.",
+        "Find the saved job in the application tracker.",
+        "Review the job description and application details.",
+        "Update the application to Applied and verify it persists after reload. This does not submit a job application.",
+        "Schedule a fictional technical interview and inspect its preparation notes.",
+        "Review interview management.",
+        "Inspect the resume workspace. Private documents require an account and the safety scanner.",
+        "Inspect the Offer Desk account prerequisite. This guest demonstration does not claim authenticated offer management.",
+        "PDF Tools remains secondary to the job-search workflow. AI matching is disabled."
+      ],
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "size": "mobile",
+      "status": "PASS",
+      "screens": [
+        {
+          "file": "dashboard-mobile.png",
+          "path": "/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "applications-mobile.png",
+          "path": "/applications",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "details-mobile.png",
+          "path": "/applications/b5f09352-7a8f-4ad1-aacb-f869b58ee923",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "updated-mobile.png",
+          "path": "/applications/b5f09352-7a8f-4ad1-aacb-f869b58ee923",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "interview-preparation-mobile.png",
+          "path": "/interviews/7dcd983f-134a-4e51-9368-75b37821f3e9",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "interviews-mobile.png",
+          "path": "/interviews",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "resumes-mobile.png",
+          "path": "/resumes",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "offers-mobile.png",
+          "path": "/applications/b5f09352-7a8f-4ad1-aacb-f869b58ee923",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "pdf-tools-mobile.png",
+          "path": "/resumes/pdf-tools",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review the main job-search dashboard with a fictional saved job.",
+        "Find the saved job in the application tracker.",
+        "Review the job description and application details.",
+        "Update the application to Applied and verify it persists after reload. This does not submit a job application.",
+        "Schedule a fictional technical interview and inspect its preparation notes.",
+        "Review interview management.",
+        "Inspect the resume workspace. Private documents require an account and the safety scanner.",
+        "Inspect the Offer Desk account prerequisite. This guest demonstration does not claim authenticated offer management.",
+        "PDF Tools remains secondary to the job-search workflow. AI matching is disabled."
+      ],
+      "errors": [],
+      "httpErrors": []
+    }
+  ]
+}

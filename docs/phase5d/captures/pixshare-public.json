@@ -1,0 +1,67 @@
+{
+  "capturedAt": "2026-10-27T05:16:11.879Z",
+  "base": "https://pixshare.edtosoy.com",
+  "production": true,
+  "results": [
+    {
+      "size": "desktop",
+      "status": "PASS",
+      "screens": [
+        {
+          "file": "home-desktop.png",
+          "path": "/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "gallery-desktop.png",
+          "path": "/explore",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Inspect the public deployment.",
+        "Inspect gallery availability without mutating production."
+      ],
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "size": "mobile",
+      "status": "PASS",
+      "screens": [
+        {
+          "file": "home-mobile.png",
+          "path": "/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "gallery-mobile.png",
+          "path": "/explore",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Inspect the public deployment.",
+        "Inspect gallery availability without mutating production."
+      ],
+      "errors": [],
+      "httpErrors": []
+    }
+  ]
+}

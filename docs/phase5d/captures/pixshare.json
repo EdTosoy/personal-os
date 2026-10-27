@@ -1,0 +1,149 @@
+{
+  "capturedAt": "2026-10-27T05:22:30.017Z",
+  "base": "http://127.0.0.1:33321",
+  "production": false,
+  "results": [
+    {
+      "size": "desktop",
+      "status": "PASS",
+      "screens": [
+        {
+          "file": "home-desktop.png",
+          "path": "/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "gallery-desktop.png",
+          "path": "/explore",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "details-desktop.png",
+          "path": "/posts/c00070ba-66bf-4f7c-87a3-6285b4481ecb",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "filtered-desktop.png",
+          "path": "/explore",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "upload-prerequisite-desktop.png",
+          "path": "/upload",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "management-prerequisite-desktop.png",
+          "path": "/me",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review a genuine local PixShare album backed by disposable PostgreSQL and bundled demo photographs.",
+        "Open the public gallery.",
+        "Open a photograph and read its actual details.",
+        "Filter the real persisted photo collection to PNG images.",
+        "Restore all formats and change the gallery ordering.",
+        "Inspect the genuine authentication prerequisite. Fresh authenticated upload is not claimed.",
+        "Inspect the owner-only media workspace prerequisite. No sign-in is mocked."
+      ],
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "size": "mobile",
+      "status": "PASS",
+      "screens": [
+        {
+          "file": "home-mobile.png",
+          "path": "/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "gallery-mobile.png",
+          "path": "/explore",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "details-mobile.png",
+          "path": "/posts/c00070ba-66bf-4f7c-87a3-6285b4481ecb",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "filtered-mobile.png",
+          "path": "/explore",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "upload-prerequisite-mobile.png",
+          "path": "/upload",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "management-prerequisite-mobile.png",
+          "path": "/me",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review a genuine local PixShare album backed by disposable PostgreSQL and bundled demo photographs.",
+        "Open the public gallery.",
+        "Open a photograph and read its actual details.",
+        "Filter the real persisted photo collection to PNG images.",
+        "Restore all formats and change the gallery ordering.",
+        "Inspect the genuine authentication prerequisite. Fresh authenticated upload is not claimed.",
+        "Inspect the owner-only media workspace prerequisite. No sign-in is mocked."
+      ],
+      "errors": [],
+      "httpErrors": []
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "capturedAt": "2026-10-27T05:19:05.727Z",
+  "base": "http://localhost:33311",
+  "production": false,
+  "results": [
+    {
+      "size": "desktop",
+      "status": "FAIL",
+      "screens": [
+        {
+          "file": "overview-desktop.png",
+          "path": "/dashboard",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "patients-desktop.png",
+          "path": "/dashboard/patients",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "appointments-desktop.png",
+          "path": "/dashboard/appointment",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "queue-desktop.png",
+          "path": "/dashboard/queue",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        },
+        {
+          "file": "billing-desktop.png",
+          "path": "/dashboard/billing",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review the administration dashboard backed by isolated PostgreSQL.",
+        "Inspect fictional patient records.",
+        "Review synthetic appointment scheduling.",
+        "Inspect the patient queue before proceeding to billing.",
+        "Review a pending synthetic administrative charge."
+      ],
+      "errors": [],
+      "httpErrors": [],
+      "reason": "locator.waitFor: Timeout 20000ms exceeded. Call log: \u001b[2m  - waiting for getByText('PAID', { exact: true }).first() to be visible\u001b[22m"
+    },
+    {
+      "size": "mobile",
+      "status": "FAIL",
+      "screens": [
+        {
+          "file": "overview-mobile.png",
+          "path": "/dashboard",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "patients-mobile.png",
+          "path": "/dashboard/patients",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "appointments-mobile.png",
+          "path": "/dashboard/appointment",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "queue-mobile.png",
+          "path": "/dashboard/queue",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        },
+        {
+          "file": "billing-mobile.png",
+          "path": "/dashboard/billing",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false
+        }
+      ],
+      "steps": [
+        "Review the administration dashboard backed by isolated PostgreSQL.",
+        "Inspect fictional patient records.",
+        "Review synthetic appointment scheduling.",
+        "Inspect the patient queue before proceeding to billing.",
+        "Review a pending synthetic administrative charge."
+      ],
+      "errors": [],
+      "httpErrors": [],
+      "reason": "locator.waitFor: Timeout 20000ms exceeded. Call log: \u001b[2m  - waiting for getByText('PAID', { exact: true }).first() to be visible\u001b[22m"
+    }
+  ]
+}

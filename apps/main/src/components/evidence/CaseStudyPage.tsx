@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { CaseStudy } from '@/data/case-studies';
+import { productDemos } from '@/data/media-refresh';
 import { projects } from '@/data/projects';
 import { DEFAULT_PAGE_SIZE } from '@/lib/pagination';
 import { GuidedWalkthrough } from './GuidedWalkthrough';
@@ -7,6 +8,7 @@ import { EvidenceScreenshot } from './EvidenceScreenshot';
 import { ThemeToggle } from '@/components/ui/ToggleTheme';
 
 export function CaseStudyPage({ study }: { study: CaseStudy }) {
+  const demo = productDemos[study.slug];
   const navigation = projects.flatMap((project) =>
     project.featured && project.caseStudy
       ? [{ title: project.title, href: project.caseStudy.href }]
@@ -136,6 +138,82 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
             </ol>
           </details>
         </section>
+        {demo && (
+          <section
+            className="case-section case-demo"
+            aria-labelledby="demo-title"
+          >
+            <h2 id="demo-title">{demo.title}</h2>
+            <p className="case-scope">{demo.scope}</p>
+            <figure>
+              <video
+                controls
+                playsInline
+                preload="none"
+                poster={`/evidence/phase5d/${demo.project}/poster.webp`}
+                width={1440}
+                height={1000}
+                aria-label={demo.title}
+                aria-describedby="demo-transcript"
+              >
+                <source
+                  src={`/evidence/phase5d/${demo.project}/demo.mp4`}
+                  type="video/mp4"
+                />
+                Your browser cannot play this recording. Read the steps below.
+              </video>
+              <figcaption>
+                Actual Playwright recording · silent · native playback controls
+              </figcaption>
+            </figure>
+            <div id="demo-transcript" className="case-demo-transcript">
+              <h3>Recording transcript</h3>
+              <ol>
+                {demo.transcript.map((step) => (
+                  <li key={step}>{step}</li>
+                ))}
+              </ol>
+            </div>
+            <p className="case-viewer-note">
+              <a href="/evidence/phase5d-verification.md">
+                Read the Phase 5D capture and verification report
+              </a>
+            </p>
+            <details className="case-transcript">
+              <summary>Inspect the mobile captures (390 × 844)</summary>
+              <div className="case-mobile-captures">
+                {demo.mobile.map((item) => (
+                  <EvidenceScreenshot
+                    key={item.file}
+                    image={{
+                      src: `/evidence/phase5d/${demo.project}/${item.file}-mobile.webp`,
+                      width: 390,
+                      height: 844,
+                      alt: item.alt,
+                      caption: `${item.alt} Same capture environment as the recording.`,
+                      status: 'Authentic mobile capture',
+                    }}
+                  />
+                ))}
+              </div>
+            </details>
+            {study.slug === 'pixshare' && (
+              <p className="case-scope">
+                Public deployment check:{' '}
+                <a
+                  href="https://pixshare.edtosoy.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  PixShare frontend (opens in a new tab)
+                </a>{' '}
+                responded with HTTP 200; the gallery could not reach its API.
+                The card retains its case-study destination while this remains
+                unresolved.
+              </p>
+            )}
+          </section>
+        )}
         <section className="case-section" aria-labelledby="decisions-title">
           <h2 id="decisions-title">Difficult engineering decisions</h2>
           <div className="case-three-grid">

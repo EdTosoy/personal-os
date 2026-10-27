@@ -1,0 +1,37 @@
+{
+  "lint": "PASS",
+  "typecheck": "PASS",
+  "productionBuild": "PASS",
+  "unit": {
+    "status": "FAIL",
+    "passed": 32,
+    "failed": 1,
+    "baselineReproduced": true,
+    "reason": "Unchanged older-project disclosure expectation; new live-link assertions passed before it."
+  },
+  "legacyBrowser": {
+    "status": "FAIL",
+    "reason": "Unchanged pagination status-counter expectation absent from current Pagination.tsx; no assertions disabled."
+  },
+  "phase5dBrowser": {
+    "status": "PASS",
+    "scenarios": 20,
+    "axeScans": 24,
+    "pixelComparisons": 20,
+    "axeViolations": 0,
+    "axeIncompleteNodes": 112,
+    "noJavaScriptStudyTranscripts": 5
+  },
+  "captures": {
+    "status": "PASS",
+    "screenshots": 68,
+    "workflows": 10,
+    "originalVideos": 5
+  },
+  "pixshareFreshAuthentication": "BLOCKED",
+  "remoteMarcus": "PASS",
+  "remotePixshareGallery": "FAIL",
+  "physicalDevices": "NOT RUN",
+  "fullUpstreamSuites": "NOT RUN",
+  "baselineRevision": "b2ad239a1c0f8afd2fbfe06faa612a4bf58752b0"
+}
