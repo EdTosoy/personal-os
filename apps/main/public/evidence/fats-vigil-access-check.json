@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-10-29T13:37:14.239Z",
+  "publicVerified": {
+    "vigil": false,
+    "fats": false
+  },
+  "checks": [
+    {
+      "project": "Vigil",
+      "url": "https://vigil.edtosoy.com/",
+      "status": null,
+      "error": "ENOTFOUND"
+    },
+    {
+      "project": "Vigil",
+      "url": "https://vigil.edtosoy.com/health/ready",
+      "status": null,
+      "error": "ENOTFOUND"
+    },
+    {
+      "project": "Vigil",
+      "url": "https://vigil.edtosoy.com/reconciliation",
+      "status": null,
+      "error": "ENOTFOUND"
+    },
+    {
+      "project": "FATS",
+      "url": "https://fats.edtosoy.com/",
+      "status": 302,
+      "redirectOrigin": "https://vercel.com",
+      "brandedApplication": false,
+      "readiness": false
+    },
+    {
+      "project": "FATS",
+      "url": "https://fats.edtosoy.com/applications",
+      "status": 302,
+      "redirectOrigin": "https://vercel.com",
+      "brandedApplication": false,
+      "readiness": false
+    },
+    {
+      "project": "FATS",
+      "url": "https://fats.edtosoy.com/api/account",
+      "status": 302,
+      "redirectOrigin": "https://vercel.com",
+      "brandedApplication": false,
+      "readiness": false
+    },
+    {
+      "project": "FATS protected alias",
+      "url": "https://fats-edtosoys-projects.vercel.app/",
+      "status": 302,
+      "redirectOrigin": "https://vercel.com",
+      "brandedApplication": false,
+      "readiness": false
+    },
+    {
+      "project": "Vigil GitHub",
+      "url": "https://github.com/EdTosoy/vigil",
+      "status": 200,
+      "redirectOrigin": null,
+      "brandedApplication": false,
+      "readiness": false
+    },
+    {
+      "project": "Vigil GitHub",
+      "url": "https://github.com/EdTosoy/vigil/blob/a479cd7cb896b960c65f2b083673d54c3f8f95a2/README.md",
+      "status": 200,
+      "redirectOrigin": null,
+      "brandedApplication": false,
+      "readiness": false
+    },
+    {
+      "project": "FATS GitHub",
+      "url": "https://github.com/EdTosoy/FATS",
+      "status": 200,
+      "redirectOrigin": null,
+      "brandedApplication": false,
+      "readiness": false
+    },
+    {
+      "project": "FATS GitHub",
+      "url": "https://github.com/EdTosoy/FATS/blob/918d8eafc7698184cdc439fe9d174c0dc6279fef/docs/FATS_D2_HOSTED_ACCOUNTS_VERIFICATION.md",
+      "status": 200,
+      "redirectOrigin": null,
+      "brandedApplication": false,
+      "readiness": false
+    }
+  ]
+}

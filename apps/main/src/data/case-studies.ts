@@ -31,10 +31,10 @@ export interface CaseStudy {
 
 export const flowStudy: CaseStudy = {
   slug: 'flow-financial-reconciliation',
-  name: 'Vigil / Flow',
-  category: 'Financial reconciliation',
+  name: 'Vigil — Financial Reconciliation & Exception Management',
+  category: 'Financial reconciliation & operational assurance',
   audience:
-    'Financial operations teams investigating payment, processor, settlement and bank records. This independent system demonstrates that workflow with synthetic data.',
+    'Financial operations teams investigating payment, processor, settlement and bank records. Local captures use synthetic data; a separate hosted report verifies real Stripe sandbox charge and fee ingestion.',
   decisions: [
     {
       title: 'Separate closure from correctness',
@@ -47,14 +47,17 @@ export const flowStudy: CaseStudy = {
   ],
   headline: 'Find the financial records that do not agree.',
   overview:
-    'A financial reconciliation system that traces processor and bank evidence through exact-money accounting, deterministic matching, and operational investigation.',
+    'Trace payment evidence from signed ingestion through deterministic settlement interpretation and bank reconciliation. An operator dashboard exposes exceptions, financial controls and recoverable work without treating successful processing as proof that money arrived.',
   contributionSummary:
-    'Exact-money accounting, deterministic reconciliation, recoverable workers, and the read-only investigation interface.',
+    'Built immutable ingestion, Stripe sandbox enrichment, versioned processor and bank interpretations, exact 1:1 and declared N:1 reconciliation, exception lifecycles, completeness controls, durable workers and the read-only operator dashboard. Prepared and verified an ephemeral AWS deployment separately from the local visual walkthrough.',
   scope:
-    'Captured from the local production build against a disposable PostgreSQL database. All financial records are synthetic. The deployment is ephemeral and the operations screens are read-only; availability is not promised.',
+    'Fresh Playwright captures from an existing local production build and disposable PostgreSQL, using the real ingestion and reconciliation pipeline with synthetic processor and bank records. The dashboard is read-only. Stripe sandbox and historical AWS evidence below comes from the upstream Phase 15 report, not these screenshots; the planned public domain remains pending.',
   stack: [
     'TypeScript',
+    'Node.js',
     'PostgreSQL',
+    'Stripe sandbox',
+    'AWS / Terraform',
     'Next.js',
     'Exact money',
     'Durable workers',
@@ -64,11 +67,11 @@ export const flowStudy: CaseStudy = {
   contributions: [
     {
       title: 'Financial correctness',
-      body: 'Implemented exact integer money, an immutable double-entry ledger, and deterministic reconciliation with explicit unmatched and ineligible outcomes.',
+      body: 'Implemented integer minor-unit money and a PostgreSQL-enforced immutable double-entry ledger. Exact 1:1 and explicitly declared N:1 settlement matching use frozen populations and unique whole-item allocations; ambiguous candidates remain unmatched or ineligible.',
     },
     {
       title: 'Recoverable processing',
-      body: 'Built ingestion and durable worker paths around stable identities, transactional intent, retries and retained failures so processing history remains inspectable.',
+      body: 'Verified Stripe signatures over raw bytes, committed immutable receipts with transactional outbox intent, and moved API enrichment to workers. Semantic idempotency, database-clock leases, fencing and bounded retries prevent duplicate effects and reject expired ownership.',
     },
     {
       title: 'Operational evidence',
@@ -91,15 +94,35 @@ export const flowStudy: CaseStudy = {
       body: 'The operations app consumes a server-only read layer. Bounded, parameterized queries and explicit unavailable states avoid turning failed queries into healthy empty dashboards.',
       path: 'apps/ops/server/read.ts',
     },
+    {
+      title: 'Evidence is not payment authority',
+      body: 'Stripe capture, fee, refund, dispute and payout contracts interpret observations; they do not authorize payments or automatically post journals. Bank observations are synthetic. Settlement membership requires explicit evidence, not similar amounts or dates.',
+      path: 'docs/architecture/current-system.md',
+    },
+    {
+      title: 'Auditability and resilient work',
+      body: 'Financial changes, audit and work intent commit together. Immutable provenance and versioned interpretations explain replay and recovery. Exception classification, assignment and resolution remain distinct from reconciliation; accepted risk stays unreconciled.',
+      path: 'docs/architecture/invariants.md',
+    },
+    {
+      title: 'AWS architecture with bounded trust',
+      body: 'The historical demo verified non-root ECS Fargate containers behind ALB/ACM HTTPS, private Single-AZ RDS, scoped IAM and database roles, SSM SecureString and CloudWatch logs. Public task IPs allow outbound access without a NAT Gateway; security groups restrict ingress. Current Sydney/Cloudflare configuration is prepared separately and needs hosted verification.',
+      path: 'docs/phase15/sydney-redeployment.md',
+    },
+    {
+      title: 'Scoped human access',
+      body: 'Current source adds Better Auth database sessions, Admin/Operator/Viewer roles and explicit book grants. Authentication runtime and account seeding use separate restricted database roles. The local recording signs in a synthetic Viewer against a single demo book before recording; this does not establish a hosted authentication rollout.',
+      path: 'apps/ops/server/auth-service.ts',
+    },
   ],
   steps: [
     {
       title: 'Read financial assurance',
       image: {
-        src: '/evidence/phase5d/flow/overview-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/flow/overview-desktop.webp',
         width: 1440,
         height: 1000,
-        alt: 'Flow dashboard with FAIL financial assurance, PASS structural integrity and UNKNOWN completeness checks.',
+        alt: 'Vigil dashboard with FAIL financial assurance, PASS structural integrity and UNKNOWN completeness checks.',
         caption: 'Operations overview · real database-backed assurance states.',
         status: 'Functional app · synthetic data',
       },
@@ -111,7 +134,7 @@ export const flowStudy: CaseStudy = {
     {
       title: 'Inspect reconciliation results',
       image: {
-        src: '/evidence/phase5d/flow/reconciliation-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/flow/reconciliation-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Two completed reconciliation runs with matched, unmatched and ineligible outcomes and active current proof.',
@@ -128,7 +151,7 @@ export const flowStudy: CaseStudy = {
     {
       title: 'Trace settlement evidence',
       image: {
-        src: '/evidence/phase5d/flow/settlement-inspection-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/flow/settlement-inspection-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Reconciliation detail showing rule version, PHP currency, window, processor and bank populations and population hash.',
@@ -145,10 +168,10 @@ export const flowStudy: CaseStudy = {
     {
       title: 'Check completeness controls',
       image: {
-        src: '/evidence/phase5d/flow/controls-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/flow/controls-desktop.webp',
         width: 1440,
         height: 1000,
-        alt: 'Flow completeness and integrity controls over synthetic financial records.',
+        alt: 'Vigil completeness and integrity controls over synthetic financial records.',
         caption:
           'Controls separate structural checks from independent source assurance.',
         status: 'Functional app · synthetic data',
@@ -167,7 +190,7 @@ export const flowStudy: CaseStudy = {
     {
       title: 'Investigate exceptions',
       image: {
-        src: '/evidence/phase5d/flow/exceptions-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/flow/exceptions-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Exception queue with open unreconciled cases and a resolved accepted-risk case that is still unreconciled.',
@@ -184,7 +207,7 @@ export const flowStudy: CaseStudy = {
     {
       title: 'Inspect retained failures',
       image: {
-        src: '/evidence/phase5d/flow/workers-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/flow/workers-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Worker operations showing durable processing states and retained retryable and terminal failures.',
@@ -200,27 +223,42 @@ export const flowStudy: CaseStudy = {
   ],
   verification: [
     {
-      label: 'Executed browser capture',
-      body: 'Playwright loaded six real database-backed screens: overview, reconciliation, run detail, exceptions, controls and workers. No unhandled page errors were observed.',
+      label: 'Fresh synthetic operator walkthrough',
+      body: 'This refresh executed the real local pipeline and captured six database-backed screens at desktop and mobile widths: overview, reconciliation, run detail, exceptions, controls and workers. Both journeys passed without observed page or HTTP errors. A short continuous recording uses the same synthetic dataset.',
     },
     {
-      label: 'Executed correctness tests',
-      body: 'All 15 unit-test targets, 5 boundary checks, 4 Stripe HTTP contract tests and 9 deployment/access tests passed. A further 87 PostgreSQL integration, browser and resilience tests passed locally. See the report for exact scope and commands.',
+      label: 'Recorded Stripe and recovery proof',
+      body: 'The upstream Phase 15 report (9 October 2026) records a real signed Stripe sandbox charge.succeeded event through HTTPS ingestion, durable processing and Charge/Balance Transaction enrichment into charge/fee interpretations. Two overlapping backfills retained one raw event, one completion and stable economic derivation identities. Refund, dispute and payout evidence remains local contract/integration scope.',
     },
     {
-      label: 'Source-backed architecture',
-      body: 'Pinned source links connect the money model, reconciliation domain and server-side operations reads to this capture revision. Local regression evidence covers the selected suites; it does not establish a live deployment or all repository gates.',
+      label: 'Recorded regression and AWS evidence',
+      body: 'Phase 15 records the full pnpm verify gate, including 293 real PostgreSQL integration tests, plus 8 final deployment/access regressions. A 92-resource AWS runtime was created and actually destroyed; a fresh 92-create plan was checked without a second apply. These are attributed upstream results, not suites or cloud operations rerun by this portfolio refresh.',
     },
   ],
   limitations: [
-    'The operations interface is investigation-first and read-only. Ingestion and reconciliation were performed through the existing local pipeline; the walkthrough does not simulate UI commands to run them.',
-    'No standalone transaction inspection screen was found. The captured run detail provides settlement population and provenance evidence, rather than a fabricated transaction browser.',
-    'No AWS or Stripe calls were made for this task. The upstream Phase 15 report records an ephemeral hosted demo and actual runtime teardown; it says the dashboard is intentionally offline. Local captures do not establish current availability, production readiness, compliance, scale or real-bank completeness.',
-    'The operations, operations-browser, reconciliation, exceptions and resilience integration suites passed against disposable PostgreSQL. Other integration files and live deployment checks were not run; this is not the full repository release gate.',
+    'Deployment Pending: vigil.edtosoy.com is planned for 30 October 2026. On 29 October it did not resolve, so application readiness and dashboard access could not be verified. No public Live App link is activated.',
+    'Stripe is sandbox-only and bank observations are synthetic. Vigil neither initiates live payments nor integrates with a real bank. Successful ingestion cannot establish all-time source completeness; missing independent evidence stays UNKNOWN.',
+    'The operator dashboard is read-only. Reconciliation, controls and exception mutations use separate command boundaries; screenshots do not imply that operators can trigger those commands through the interface.',
+    'Matching supports exact 1:1 and complete-declaration N:1. Arbitrary N:M, partial allocations, FX, independent payment authorization and business-to-ledger orchestration remain deferred.',
+    'Historical hosted proof used a disposable Single-AZ database and shared demo access. Current Sydney deployment/authentication preparation is not a verified public rollout, HA/restore guarantee, compliance certification or production SLA. AI work remains deferred.',
   ],
-  repository: 'https://github.com/EdTosoy/flow',
-  revision: 'd18efb3d65c7b164c45ca3f4571150cb8ce15a25',
+  repository: 'https://github.com/EdTosoy/vigil',
+  revision: 'a479cd7cb896b960c65f2b083673d54c3f8f95a2',
+  sourceNote:
+    'Source links are pinned to the inspected Vigil revision. Fresh local synthetic media, historical hosted Stripe/AWS proof and pending public availability have separate evidence. The refresh report records commands and media provenance.',
   references: [
+    {
+      label: 'Current architecture and financial authority boundaries',
+      path: 'docs/architecture/current-system.md',
+    },
+    {
+      label: 'Stripe sandbox scope and developer workflow',
+      path: 'docs/phase14/README.md',
+    },
+    {
+      label: 'Current Sydney deployment preparation',
+      path: 'docs/phase15/sydney-redeployment.md',
+    },
     {
       label: 'Operations architecture and local reproduction',
       path: 'docs/phase12/README.md',
@@ -246,15 +284,15 @@ export const flowStudy: CaseStudy = {
 
 export const fatsStudy: CaseStudy = {
   slug: 'fats-pdf-tools',
-  name: 'FATS — Job Search Companion',
+  name: 'FATS — Friendly Applicant Tracking System',
   category: 'Job-search workflow',
   headline: 'Keep the next opportunity in view.',
   overview:
-    'A full-stack companion for capturing jobs, tracking applications, preparing for interviews, organizing resume versions and reviewing offers.',
+    'A personal job-search workspace that connects saved listings, application stages, interview preparation and exact resume versions. Offer Desk and Career Vault carry the record forward into an offer decision and employment, while local PDF tools support the documents along the way.',
   contributionSummary:
     'Built the application and interview workflows, account-scoped persistence, Sidekick capture handoff, document/version boundaries, Offer Desk and Career Vault, plus the supporting local PDF tools.',
   scope:
-    'Authentic captures from the verified local application and packaged extension, using fictional job-search records. The main workflow is distinct from the development-only PDF v2 candidate and simulated design prototype. Resume intake currently fails closed because the required scanner is unavailable.',
+    'Fresh desktop/mobile captures and a short recording use the real local production build, a new guest workspace and fictional jobs/interviews. Sidekick, authenticated offers and PDF v2 images are retained historical evidence. The current library explains unavailable file services before upload; no accepted private document or hosted account workflow is claimed by this guest recording.',
   stack: [
     'Next.js',
     'TypeScript',
@@ -276,7 +314,7 @@ export const fatsStudy: CaseStudy = {
     },
     {
       title: 'Support decisions and documents',
-      body: 'Added offer terms/history and deliberate employment creation. PDF utilities process real bytes; explainable AI matching is implemented but disabled by default pending evaluation.',
+      body: 'Built Offer Desk terms, revision history, questions and explicit decisions, plus Career Vault employment records and document checklists. Browser PDF tools edit and export real local bytes; extraction/splitting have separate development evidence. Explainable AI matching is paused and disabled by default pending evaluation.',
     },
   ],
   architecture: [
@@ -295,6 +333,16 @@ export const fatsStudy: CaseStudy = {
       body: 'Private intake requires scanning and constrained parsing. Supporting browser PDF tools use PDF.js for rendering and pdf-lib in a worker for output; local edits are not saved library versions.',
       path: 'apps/web/src/lib/pdf-tools-engine.ts',
     },
+    {
+      title: 'Authentication and account safety',
+      body: 'Better Auth uses live database sessions, verified-email access, origin checks and owner-scoped queries. Single-use verification/recovery, reset-driven session revocation, explicit guest transfer and erasure guards protect account boundaries. Hosted preparation adds transaction-pinned advisory locks for pooled PostgreSQL and a bounded Resend adapter; actual hosted inbox delivery remains unverified.',
+      path: 'docs/FATS_D2_HOSTED_ACCOUNTS_VERIFICATION.md',
+    },
+    {
+      title: 'Versioned career records',
+      body: 'Applications link the exact submitted resume version; uploading a newer copy does not rewrite history. Offer acceptance, application stage and employment creation are separate user decisions. Career Vault keeps employment metadata, checklists and document history; restricted file storage does not make metadata workflows disappear.',
+      path: 'docs/PRODUCT_INTEGRATION_VERIFICATION.md',
+    },
   ],
   steps: [
     {
@@ -304,7 +352,7 @@ export const fatsStudy: CaseStudy = {
       annotation:
         'The counts are synthetic test records, not user adoption or hiring outcomes.',
       image: {
-        src: '/evidence/phase5d/fats/dashboard-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/fats/dashboard-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'See the next job-search action in the actual FATS application with fictional records.',
@@ -341,7 +389,7 @@ export const fatsStudy: CaseStudy = {
       annotation:
         'Guest data stays browser-local. Stage changes are user decisions, separate from interview and offer events.',
       image: {
-        src: '/evidence/phase5d/fats/applications-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/fats/applications-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Track applications through their stages in the actual FATS application with fictional records.',
@@ -357,7 +405,7 @@ export const fatsStudy: CaseStudy = {
       annotation:
         'Changing the tracker stage never submits an application to an employer.',
       image: {
-        src: '/evidence/phase5d/fats/updated-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/fats/updated-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'FATS application details after a real persisted Applied status update.',
@@ -373,7 +421,7 @@ export const fatsStudy: CaseStudy = {
       annotation:
         'Completing an interview does not automatically advance an application.',
       image: {
-        src: '/evidence/phase5d/fats/interviews-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/fats/interviews-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'Prepare for each interview in the actual FATS application with fictional records.',
@@ -389,7 +437,7 @@ export const fatsStudy: CaseStudy = {
       annotation:
         'This is a local planning record; no meeting invitation or email is sent.',
       image: {
-        src: '/evidence/phase5d/fats/interview-preparation-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/fats/interview-preparation-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'FATS interview details with fictional preparation notes.',
@@ -399,11 +447,11 @@ export const fatsStudy: CaseStudy = {
       focus: { x: 0.2, y: 0.24, width: 0.52, height: 0.45 },
     },
     {
-      title: 'Keep document versions behind safety checks',
+      title: 'Understand the document safety boundary',
       description:
-        'The library implements resume and document versions, but current local intake refuses new files while its required scanner is unavailable. The error retains the form draft.',
+        'The implemented library supports categorization, immutable versions, default resumes and exact submitted-version links. This retained screenshot predates the improved availability guidance: current intake disables uploads before opening the form when required scanning is unavailable; server endpoints still fail closed.',
       annotation:
-        'This is evidence of the safety boundary, not a successful upload. Earlier populated-library captures used test scanner fixtures.',
+        'Historical scanner-refusal evidence, not an accepted upload. Earlier populated libraries used scanner fixtures; current real-scanner acceptance remains unverified.',
       image: {
         src: '/evidence/fats/scanner-unavailable.png',
         width: 600,
@@ -423,11 +471,11 @@ export const fatsStudy: CaseStudy = {
     {
       title: 'Inspect private workspace prerequisites',
       description:
-        'The current resume workspace requires sign-in for private document management. The recording also shows the Offer Desk sign-in prerequisite; neither is represented as successful authenticated operation.',
+        'The current resume workspace explains file-service restrictions before sign-in and keeps local PDF actions usable. Private document management and Offer Desk require an account; this guest recording does not claim authenticated operation.',
       annotation:
-        'Prior scanner refusal and authenticated offer evidence remain labeled historical. AI matching stays disabled; PDF v2 remains a development candidate.',
+        'Private file storage and a healthy scanner are independent prerequisites. AI matching stays disabled; the PDF v2 route remains a development-only candidate.',
       image: {
-        src: '/evidence/phase5d/fats/resumes-desktop.webp',
+        src: '/evidence/fats-vigil-20261029/fats/resumes-desktop.webp',
         width: 1440,
         height: 1000,
         alt: 'FATS resume and document workspace with the genuine private-library sign-in prerequisite.',
@@ -435,6 +483,21 @@ export const fatsStudy: CaseStudy = {
         status: 'Authentication prerequisite',
       },
       focus: { x: 0.2, y: 0.24, width: 0.73, height: 0.36 },
+    },
+    {
+      title: 'Carry the record into Career Vault',
+      description:
+        'Career Vault records employment details, document checklists and immutable history after an explicit transition. This fresh guest capture shows the account prerequisite; the earlier product and later metadata reports cover authenticated persistence.',
+      annotation:
+        'No employment record or private document is created by the guest walkthrough. Employment creation remains separate from accepting an offer.',
+      image: {
+        src: '/evidence/fats-vigil-20261029/fats/career-vault-desktop.webp',
+        width: 1440,
+        height: 1000,
+        alt: 'Actual FATS Career Vault showing its guest account prerequisite and document guidance.',
+        caption: 'Fresh local guest capture; account prerequisite.',
+        status: 'Authentication prerequisite',
+      },
     },
     {
       title: 'Compare offers and choose next steps',
@@ -461,28 +524,47 @@ export const fatsStudy: CaseStudy = {
   ],
   verification: [
     {
-      label: 'End-to-end product evidence',
-      body: 'The product integration report records two complete desktop/narrow journeys: registration, real packaged Sidekick capture, stages, interview notes, offer decisions, explicit employment, local PDF export and backup/import. These are prior upstream checks, not newly rerun application tests.',
+      label: 'Product workflows and fresh media',
+      body: 'The earlier product integration report records two desktop/narrow journeys through registration, packaged Sidekick capture, stages, interviews, offers, explicit employment, PDF export and backup/import. This refresh independently records guest stage persistence after reload, a fictional interview, and the real Resume, Career Vault and Offer Desk prerequisites at desktop/mobile widths.',
     },
     {
-      label: 'Document acceptance is blocked',
-      body: 'Production intake tests verify a real 503 when scanning is unavailable, preservation of the draft and denial of legacy/quarantine access. Accepted resume/version uploads need actual-scanner verification; populated test-fixture libraries do not establish that prerequisite.',
+      label: 'Recorded hosted-account preparation',
+      body: 'The D2 report records 32/32 account/safety/data-protection integration tests both directly and through transaction PgBouncer, 3/3 hosted-account integrations and 6/6 configuration/mail unit checks. Browser evidence records 36 account-flow cases, 2 no-storage cases, 50 guest/PDF cases and 8 fail-closed document/erasure cases. These local synthetic results are not proof of live Neon or inbox delivery.',
     },
     {
-      label: 'Failures and candidates remain visible',
-      body: "The paused model-comparison plan has a frozen source-hash mismatch; parser capacity failures occurred under parallel execution. Earlier backup and Sidekick-origin failures have later successful scoped evidence. The portfolio's earlier PDF-v2 capture recorded five developer-overlay click failures. None is silently recast as a green full release gate.",
+      label: 'Protected preview and explicit gaps',
+      body: 'D1 records 24/24 browser tests on a protected hosted guest deployment. Current anonymous checks of fats.edtosoy.com and the recorded Vercel alias reach Vercel login, not the workspace. D2 records 318/319 serial unit tests passing with the existing matching-plan checksum failure; actual scanner acceptance, live mail delivery and public beta readiness remain unverified.',
     },
   ],
   limitations: [
-    'No real-person beta or production readiness is established. Current resume/document intake is blocked by absent scanner/signature configuration; accepted-file and version workflows require actual-scanner browser verification.',
-    'Explainable AI matching is disabled by default pending live-model quality and safety evaluation. It is not presented as a validated hiring recommendation or an active product result.',
-    'PDF v2 is a development candidate; the separate design prototype simulates actions. Existing local PDF utilities work, but PDF compatibility and accessibility remain constrained.',
-    'Guest workspaces are browser-local. Account persistence does not establish hosted email reliability, off-device recovery objectives, operational readiness or complete personal-data lifecycle coverage.',
-    'Known frozen-plan, parallel-parser and earlier candidate browser failures remain in their reports. Later scoped passes do not establish a completely passing full upstream gate.',
+    'Private Preview: fats.edtosoy.com currently redirects anonymous visitors to Vercel login. The stable Vercel alias is also protected. No public Live App link is enabled; hosted account preparation is implemented locally but not established as deployed.',
+    'Private document uploads/library access require persistent private storage and a healthy scanner. Current no-storage/scanner environments explain the restriction and fail closed. Real configured-scanner acceptance and accepted-file browser workflows remain unverified.',
+    'Explainable AI job matching is paused and disabled by default. It compares reviewed resume/job text after explicit consent, uses structured outputs and validates supporting quotations; it does not establish live-model quality, hiring outcomes or validated recommendations.',
+    'Production PDF tools edit and export local documents without uploading them. Extraction, splitting, merging and advanced page organization have development-only v2 evidence; the separate design prototype simulates actions. PDF compatibility and accessibility remain bounded.',
+    'Guest records stay in this browser and can be lost when site data is cleared. Accounts add PostgreSQL persistence and explicit transfer; hosted inbox delivery, provider recovery/retention and real-person beta readiness still need their own verification.',
+    'The upstream D2 full unit suite retains one matching-plan source-hash failure. Earlier parallel parser contention and candidate-browser failures remain historical evidence; selected later passes are not represented as an entirely green release gate.',
   ],
   repository: 'https://github.com/EdTosoy/FATS',
-  revision: '8afbf3da66baa06a7ea03c93af46fbbc46d34eb1',
+  revision: '918d8eafc7698184cdc439fe9d174c0dc6279fef',
+  sourceNote:
+    'Links are pinned to the inspected FATS revision. D1/D2 and Hallmark reports record prior upstream checks; this refresh reruns the synthetic guest media journey and portfolio checks, not the full application suite. Historical PDF-v2 captures retain their original candidate status.',
   references: [
+    {
+      label: 'Protected hosted guest deployment and 24 browser checks',
+      path: 'docs/FATS_D1_DEPLOYMENT_VERIFICATION.md',
+    },
+    {
+      label: 'Hosted-account preparation, checks and remaining blockers',
+      path: 'docs/FATS_D2_HOSTED_ACCOUNTS_VERIFICATION.md',
+    },
+    {
+      label: 'Current document guidance and Career Vault regression',
+      path: 'docs/HALLMARK_F08_VERIFICATION.md',
+    },
+    {
+      label: 'Explainable matching and evidence limits',
+      path: 'docs/MATCHING.md',
+    },
     {
       label: 'Product journey and executed checks',
       path: 'docs/PRODUCT_INTEGRATION_VERIFICATION.md',

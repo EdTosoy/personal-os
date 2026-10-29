@@ -1,5 +1,7 @@
-/** Run with the source repository's installed tsx loader; source is read-only. */
+/** Run with --conditions=react-server and the source repository's tsx loader; source is read-only. */
 import { createRequire } from 'node:module';
+import { randomBytes } from 'node:crypto';
+import assert from 'node:assert/strict';
 import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import {
   record,
@@ -14,6 +16,8 @@ import {
 const cwd = repo('flow');
 const { migrate } = await import(cwd + '/tools/migrations.ts');
 const { seedDemo } = await import(cwd + '/tools/ops-demo-seed.ts');
+const { seedAccount } = await import(cwd + '/apps/ops/server/seed-account.ts');
+const { authPool } = await import(cwd + '/apps/ops/server/auth-service.ts');
 const { Pool } = createRequire(cwd + '/package.json')('pg');
 const name = 'phase5d-vigil-' + Date.now(),
   pools = {};
@@ -65,14 +69,17 @@ try {
     worker: 'worker',
     integrity: 'integrity_reader',
     operations: 'operations_reader',
+    auth: 'auth_runtime',
+    auth_seed: 'auth_seeder',
   };
   for (const [key, role] of Object.entries(roles)) {
     await pools.admin.query(
       `CREATE ROLE evidence_${key} LOGIN IN ROLE flow_${role}`,
     );
-    pools[key] = new Pool({
-      connectionString: url.replace('evidence_admin@', `evidence_${key}@`),
-    });
+    const connectionString = url.replace('evidence_admin@', `evidence_${key}@`);
+    pools[key] = key.startsWith('auth')
+      ? authPool(connectionString)
+      : new Pool({ connectionString });
   }
   const inputs = [];
   await mkdir(output + '/flow-inputs', { recursive: true });
@@ -109,6 +116,15 @@ try {
     inputs.push(JSON.parse(await readFile(out + '/input.json', 'utf8')));
   }
   const demo = await seedDemo(pools, inputs, 'phase5d-synthetic-evidence', 2);
+  const password = randomBytes(24).toString('hex');
+  const email = 'portfolio-demo@vigil.example';
+  await seedAccount(pools.auth_seed, {
+    email,
+    password,
+    name: 'Portfolio Demo',
+    role: 'Viewer',
+    books: [demo.bookId],
+  });
   const base = 'http://127.0.0.1:33302';
   server = serve(
     cwd,
@@ -122,17 +138,40 @@ try {
       '33302',
     ],
     {
+      DATABASE_ADMIN_URL: '',
+      DATABASE_AUTH_SEED_URL: '',
+      DATABASE_AUTH_URL: url.replace('evidence_admin@', 'evidence_auth@'),
+      BETTER_AUTH_URL: base,
+      BETTER_AUTH_SECRET: randomBytes(32).toString('hex'),
+      VIGIL_DEPLOYMENT_MODE: 'application',
+      VIGIL_VISITOR_LOGIN: 'false',
+      OPS_BOOK_ID: '',
       DATABASE_OPERATIONS_URL: url.replace(
         'evidence_admin@',
         'evidence_operations@',
       ),
     },
   );
-  await ready(base);
+  await ready(base + '/health/ready');
   const query = `?book=${demo.bookId}&evaluation=${demo.evaluationId}`;
   await record({
     name: 'flow',
     base,
+    setup: async (context) => {
+      // Real authentication before creating the recorded page: no credentials in media.
+      const response = await context.request.post(
+        base + '/api/auth/sign-in/email',
+        {
+          headers: { Origin: base },
+          data: { email, password, rememberMe: false },
+        },
+      );
+      assert.equal(
+        response.status(),
+        200,
+        'Synthetic Viewer sign-in must succeed',
+      );
+    },
     journey: async ({ page, go, snap, beat }) => {
       for (const [path, label, text] of [
         [
@@ -167,6 +206,14 @@ try {
         ],
       ]) {
         await go(path + query);
+        assert.equal(
+          new URL(page.url()).pathname,
+          path,
+          'Reject authentication redirects',
+        );
+        await expect(
+          page.getByRole('heading', { name: 'Sign in to Vigil' }),
+        ).toHaveCount(0);
         await expect(
           page.getByText('Invalid request', { exact: true }),
         ).toHaveCount(0);

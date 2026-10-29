@@ -42,6 +42,14 @@
           "command": "node scripts/check-media.mjs",
           "cwd": "apps/main"
         }
+      },
+      "verify-fats-vigil": {
+        "executor": "nx:run-commands",
+        "cache": false,
+        "options": {
+          "command": "node scripts/check-fats-vigil.mjs",
+          "cwd": "apps/main"
+        }
       }
     }
   }

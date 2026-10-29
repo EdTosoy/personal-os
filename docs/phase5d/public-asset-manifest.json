@@ -1,5 +1,185 @@
 [
   {
+    "asset": "/evidence/fats-vigil-20261029/fats/applications-desktop.webp",
+    "bytes": 45982,
+    "sha256": "45ad11b06dee9a4884780650558498780fdfbc9f564b7ab2f0cc2bc62154d02a"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/applications-mobile.webp",
+    "bytes": 24272,
+    "sha256": "83602fcc0aa4a21a28b8add5b756da3337da5c29a80c98476a7e5357d7e4fa91"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/career-vault-desktop.webp",
+    "bytes": 57482,
+    "sha256": "df47b17991c278615985a8e4aba0fa7951d41df11b2bbff961455000bf6a40f3"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/career-vault-mobile.webp",
+    "bytes": 28370,
+    "sha256": "33e8cfe2f8e32572a7dd54417ff7730f019fd35a47382d5a0271af6aae520fd2"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/dashboard-desktop.webp",
+    "bytes": 59542,
+    "sha256": "1bdc64026e9318be4cab0bf5d850577f0989ef75380453679277a0540621ff6a"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/dashboard-mobile.webp",
+    "bytes": 26208,
+    "sha256": "4ae076393d32ff04120c5f567014514d02618fa8c25c8dd3efb61efbf35122de"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/demo.mp4",
+    "bytes": 978512,
+    "sha256": "8596157c492b047dd6ad3f5c9a6202f5913f96c76e1aa76d636c221a67a1a71f"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/details-desktop.webp",
+    "bytes": 54978,
+    "sha256": "dde681e2fee2d98ccaa86a5df590ac187e23358d892ea092552d75839d7755de"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/details-mobile.webp",
+    "bytes": 23388,
+    "sha256": "2d76f53c02512ae723bf476d861ff019bf7f326092c1df75f6834a0d90b9261d"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/interview-preparation-desktop.webp",
+    "bytes": 59834,
+    "sha256": "3cf5fc4c8ab29ccbd867fdd8421f51118f548f890eef5e1cd3e790317ad62ae5"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/interview-preparation-mobile.webp",
+    "bytes": 27408,
+    "sha256": "4c7bded2d998c73290349cdf7a6c895f53e600117a0b85399fe4f66399ad045c"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/interviews-desktop.webp",
+    "bytes": 46848,
+    "sha256": "2c98da3cc4b11fba859f04b2dae26cea696363ac67a66fc5e898c748a1a6b05a"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/interviews-mobile.webp",
+    "bytes": 24332,
+    "sha256": "8c2ef0557235a344312f8551401491025b792e27d025f18235196726d04e6692"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/offers-desktop.webp",
+    "bytes": 60256,
+    "sha256": "d97ffe6ddab4fca0a09e76c0cf1c116b8a8c5a452d663d9e14847020e910da8a"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/offers-mobile.webp",
+    "bytes": 22494,
+    "sha256": "ec9bd6b81e9b6fe7d7a0214f6741b939ce14ca99067f808de17863a139ab2240"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/pdf-tools-desktop.webp",
+    "bytes": 49662,
+    "sha256": "3fff61ddec5ef884416e8b29a5763593a0a7f22aac0884b28c505c0fbed00235"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/pdf-tools-mobile.webp",
+    "bytes": 24978,
+    "sha256": "33541e7e5c5eb3dc828da12a15c5bcdeb5469d90b1aca2d80026796de9d8aecf"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/poster.webp",
+    "bytes": 31298,
+    "sha256": "af13277cd9500c61212d261fd8f81a7b6d3525a033950525f1b235c92bfb2968"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/resumes-desktop.webp",
+    "bytes": 60694,
+    "sha256": "bac2835ab016c8ff464b6f6427379219944a3614799580c52f7d4c86e4cb1887"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/resumes-mobile.webp",
+    "bytes": 28778,
+    "sha256": "0050a0accc7b5aa3a95672d215e1a9633c242f56e552e54d0b4488adb54ffec3"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/updated-desktop.webp",
+    "bytes": 54968,
+    "sha256": "db7002b02a2ae315641905fee555ccc0b76f62f876e0d41628bb66ea298f596c"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/fats/updated-mobile.webp",
+    "bytes": 23392,
+    "sha256": "52df63763c02e2becd31d83212de1bd6f5a4c021991d860cccc61de3eb293914"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/controls-desktop.webp",
+    "bytes": 49462,
+    "sha256": "fe7db04e8f1d314248dd2fafa31ed93bcb4cfeb8e852b8cf72c12a431899ad3f"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/controls-mobile.webp",
+    "bytes": 25978,
+    "sha256": "99cdc86605904590e8a00fa7ab42553aa62f2366ed2e876fc983b50b70b54237"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/demo.mp4",
+    "bytes": 518731,
+    "sha256": "bd094b3ae862638d7b94485255b5d7628b936c42939b0ce36182748323529df3"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/exceptions-desktop.webp",
+    "bytes": 47720,
+    "sha256": "12f351b70d91d26f2c16f542b6b547c29bde2a71442140582ea4c614830a64a3"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/exceptions-mobile.webp",
+    "bytes": 20912,
+    "sha256": "5c7f179a90999297e245e68a68c968f06aee4ba2ffd10dbde1e65f4294b13388"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/overview-desktop.webp",
+    "bytes": 64720,
+    "sha256": "8a0e437519996b90a69b382c1b60d6a3601c31829857649f14049d6a0a333747"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/overview-mobile.webp",
+    "bytes": 29492,
+    "sha256": "954e2571548b17133ce25d24b6e0440b2a4eb332b1c83b313582d69c4917983d"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/poster.webp",
+    "bytes": 41912,
+    "sha256": "373c77182f24bef4a059aaa7190d655218136fb6b927bf377a50653b60eb84e8"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/reconciliation-desktop.webp",
+    "bytes": 47564,
+    "sha256": "fbf0e9000f5e2ae9d029a6e8e430ade1c5a54abcd9325b8fab8c89f444572878"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/reconciliation-mobile.webp",
+    "bytes": 23664,
+    "sha256": "4099d33d73549b916a2898a60ea9d98b40f4e4f00b7cdaa6029a53717d673e47"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/settlement-inspection-desktop.webp",
+    "bytes": 44392,
+    "sha256": "3d9700f4768b5fb8da5e541dd249415f4a547caff90a3564d686639766d85a0b"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/settlement-inspection-mobile.webp",
+    "bytes": 25864,
+    "sha256": "9aa5795139eca12e594252f0876f851e14319c37383296f411d90a98cd5e0e74"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/workers-desktop.webp",
+    "bytes": 43592,
+    "sha256": "9234e8b41cbd96a35d17d7265132a98803e3ffde07a5df9aa842eafef9de475a"
+  },
+  {
+    "asset": "/evidence/fats-vigil-20261029/flow/workers-mobile.webp",
+    "bytes": 21712,
+    "sha256": "2a97142ff1c6e922517695e46da3465380f6bf09344444944a14e44ddf1b2770"
+  },
+  {
     "asset": "/evidence/phase5d/fats/applications-desktop.webp",
     "bytes": 45782,
     "sha256": "190d558a30123c4119d3f651831992a2719eb9a05a3343f5785c4323800ecee9"

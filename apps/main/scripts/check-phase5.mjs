@@ -14,20 +14,22 @@ const base = process.env.EVIDENCE_BASE_URL || 'http://127.0.0.1:3126';
 const out = resolve(process.env.EVIDENCE_OUTPUT || '../../docs/phase5/after');
 const axe = await readFile(nextRequire.resolve('axe-core/axe.min.js'), 'utf8');
 await mkdir(out, { recursive: true });
-async function evaluate(path) {
+async function evaluate(path, dependencies = {}) {
   const { outputText } = ts.transpileModule(await readFile(path, 'utf8'), {
     compilerOptions: { module: ts.ModuleKind.CommonJS },
   });
   const fixtureModule = { exports: {} };
   new Function('require', 'module', 'exports', outputText)(
-    projectRequire,
+    (name) => dependencies[name] || projectRequire(name),
     fixtureModule,
     fixtureModule.exports,
   );
   return fixtureModule.exports;
 }
 const { paginate } = await evaluate('src/lib/pagination.ts');
-const { projects } = await evaluate('src/data/projects.ts');
+const { projects } = await evaluate('src/data/projects.ts', {
+  './fats-vigil-access': await evaluate('src/data/fats-vigil-access.ts'),
+});
 const { flowStudy, fatsStudy, hospitalStudy, pixshareStudy, marcusStudy } =
   await evaluate('src/data/case-studies.ts');
 const studies = [
@@ -41,7 +43,7 @@ const expected = projects.filter((project) => project.featured);
 assert.deepEqual(
   expected.map((project) => project.slug),
   [
-    'flow-financial-reconciliation',
+    'vigil-financial-reconciliation',
     'fats-job-application-platform',
     'pulse-hospital-devops-platform',
     'pixshare',

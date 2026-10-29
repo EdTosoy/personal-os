@@ -6,13 +6,20 @@ import { root, output, exec, receipt } from './capture.mjs';
 const req = createRequire(`${root}/apps/main/package.json`);
 const sharp = createRequire(req.resolve('next/package.json'))('sharp');
 const manifest = [];
-for (const name of ['flow', 'fats', 'hospital', 'pixshare', 'marcus']) {
+const projects = ['flow', 'fats', 'hospital', 'pixshare', 'marcus'];
+const selected = process.env.CAPTURE_PROJECTS?.split(',') || projects;
+if (selected.some((name) => !projects.includes(name)))
+  throw Error('Unknown capture project');
+const assetRoot = process.env.CAPTURE_ASSET_ROOT || '/evidence/phase5d';
+if (!/^\/evidence\/[a-z0-9-]+$/.test(assetRoot))
+  throw Error('Capture assets must use a named evidence directory');
+for (const name of selected) {
   const capture = JSON.parse(await readFile(`${output}/${name}.json`, 'utf8'));
   if (
     !capture.results.every((r) => r.status === 'PASS' && r.errors.length === 0)
   )
     throw Error(`${name}: refusing to publish failed capture`);
-  const dir = `${root}/apps/main/public/evidence/phase5d/${name}`;
+  const dir = `${root}/apps/main/public${assetRoot}/${name}`;
   await mkdir(dir, { recursive: true });
   for (const file of (await readdir(`${output}/${name}`)).filter(
     (f) => f.endsWith('.png') && !f.startsWith('failure'),
@@ -88,7 +95,7 @@ for (const name of ['flow', 'fats', 'hospital', 'pixshare', 'marcus']) {
   await unlink(`${dir}/poster.png`);
   manifest.push({
     source: original.replace(root + '/', ''),
-    asset: `/evidence/phase5d/${name}/demo.mp4`,
+    asset: `${assetRoot}/${name}/demo.mp4`,
     originalBytes: (await stat(original)).size,
     bytes: (await stat(`${dir}/demo.mp4`)).size,
     originalDuration: duration,

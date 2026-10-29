@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
-import { CaseStudyPage } from "@/components/evidence/CaseStudyPage";
-import { flowStudy } from "@/data/case-studies";
-import { pageMetadata } from "@/lib/metadata";
+import type { Metadata } from 'next';
+import { CaseStudyPage } from '@/components/evidence/CaseStudyPage';
+import { flowStudy } from '@/data/case-studies';
+import { pageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = pageMetadata(
-  "Flow — Financial Reconciliation | Edberto Tosoy",
-  "Inspect real Flow application evidence: reconciliation outcomes, exact-money architecture, exception investigation and verification boundaries.",
-  "/projects/flow-financial-reconciliation",
+  'Vigil — Financial Reconciliation & Exception Management | Edberto Tosoy',
+  'Inspect Vigil payment ingestion, Stripe sandbox evidence, deterministic reconciliation, exceptions, durable workers and AWS architecture, with verified scope and deployment status.',
+  '/projects/flow-financial-reconciliation',
 );
 export default function FlowCaseStudy() {
   return <CaseStudyPage study={flowStudy} />;

@@ -34,7 +34,7 @@ describe('Portfolio homepage', () => {
         (el) => el.getAttribute('data-project'),
       ),
     ).toEqual([
-      'flow-financial-reconciliation',
+      'vigil-financial-reconciliation',
       'fats-job-application-platform',
       'pulse-hospital-devops-platform',
       'pixshare',

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { CaseStudy } from '@/data/case-studies';
 import { productDemos } from '@/data/media-refresh';
 import { projects } from '@/data/projects';
+import { fatsVigilAccess } from '@/data/fats-vigil-access';
 import { DEFAULT_PAGE_SIZE } from '@/lib/pagination';
 import { GuidedWalkthrough } from './GuidedWalkthrough';
 import { EvidenceScreenshot } from './EvidenceScreenshot';
@@ -9,6 +10,12 @@ import { ThemeToggle } from '@/components/ui/ToggleTheme';
 
 export function CaseStudyPage({ study }: { study: CaseStudy }) {
   const demo = productDemos[study.slug];
+  const demoBase = demo
+    ? demo.mediaBase || `/evidence/phase5d/${demo.project}`
+    : '';
+  const access = Object.values(fatsVigilAccess).find(
+    (item) => item.caseStudySlug === study.slug,
+  );
   const navigation = projects.flatMap((project) =>
     project.featured && project.caseStudy
       ? [{ title: project.title, href: project.caseStudy.href }]
@@ -54,6 +61,33 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
           <p className="case-category">
             {study.category} / independent engineering project
           </p>
+          {access && (
+            <div className="case-scope">
+              <div className="flex flex-wrap gap-4">
+                {access.publicVerified ? (
+                  <a
+                    href={access.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live App
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                ) : (
+                  <span>{access.label}</span>
+                )}
+                <a
+                  href={study.repository}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub<span className="sr-only"> (opens in a new tab)</span>
+                </a>
+                <a href="/evidence/fats-vigil-refresh.md">Refresh evidence</a>
+              </div>
+              <p>{access.detail}</p>
+            </div>
+          )}
           <div className="flex flex-wrap gap-2 mt-5">
             {study.stack.map((item) => (
               <span className="chip px-3 py-1" key={item}>
@@ -150,16 +184,13 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
                 controls
                 playsInline
                 preload="none"
-                poster={`/evidence/phase5d/${demo.project}/poster.webp`}
+                poster={`${demoBase}/poster.webp`}
                 width={1440}
                 height={1000}
                 aria-label={demo.title}
                 aria-describedby="demo-transcript"
               >
-                <source
-                  src={`/evidence/phase5d/${demo.project}/demo.mp4`}
-                  type="video/mp4"
-                />
+                <source src={`${demoBase}/demo.mp4`} type="video/mp4" />
                 Your browser cannot play this recording. Read the steps below.
               </video>
               <figcaption>
@@ -175,8 +206,16 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
               </ol>
             </div>
             <p className="case-viewer-note">
-              <a href="/evidence/phase5d-verification.md">
-                Read the Phase 5D capture and verification report
+              <a
+                href={
+                  access
+                    ? '/evidence/fats-vigil-refresh.md'
+                    : '/evidence/phase5d-verification.md'
+                }
+              >
+                {access
+                  ? 'Read the refreshed capture and verification report'
+                  : 'Read the Phase 5D capture and verification report'}
               </a>
             </p>
             <details className="case-transcript">
@@ -186,7 +225,7 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
                   <EvidenceScreenshot
                     key={item.file}
                     image={{
-                      src: `/evidence/phase5d/${demo.project}/${item.file}-mobile.webp`,
+                      src: `${demoBase}/${item.file}-mobile.webp`,
                       width: 390,
                       height: 844,
                       alt: item.alt,
@@ -270,8 +309,17 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
         <section className="case-section" aria-labelledby="verification-title">
           <div className="case-section-heading">
             <h2 id="verification-title">Evidence, with boundaries</h2>
-            <a className="case-source" href="/evidence/phase5-verification.md">
-              Read Phase 5 verification report
+            <a
+              className="case-source"
+              href={
+                access
+                  ? '/evidence/fats-vigil-refresh.md'
+                  : '/evidence/phase5-verification.md'
+              }
+            >
+              {access
+                ? 'Read refresh verification report'
+                : 'Read Phase 5 verification report'}
             </a>
           </div>
           <p className="case-evidence-provenance">

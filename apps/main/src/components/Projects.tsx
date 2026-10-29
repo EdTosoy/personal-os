@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { projects } from '@/data/projects';
+import { fatsVigilAccess } from '@/data/fats-vigil-access';
 import { skills } from '@/data/skills';
 import { paginate } from '@/lib/pagination';
 import { Pagination } from '@/components/ui/Pagination';
@@ -45,6 +46,9 @@ export default function Projects({
             <div className="project-card-copy">
               <div className="project-card-meta">
                 <span>{project.status}</span>
+                {fatsVigilAccess[project.slug] && !project.demo && (
+                  <span>{fatsVigilAccess[project.slug].label}</span>
+                )}
                 {project.demo && (
                   <a
                     href={project.demo}
@@ -97,7 +101,7 @@ export default function Projects({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Code
+                  {fatsVigilAccess[project.slug] ? 'GitHub' : 'Code'}
                   <span className="sr-only">
                     {' '}
                     for {project.title} (opens in a new tab)

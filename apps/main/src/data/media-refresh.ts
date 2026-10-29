@@ -1,6 +1,7 @@
 /** Phase 5D evidence comes from real Playwright sessions; see docs/PHASE5D_MEDIA_REFRESH.md. */
 export interface ProductDemo {
   project: string;
+  mediaBase?: string;
   title: string;
   scope: string;
   transcript: string[];
@@ -9,9 +10,10 @@ export interface ProductDemo {
 export const productDemos: Record<string, ProductDemo> = {
   'flow-financial-reconciliation': {
     project: 'flow',
+    mediaBase: '/evidence/fats-vigil-20261029/flow',
     title: 'Investigate a synthetic reconciliation',
     scope:
-      'Local Vigil / Flow production build; disposable PostgreSQL and synthetic financial inputs. The real pipeline prepares reconciliation before recording; the UI is read-only.',
+      'Refreshed 29 October 2026: local Vigil production build, disposable PostgreSQL and synthetic financial inputs. The real pipeline prepares reconciliation before recording; the UI is read-only. Hosted Stripe evidence is documented separately.',
     transcript: [
       'Read the financial overview and distinguish FAIL, PASS and UNKNOWN.',
       'Review completed reconciliation runs, matched records and unresolved populations.',
@@ -28,14 +30,15 @@ export const productDemos: Record<string, ProductDemo> = {
   },
   'fats-pdf-tools': {
     project: 'fats',
+    mediaBase: '/evidence/fats-vigil-20261029/fats',
     title: 'Follow a job seeker’s next steps',
     scope:
-      'Local production build; fictional job and interview in a fresh guest browser workspace. Status changes persist locally. Private documents and Offer Desk require an account; AI matching remains disabled. Prior authenticated captures and known failures remain disclosed below.',
+      'Refreshed 29 October 2026: local production build, fictional job and interview in a fresh guest workspace. Status changes persist locally. Resumes, Career Vault and Offer Desk show their genuine account/file-service prerequisites. AI remains disabled; no hosted account or accepted upload is claimed.',
     transcript: [
       'Review the main dashboard and application tracker with a fictional saved job.',
       'Open the job description, set the stage to Applied, reload and verify persistence. This does not submit an application.',
       'Schedule a fictional technical conversation in Asia/Manila and review preparation notes.',
-      'Inspect interview management, resume workspace and the Offer Desk account prerequisite.',
+      'Inspect interview management, resume guidance, Career Vault and the Offer Desk account prerequisite.',
       'Visit PDF Tools as secondary functionality; no document acceptance or AI analysis is claimed.',
     ],
     mobile: [

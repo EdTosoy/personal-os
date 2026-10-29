@@ -1,19 +1,21 @@
 import type { Project } from '@/types';
+import { verifiedProjectUrl } from './fats-vigil-access';
 
 export const projects: Project[] = [
   {
     slug: 'vigil-financial-reconciliation',
+    demo: verifiedProjectUrl('vigil-financial-reconciliation'),
     caseStudy: {
       href: '/projects/flow-financial-reconciliation',
-      image: '/evidence/phase5d/flow/overview-desktop.webp',
-      alt: 'Real vigil dashboard with financial assurance and completeness checks.',
+      image: '/evidence/fats-vigil-20261029/flow/overview-desktop.webp',
+      alt: 'Real Vigil dashboard with financial assurance and completeness checks.',
       caption: 'Local capture; synthetic records; ephemeral demo',
     },
-    title: 'Vigil — Financial Reconciliation',
+    title: 'Vigil — Financial Reconciliation & Exception Management',
     shortDescription:
-      'Reconcile financial transactions and investigate missing, mismatched, or incomplete records, with exact-money accounting and recoverable processing.',
+      'Trace payment evidence from ingestion to settlement and bank reconciliation. Investigate exceptions with exact-money rules, independent controls and recoverable workers.',
     longDescription:
-      'An independent TypeScript, Node.js, and PostgreSQL system with exact-integer money, an immutable double-entry ledger, processor and bank ingestion, deterministic reconciliation, and recoverable workers. A read-only Next.js interface supports operational investigation. Selected unit and PostgreSQL integration suites passed locally against synthetic data. AWS and Terraform infrastructure is source evidence; this case study does not establish a live deployment, compliance, scale, or production readiness.',
+      'A TypeScript modular monolith with Stripe sandbox ingestion, immutable evidence, versioned settlement interpretation, exact 1:1 and declared N:1 bank matching, an independent double-entry ledger and a read-only operator dashboard. Transactional outbox work, leases and fencing preserve recoverability. The upstream Phase 15 report records real hosted Stripe charge/fee evidence, 293 PostgreSQL integration tests and an ephemeral AWS apply–demo–destroy cycle. The planned Vigil domain remains pending; bank inputs are synthetic and production readiness is unproven.',
     status: 'In Progress',
     featured: true,
     github: 'https://github.com/EdTosoy/vigil',
@@ -32,17 +34,18 @@ export const projects: Project[] = [
   },
   {
     slug: 'fats-job-application-platform',
+    demo: verifiedProjectUrl('fats-job-application-platform'),
     caseStudy: {
       href: '/projects/fats-pdf-tools',
-      image: '/evidence/phase5d/fats/dashboard-desktop.webp',
-      alt: 'FATS job-search dashboard with application stages, upcoming interviews and resume reminders.',
+      image: '/evidence/fats-vigil-20261029/fats/dashboard-desktop.webp',
+      alt: 'FATS guest job-search dashboard with application counts, a saved opportunity and interview planning.',
       caption: 'Verified local workflows; synthetic job-search records',
     },
-    title: 'FATS — Job Search Companion',
+    title: 'FATS — Friendly Applicant Tracking System',
     shortDescription:
-      'Capture job listings, track applications, prepare for interviews, and organize offers. A full-stack companion for early-career job seekers.',
+      'Keep a personal job search together: capture listings with Sidekick, track applications and interviews, manage resume versions, and plan offers and employment with Offer Desk and Career Vault.',
     longDescription:
-      'An evolving job application management platform built with Next.js, TypeScript, PostgreSQL, and Better Auth. Includes application and interview tracking, account-scoped workspaces, document uploads, and a Chrome extension handoff for job capture. Implements PDF/DOCX extraction, document versioning, consent-gated analysis workflows using the OpenAI Responses API, structured JSON Schema outputs, and evidence validation. Also includes browser-based PDF editing, page extraction, splitting, and merging tools. AI-assisted matching remains disabled by default pending live-model quality and safety evaluation. The platform is under active development. Resume intake currently fails closed without its required scanner; PDF v2 remains a development candidate and known test failures are disclosed.',
+      'A Next.js and PostgreSQL product with separate guest and account workspaces, a Chrome capture extension, interview preparation, private document/version rules, Career Vault and Offer Desk. Better Auth, verified email, session revocation, owner-scoped access and fail-closed document intake support private-beta hardening. Supporting PDF tools edit, extract and split local documents. Explainable AI matching remains paused and disabled by default pending evaluation. A protected Vercel guest preview exists; public access, hosted account delivery and accepted-file scanning are not established.',
     status: 'Actively Maintained',
     featured: true,
     github: 'https://github.com/EdTosoy/FATS',

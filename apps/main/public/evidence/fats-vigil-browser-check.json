@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-29T13:56:41.724614+00:00",
+  "command": "EVIDENCE_BASE_URL=http://127.0.0.1:3130 EVIDENCE_OUTPUT=/tmp/fats-vigil-verification-final NX_DAEMON=false NX_NO_CLOUD=true pnpm nx run @org/main:verify-fats-vigil",
+  "server": "Existing production build served by the installed Next.js CLI; temporary server stopped automatically after verification.",
+  "viewports": [390, 1440],
+  "themes": ["light", "dark"],
+  "noJavaScriptTranscripts": true,
+  "unrelatedProjectObjectsUnchanged": true,
+  "datedAssetPathsVerified": true,
+  "results": [
+    {
+      "project": "vigil-financial-reconciliation",
+      "width": 390,
+      "theme": "light",
+      "status": "PASS",
+      "media": {
+        "duration": 20.958333,
+        "width": 1440,
+        "height": 1000,
+        "error": null
+      }
+    },
+    {
+      "project": "fats-job-application-platform",
+      "width": 390,
+      "theme": "light",
+      "status": "PASS",
+      "media": {
+        "duration": 33.916667,
+        "width": 1440,
+        "height": 1000,
+        "error": null
+      }
+    },
+    {
+      "project": "vigil-financial-reconciliation",
+      "width": 390,
+      "theme": "dark",
+      "status": "PASS",
+      "media": {
+        "duration": 20.958333,
+        "width": 1440,
+        "height": 1000,
+        "error": null
+      }
+    },
+    {
+      "project": "fats-job-application-platform",
+      "width": 390,
+      "theme": "dark",
+      "status": "PASS",
+      "media": {
+        "duration": 33.916667,
+        "width": 1440,
+        "height": 1000,
+        "error": null
+      }
+    },
+    {
+      "project": "vigil-financial-reconciliation",
+      "width": 1440,
+      "theme": "light",
+      "status": "PASS",
+      "media": {
+        "duration": 20.958333,
+        "width": 1440,
+        "height": 1000,
+        "error": null
+      }
+    },
+    {
+      "project": "fats-job-application-platform",
+      "width": 1440,
+      "theme": "light",
+      "status": "PASS",
+      "media": {
+        "duration": 33.916667,
+        "width": 1440,
+        "height": 1000,
+        "error": null
+      }
+    },
+    {
+      "project": "vigil-financial-reconciliation",
+      "width": 1440,
+      "theme": "dark",
+      "status": "PASS",
+      "media": {
+        "duration": 20.958333,
+        "width": 1440,
+        "height": 1000,
+        "error": null
+      }
+    },
+    {
+      "project": "fats-job-application-platform",
+      "width": 1440,
+      "theme": "dark",
+      "status": "PASS",
+      "media": {
+        "duration": 33.916667,
+        "width": 1440,
+        "height": 1000,
+        "error": null
+      }
+    }
+  ],
+  "pixels": [
+    {
+      "slug": "flow-financial-reconciliation",
+      "width": 390,
+      "mode": "full",
+      "outsideRatio": 0.5463099005385145,
+      "insideDelta": 0,
+      "outsideCount": 54202,
+      "insideCount": 15744
+    },
+    {
+      "slug": "flow-financial-reconciliation",
+      "width": 390,
+      "mode": "zoom",
+      "outsideRatio": 0.5457647374353449,
+      "insideDelta": 0,
+      "outsideCount": 55417,
+      "insideCount": 24543
+    },
+    {
+      "slug": "fats-pdf-tools",
+      "width": 390,
+      "mode": "full",
+      "outsideRatio": 0.5457170206059067,
+      "insideDelta": 0,
+      "outsideCount": 95675,
+      "insideCount": 26429
+    },
+    {
+      "slug": "fats-pdf-tools",
+      "width": 390,
+      "mode": "zoom",
+      "outsideRatio": 0.5457384712536082,
+      "insideDelta": 0,
+      "outsideCount": 80165,
+      "insideCount": 40299
+    },
+    {
+      "slug": "flow-financial-reconciliation",
+      "width": 1440,
+      "mode": "full",
+      "outsideRatio": 0.5461476952367019,
+      "insideDelta": 0,
+      "outsideCount": 352798,
+      "insideCount": 112749
+    },
+    {
+      "slug": "flow-financial-reconciliation",
+      "width": 1440,
+      "mode": "zoom",
+      "outsideRatio": 0.5460270980141356,
+      "insideDelta": 0,
+      "outsideCount": 366866,
+      "insideCount": 171820
+    },
+    {
+      "slug": "fats-pdf-tools",
+      "width": 1440,
+      "mode": "full",
+      "outsideRatio": 0.5456514753708942,
+      "insideDelta": 0,
+      "outsideCount": 626311,
+      "insideCount": 182115
+    },
+    {
+      "slug": "fats-pdf-tools",
+      "width": 1440,
+      "mode": "zoom",
+      "outsideRatio": 0.5459014708205328,
+      "insideDelta": 0,
+      "outsideCount": 527897,
+      "insideCount": 272569
+    }
+  ]
+}

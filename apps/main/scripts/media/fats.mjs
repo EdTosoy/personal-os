@@ -29,8 +29,7 @@ try {
     journey: async ({ page, go, snap, beat }) => {
       await go('/');
       await page
-        .getByRole('banner')
-        .getByRole('button', { name: 'Save a job', exact: true })
+        .getByRole('button', { name: 'Save your first job', exact: true })
         .click();
       const form = page.getByRole('dialog');
       await form.getByLabel(/^Job title/).fill('Graduate Software Engineer');
@@ -110,6 +109,11 @@ try {
       await snap('resumes');
       await beat(
         'Inspect the resume workspace. Private documents require an account and the safety scanner.',
+      );
+      await go('/career-vault');
+      await snap('career-vault');
+      await beat(
+        'Inspect Career Vault and its account prerequisite. No employment record or private file is created in this guest recording.',
       );
       await go(detail);
       await page
