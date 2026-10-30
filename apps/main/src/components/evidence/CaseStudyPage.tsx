@@ -2,20 +2,22 @@ import Link from 'next/link';
 import type { CaseStudy } from '@/data/case-studies';
 import { productDemos } from '@/data/media-refresh';
 import { projects } from '@/data/projects';
-import { fatsVigilAccess } from '@/data/fats-vigil-access';
 import { DEFAULT_PAGE_SIZE } from '@/lib/pagination';
 import { GuidedWalkthrough } from './GuidedWalkthrough';
 import { EvidenceScreenshot } from './EvidenceScreenshot';
 import { ThemeToggle } from '@/components/ui/ToggleTheme';
 
 export function CaseStudyPage({ study }: { study: CaseStudy }) {
+  const project = projects.find(
+    (item) => item.caseStudy?.href === `/projects/${study.slug}`,
+  );
   const demo = productDemos[study.slug];
+  const hasRefreshedEvidence = demo?.mediaBase?.startsWith(
+    '/evidence/fats-vigil-',
+  );
   const demoBase = demo
     ? demo.mediaBase || `/evidence/phase5d/${demo.project}`
     : '';
-  const access = Object.values(fatsVigilAccess).find(
-    (item) => item.caseStudySlug === study.slug,
-  );
   const navigation = projects.flatMap((project) =>
     project.featured && project.caseStudy
       ? [{ title: project.title, href: project.caseStudy.href }]
@@ -61,33 +63,26 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
           <p className="case-category">
             {study.category} / independent engineering project
           </p>
-          {access && (
-            <div className="case-scope">
-              <div className="flex flex-wrap gap-4">
-                {access.publicVerified ? (
-                  <a
-                    href={access.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live App
-                    <span className="sr-only"> (opens in a new tab)</span>
-                  </a>
-                ) : (
-                  <span>{access.label}</span>
-                )}
+          <div className="case-scope">
+            <div className="flex flex-wrap gap-4">
+              {project?.demo && (
                 <a
-                  href={study.repository}
+                  href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GitHub<span className="sr-only"> (opens in a new tab)</span>
+                  Live App<span className="sr-only"> (opens in a new tab)</span>
                 </a>
-                <a href="/evidence/fats-vigil-refresh.md">Refresh evidence</a>
-              </div>
-              <p>{access.detail}</p>
+              )}
+              <a
+                href={study.repository}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub<span className="sr-only"> (opens in a new tab)</span>
+              </a>
             </div>
-          )}
+          </div>
           <div className="flex flex-wrap gap-2 mt-5">
             {study.stack.map((item) => (
               <span className="chip px-3 py-1" key={item}>
@@ -208,12 +203,12 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
             <p className="case-viewer-note">
               <a
                 href={
-                  access
+                  hasRefreshedEvidence
                     ? '/evidence/fats-vigil-refresh.md'
                     : '/evidence/phase5d-verification.md'
                 }
               >
-                {access
+                {hasRefreshedEvidence
                   ? 'Read the refreshed capture and verification report'
                   : 'Read the Phase 5D capture and verification report'}
               </a>
@@ -312,12 +307,12 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
             <a
               className="case-source"
               href={
-                access
+                hasRefreshedEvidence
                   ? '/evidence/fats-vigil-refresh.md'
                   : '/evidence/phase5-verification.md'
               }
             >
-              {access
+              {hasRefreshedEvidence
                 ? 'Read refresh verification report'
                 : 'Read Phase 5 verification report'}
             </a>

@@ -30,12 +30,6 @@ export interface Experience {
   highlights: ExperienceHighlight[];
 }
 
-export type ProjectStatus =
-  | "Completed"
-  | "In Progress"
-  | "Archived"
-  | "Actively Maintained";
-
 export interface Project {
   slug: string;
 
@@ -43,19 +37,13 @@ export interface Project {
 
   shortDescription: string;
 
-  longDescription: string;
-
-  status: ProjectStatus;
-
   featured: boolean;
-
-  technologies: string[];
 
   github?: string;
 
   demo?: string;
 
-  caseStudy?: { href: string; image: string; alt: string; caption: string };
+  caseStudy?: { href: string; image: string; alt: string };
 }
 
 interface TaskItem {

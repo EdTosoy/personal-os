@@ -48,19 +48,9 @@ function compile(path, source) {
 }
 const { projects } = compile(resolve('src/data/projects.ts'));
 const studies = compile(resolve('src/data/case-studies.ts'));
-const { fatsVigilAccess, verifiedProjectUrl } = compile(
-  resolve('src/data/fats-vigil-access.ts'),
-);
 const baseline = (file) =>
   execFileSync('git', ['show', `HEAD:apps/main/${file}`], { encoding: 'utf8' });
-// Shared files must retain every unrelated data object exactly.
-assert.deepEqual(
-  projects.slice(2),
-  compile(
-    resolve('src/data/projects.ts'),
-    baseline('src/data/projects.ts'),
-  ).projects.slice(2),
-);
+// Unrelated case studies and media retain their original evidence.
 const originalStudies = compile(
   resolve('src/data/case-studies.ts'),
   baseline('src/data/case-studies.ts'),
@@ -81,19 +71,9 @@ for (const slug of [
 
 const selected = projects.slice(0, 2);
 for (const project of selected) {
-  const access = fatsVigilAccess[project.slug];
-  assert.equal(
-    project.demo,
-    undefined,
-    'Unverified public links must remain disabled',
-  );
-  assert.equal(verifiedProjectUrl(project.slug), undefined);
-  // Exercise activation without changing configuration on disk.
-  access.publicVerified = true;
-  assert.equal(verifiedProjectUrl(project.slug), access.url);
-  access.publicVerified = false;
+  assert.ok(project.demo, 'Projects must configure their app URL');
   const study = Object.values(studies).find(
-    (s) => s.slug === access.caseStudySlug,
+    (s) => project.caseStudy.href === `/projects/${s.slug}`,
   );
   assert.equal(study.repository, project.github);
   for (const item of [...study.architecture, ...study.references])
@@ -144,40 +124,37 @@ try {
           });
       });
       for (const project of selected) {
-        const access = fatsVigilAccess[project.slug];
         const study = Object.values(studies).find(
-          (s) => s.slug === access.caseStudySlug,
+          (s) => project.caseStudy.href === `/projects/${s.slug}`,
         );
         await page.goto(base + '/#projects');
         const card = page.locator(`[data-project="${project.slug}"]`);
-        await expect(card).toContainText(access.label);
         await expect(card.getByRole('link', { name: /^Live App/ })).toHaveCount(
           0,
         );
-        const github = card.getByRole('link', { name: /^GitHub/ });
+        const github = card.getByRole('link', { name: /^Source Code/ });
         await expect(github).toHaveAttribute('href', project.github);
         await expect(github).toHaveAttribute('rel', 'noopener noreferrer');
         await expect(github).toHaveAttribute('target', '_blank');
         const thumbnail = card.locator('.project-evidence-link');
-        await expect(thumbnail).toHaveAttribute('href', project.caseStudy.href);
+        await expect(thumbnail).toHaveAttribute('href', project.demo);
+        await expect(thumbnail).toHaveAttribute('target', '_blank');
         await thumbnail.locator('img').evaluate((el) => el.decode());
         await card.screenshot({
           path: `${out}/${project.slug}-${width}-${theme}.png`,
         });
-        await thumbnail.focus();
+        await card.getByRole('link', { name: /^View Case Study/ }).focus();
         await page.keyboard.press('Enter');
         await expect(page).toHaveURL(base + project.caseStudy.href);
         await expect(page.getByRole('heading', { level: 1 })).toHaveText(
           project.title,
         );
-        await expect(page.locator('.case-intro')).toContainText(access.label);
-        await expect(page.getByRole('link', { name: /^Live App/ })).toHaveCount(
-          0,
-        );
+        await expect(
+          page.getByRole('link', { name: /^Live App/ }),
+        ).toHaveAttribute('href', project.demo);
         await expect(
           page.getByRole('link', { name: /^GitHub/ }),
         ).toHaveAttribute('href', project.github);
-        await expect(page.locator(`a[href="${access.url}"]`)).toHaveCount(0);
         for (const item of [
           ...study.steps,
           ...(study.secondaryEvidence?.steps || []),
@@ -298,12 +275,11 @@ try {
         const card = page.locator(`[data-project="${slug}"]`);
         await expect(card.locator('.project-evidence-link')).toHaveAttribute(
           'href',
-          project.caseStudy.href,
+          project.demo,
         );
-        await expect(card.getByRole('link', { name: /^Code/ })).toHaveAttribute(
-          'href',
-          project.github,
-        );
+        await expect(
+          card.getByRole('link', { name: /^Source Code/ }),
+        ).toHaveAttribute('href', project.github);
       }
       await page.goto(base + '/?projectsPage=2#projects');
       await expect(

@@ -79,12 +79,12 @@ describe('Portfolio homepage', () => {
     ).toBe('page');
   });
 
-  it('renders Marcus alone on its independently linkable second page and retains older work', async () => {
+  it('renders Marcus alone on its independently linkable second page', async () => {
     const { container } = await renderPage('2');
     expect(container.querySelectorAll('.projects-grid > article')).toHaveLength(
       1,
     );
-    const live = screen.getByRole('link', { name: /^Live App\s*:/ });
+    const live = screen.getByRole('link', { name: /^Open Marcus.*live app/ });
     expect(live.getAttribute('href')).toBe('https://marcus.edtosoy.com');
     expect(live.getAttribute('target')).toBe('_blank');
     expect(
@@ -111,8 +111,5 @@ describe('Portfolio homepage', () => {
         .getByRole('link', { name: 'Previous', exact: true })
         .getAttribute('href'),
     ).toBe('?projectsPage=1#projects');
-    expect(container.querySelector('.older-projects')?.textContent).toContain(
-      'NestJS Microservices Platform',
-    );
   });
 });

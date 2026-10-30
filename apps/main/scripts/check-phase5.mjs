@@ -27,9 +27,7 @@ async function evaluate(path, dependencies = {}) {
   return fixtureModule.exports;
 }
 const { paginate } = await evaluate('src/lib/pagination.ts');
-const { projects } = await evaluate('src/data/projects.ts', {
-  './fats-vigil-access': await evaluate('src/data/fats-vigil-access.ts'),
-});
+const { projects } = await evaluate('src/data/projects.ts');
 const { flowStudy, fatsStudy, hospitalStudy, pixshareStudy, marcusStudy } =
   await evaluate('src/data/case-studies.ts');
 const studies = [

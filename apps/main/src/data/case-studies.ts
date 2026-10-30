@@ -236,7 +236,7 @@ export const flowStudy: CaseStudy = {
     },
   ],
   limitations: [
-    'Deployment Pending: vigil.edtosoy.com is planned for 30 October 2026. On 29 October it did not resolve, so application readiness and dashboard access could not be verified. No public Live App link is activated.',
+    'The 29 October 2026 access check found that vigil.edtosoy.com did not resolve. The portfolio now links to the configured app URL; that historical check does not establish its current availability or readiness.',
     'Stripe is sandbox-only and bank observations are synthetic. Vigil neither initiates live payments nor integrates with a real bank. Successful ingestion cannot establish all-time source completeness; missing independent evidence stays UNKNOWN.',
     'The operator dashboard is read-only. Reconciliation, controls and exception mutations use separate command boundaries; screenshots do not imply that operators can trigger those commands through the interface.',
     'Matching supports exact 1:1 and complete-declaration N:1. Arbitrary N:M, partial allocations, FX, independent payment authorization and business-to-ledger orchestration remain deferred.',
@@ -537,7 +537,7 @@ export const fatsStudy: CaseStudy = {
     },
   ],
   limitations: [
-    'Private Preview: fats.edtosoy.com currently redirects anonymous visitors to Vercel login. The stable Vercel alias is also protected. No public Live App link is enabled; hosted account preparation is implemented locally but not established as deployed.',
+    'The 29 October 2026 access check found that fats.edtosoy.com and its stable Vercel alias required Vercel login. The portfolio now links to the configured app URL; hosted account preparation is implemented locally but not established as deployed by that check.',
     'Private document uploads/library access require persistent private storage and a healthy scanner. Current no-storage/scanner environments explain the restriction and fail closed. Real configured-scanner acceptance and accepted-file browser workflows remain unverified.',
     'Explainable AI job matching is paused and disabled by default. It compares reviewed resume/job text after explicit consent, uses structured outputs and validates supporting quotations; it does not establish live-model quality, hiring outcomes or validated recommendations.',
     'Production PDF tools edit and export local documents without uploading them. Extraction, splitting, merging and advanced page organization have development-only v2 evidence; the separate design prototype simulates actions. PDF compatibility and accessibility remain bounded.',

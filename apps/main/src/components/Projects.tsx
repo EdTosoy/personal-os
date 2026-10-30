@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { projects } from '@/data/projects';
-import { fatsVigilAccess } from '@/data/fats-vigil-access';
 import { skills } from '@/data/skills';
 import { paginate } from '@/lib/pagination';
 import { Pagination } from '@/components/ui/Pagination';
@@ -25,16 +24,13 @@ export default function Projects({
             id="projects-title"
             className="text-3xl font-bold text-fg md:text-4xl"
           >
-            Personal projects
+            Independent projects
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-fg-muted">
             Explore the working interfaces, the engineering behind them, and the
             evidence that defines their limits.
           </p>
         </div>
-        <span className="project-count">
-          {featured.length} featured projects
-        </span>
       </div>
       <div className="projects-grid" data-project-page={page}>
         {items.map((project) => {
@@ -48,7 +44,7 @@ export default function Projects({
                 loading="lazy"
                 sizes="(min-width: 1280px) 390px, (min-width: 768px) 45vw, 90vw"
               />
-              <span>{project.caseStudy.caption}</span>
+              <span>{project.demo}</span>
             </>
           );
           return (
@@ -58,25 +54,6 @@ export default function Projects({
               data-project={project.slug}
             >
               <div className="project-card-copy">
-                <div className="project-card-meta">
-                  <span>{project.status}</span>
-                  {fatsVigilAccess[project.slug] &&
-                    !fatsVigilAccess[project.slug].publicVerified && (
-                      <span>{fatsVigilAccess[project.slug].label}</span>
-                    )}
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Live App
-                      <span className="sr-only">
-                        : {project.title} (opens in a new tab)
-                      </span>
-                    </a>
-                  )}
-                </div>
                 <h3>{project.title}</h3>
                 <p>{project.shortDescription}</p>
               </div>
@@ -94,6 +71,7 @@ export default function Projects({
                 ) : (
                   <div className="project-evidence-link mt-0">{preview}</div>
                 ))}
+
               <div className="project-card-links">
                 {project.caseStudy && (
                   <Link href={project.caseStudy.href}>
@@ -107,7 +85,7 @@ export default function Projects({
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {fatsVigilAccess[project.slug] ? 'GitHub' : 'Code'}
+                    Source Code
                     <span className="sr-only">
                       {' '}
                       for {project.title} (opens in a new tab)

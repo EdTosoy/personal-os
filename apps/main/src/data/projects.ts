@@ -1,65 +1,33 @@
 import type { Project } from '@/types';
-import { fatsVigilAccess } from './fats-vigil-access';
 
 export const projects: Project[] = [
   {
     slug: 'vigil-financial-reconciliation',
-    demo: fatsVigilAccess['vigil-financial-reconciliation'].url,
+    demo: 'https://vigil.edtosoy.com',
     caseStudy: {
       href: '/projects/flow-financial-reconciliation',
       image: '/evidence/fats-vigil-20261029/flow/overview-desktop.webp',
       alt: 'Real Vigil dashboard with financial assurance and completeness checks.',
-      caption: 'Local capture; synthetic records; ephemeral demo',
     },
     title: 'Vigil — Financial Reconciliation & Exception Management',
     shortDescription:
-      'Trace payment evidence from ingestion to settlement and bank reconciliation. Investigate exceptions with exact-money rules, independent controls and recoverable workers.',
-    longDescription:
-      'A TypeScript modular monolith with Stripe sandbox ingestion, immutable evidence, versioned settlement interpretation, exact 1:1 and declared N:1 bank matching, an independent double-entry ledger and a read-only operator dashboard. Transactional outbox work, leases and fencing preserve recoverability. The upstream Phase 15 report records real hosted Stripe charge/fee evidence, 293 PostgreSQL integration tests and an ephemeral AWS apply–demo–destroy cycle. The planned Vigil domain remains pending; bank inputs are synthetic and production readiness is unproven.',
-    status: 'In Progress',
+      'A payment tracking app that compares payment records with bank transactions and helps users find missing payments, fees, and other differences.',
     featured: true,
     github: 'https://github.com/EdTosoy/vigil',
-    technologies: [
-      'TypeScript',
-      'Node.js',
-      'PostgreSQL',
-      'Next.js',
-      'Stripe',
-      'AWS',
-      'ECS Fargate',
-      'RDS',
-      'Terraform',
-      'Docker',
-    ],
   },
   {
     slug: 'fats-job-application-platform',
-    demo: fatsVigilAccess['fats-job-application-platform'].url,
+    demo: 'https://fats.edtosoy.com',
     caseStudy: {
       href: '/projects/fats-pdf-tools',
       image: '/evidence/fats-vigil-20261029/fats/dashboard-desktop.webp',
       alt: 'FATS guest job-search dashboard with application counts, a saved opportunity and interview planning.',
-      caption: 'Verified local workflows; synthetic job-search records',
     },
     title: 'FATS — Friendly Applicant Tracking System',
     shortDescription:
-      'Keep a personal job search together: capture listings with Sidekick, track applications and interviews, manage resume versions, and plan offers and employment with Offer Desk and Career Vault.',
-    longDescription:
-      'A Next.js and PostgreSQL product with separate guest and account workspaces, a Chrome capture extension, interview preparation, private document/version rules, Career Vault and Offer Desk. Better Auth, verified email, session revocation, owner-scoped access and fail-closed document intake support private-beta hardening. Supporting PDF tools edit, extract and split local documents. Explainable AI matching remains paused and disabled by default pending evaluation. A protected Vercel guest preview exists; public access, hosted account delivery and accepted-file scanning are not established.',
-    status: 'Actively Maintained',
+      'A job search organizer that keeps saved jobs, applications, interviews, resumes, and job offers together so users can track their progress.',
     featured: true,
     github: 'https://github.com/EdTosoy/FATS',
-    technologies: [
-      'Next.js',
-      'React',
-      'TypeScript',
-      'PostgreSQL',
-      'Better Auth',
-      'OpenAI API',
-      'JSON Schema',
-      'Tailwind CSS',
-      'Playwright',
-    ],
   },
   {
     slug: 'pulse-hospital-devops-platform',
@@ -68,31 +36,11 @@ export const projects: Project[] = [
       href: '/projects/pulse-hospital-devops-platform',
       image: '/evidence/phase5d/hospital/overview-desktop.webp',
       alt: 'Current abox hospital administration dashboard with fictional patients and genuine PostgreSQL-backed workflow counts.',
-      caption: 'Real local abox app; fictional patient records',
     },
-    title: 'abox — Hospital Management Platform',
+    title: 'abox — Hospital Management',
     shortDescription:
-      'Manage patient records, appointments, queues and billing in abox, a full-stack healthcare administration app.',
-    longDescription:
-      'abox is an independent Next.js, NestJS and PostgreSQL application with Drizzle ORM, patient records, appointments, queue management, consultation and billing. JWT-backed revocable cookie sessions and backend role guards protect workflows. Fresh local captures use fictional records and verify payment persistence. Docker/EC2 preparation, backup/restore tooling, CI/CD, Terraform and historical Kubernetes/monitoring files are inspectable engineering evidence; no current cloud runtime or clinical compliance is claimed.',
-    status: 'Actively Maintained',
+      'A hospital management app that helps staff manage patient records, book appointments, track waiting patients, and handle bills and payments.',
     featured: true,
-    technologies: [
-      'Next.js',
-      'React',
-      'TypeScript',
-      'NestJS',
-      'PostgreSQL',
-      'Drizzle ORM',
-      'Docker',
-      'Kubernetes',
-      'AWS',
-      'Terraform',
-      'GitHub Actions',
-      'Prometheus',
-      'Grafana',
-      'Ansible',
-    ],
     github: 'https://github.com/EdTosoy/hospitalProject',
   },
   {
@@ -102,30 +50,11 @@ export const projects: Project[] = [
       href: '/projects/pixshare',
       image: '/evidence/phase5d/pixshare/home-desktop.webp',
       alt: 'PixShare photo album in its Atelier theme with real bundled photographs.',
-      caption: 'Local demo; public frontend responds, gallery unavailable',
     },
     title: 'PixShare — Online Photo Album',
     shortDescription:
-      'A focused online photo album built with Next.js, FastAPI and PostgreSQL, with secure owner-only media changes and responsive image delivery.',
-    longDescription:
-      'A completed local full-stack photo album with an Atelier interface, genuine Clerk authentication, asynchronous PostgreSQL persistence, validated image uploads, ownership checks, safe replacement/deletion and local or S3-compatible storage. Verified with 141 backend tests and 30 genuine browser cases. Real MinIO integration and fixture-scoped image payload measurements are documented. No deployed public live demo, production scale or AWS policy verification is claimed.',
-    status: 'Completed',
+      'A photo album app where users can upload and organize pictures, manage their own photos, and browse galleries on phones, tablets, and computers.',
     featured: true,
-    technologies: [
-      'Next.js',
-      'React',
-      'TypeScript',
-      'Python',
-      'FastAPI',
-      'PostgreSQL',
-      'SQLAlchemy',
-      'Alembic',
-      'Clerk',
-      'Pillow',
-      'S3-compatible storage',
-      'Playwright',
-      'Docker',
-    ],
     github: 'https://github.com/EdTosoy/PixShare',
   },
   {
@@ -133,48 +62,21 @@ export const projects: Project[] = [
     demo: 'https://marcus.edtosoy.com',
     title: 'Marcus — Chess Learning Platform',
     shortDescription:
-      'Learn to notice threats, practise chess decisions, play Stockfish, and reflect on a game. Technical checks are complete for Phase 2B; learning effectiveness is unproven.',
-    longDescription:
-      'A browser-local chess education platform connecting guided lessons, adaptive practice, real Stockfish games and reflective review. Phase 2B records 177 unit tests and 34 Chromium cases; Phase 2C records 46 Chromium cases and a source/build receipt. Educator review, real learner pilot, physical-device validation and licensing/corresponding-source packaging remain pending. No measured learning improvement is claimed.',
-    status: 'In Progress',
+      'A chess learning app where users follow lessons, solve practice exercises, play against a computer, and review the decisions made during a game.',
     featured: true,
     github: 'https://github.com/EdTosoy/marcus',
-    technologies: [
-      'Next.js',
-      'TypeScript',
-      'chess.js',
-      'Stockfish',
-      'Web Workers',
-      'Vitest',
-      'Playwright',
-    ],
     caseStudy: {
       href: '/projects/marcus-chess',
       image: '/evidence/phase5d/marcus/lesson-desktop.webp',
       alt: 'Current public Marcus lesson with its chessboard and guided threat explanation.',
-      caption:
-        'Public lesson and Stockfish verified; learning efficacy unvalidated',
     },
   },
   {
     slug: 'nestjs-microservices-platform',
     title: 'NestJS Microservices Platform',
     shortDescription:
-      'Event-driven e-commerce backend with independent services, RabbitMQ messaging, and asynchronous search indexing.',
-    longDescription:
-      'A distributed e-commerce backend composed of authentication, catalog, search, and media services built with NestJS. Uses RabbitMQ for asynchronous communication and event-driven workflows. The search service maintains a denormalized product index synchronized through catalog events. Implements JWT authentication, refresh tokens, role-based authorization, and shared service libraries. PostgreSQL and Prisma handle persistence, while Docker supports local multi-service development.',
-    status: 'Completed',
+      'An online store backend that handles user accounts, product listings, image uploads, and product search through separate services built with NestJS.',
     featured: false,
-    technologies: [
-      'TypeScript',
-      'Node.js',
-      'NestJS',
-      'RabbitMQ',
-      'PostgreSQL',
-      'Prisma',
-      'Docker',
-      'Cloudinary',
-    ],
     github: 'https://github.com/EdTosoy/nestjs-microservices',
   },
 ];
