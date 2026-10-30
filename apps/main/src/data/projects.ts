@@ -9,7 +9,7 @@ export const projects: Project[] = [
       image: '/evidence/fats-vigil-20261029/flow/overview-desktop.webp',
       alt: 'Real Vigil dashboard with financial assurance and completeness checks.',
     },
-    title: 'Vigil — Financial Reconciliation & Exception Management',
+    title: 'Vigil — Financial Reconciliation & Exception System',
     shortDescription:
       'A payment tracking app that compares payment records with bank transactions and helps users find missing payments, fees, and other differences.',
     featured: true,
@@ -37,7 +37,7 @@ export const projects: Project[] = [
       image: '/evidence/phase5d/hospital/overview-desktop.webp',
       alt: 'Current abox hospital administration dashboard with fictional patients and genuine PostgreSQL-backed workflow counts.',
     },
-    title: 'abox — Hospital Management',
+    title: 'abox — Hospital Management System',
     shortDescription:
       'A hospital management app that helps staff manage patient records, book appointments, track waiting patients, and handle bills and payments.',
     featured: true,
