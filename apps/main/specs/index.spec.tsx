@@ -10,6 +10,28 @@ async function renderPage(projectsPage?: string) {
 }
 
 describe('Portfolio homepage', () => {
+  it('opens apps from project images and reserves case studies for their explicit links', async () => {
+    const { container } = await renderPage();
+    for (const [slug, url] of [
+      ['vigil-financial-reconciliation', 'https://vigil.edtosoy.com'],
+      ['fats-job-application-platform', 'https://fats.edtosoy.com'],
+      ['pixshare', 'https://pixshare.edtosoy.com'],
+      ['pulse-hospital-devops-platform', 'https://abox.edtosoy.com'],
+    ]) {
+      const card = container.querySelector(`[data-project="${slug}"]`)!;
+      const imageLink = card.querySelector('a.project-evidence-link')!;
+      expect(imageLink.getAttribute('href')).toBe(url);
+      expect(imageLink.getAttribute('target')).toBe('_blank');
+      expect(imageLink.querySelector('img')).toBeTruthy();
+    }
+    for (const link of container.querySelectorAll(
+      '.project-card a[href^="/projects/"]',
+    )) {
+      expect(link.textContent).toContain('View Case Study');
+      expect(link.querySelector('img')).toBeNull();
+    }
+  });
+
   it('keeps the primary links and surrounding features with four first-page projects', async () => {
     const { container } = await renderPage();
     expect(screen.getByRole('heading', { level: 1 }).textContent).toBe(
@@ -40,7 +62,10 @@ describe('Portfolio homepage', () => {
       'pixshare',
     ]);
     expect(
-      screen.queryByRole('heading', { name: 'Marcus Chess', exact: true }),
+      screen.queryByRole('heading', {
+        name: 'Marcus — Chess Learning Platform',
+        exact: true,
+      }),
     ).toBeNull();
     expect(
       screen
@@ -71,7 +96,10 @@ describe('Portfolio homepage', () => {
         .getAttribute('href'),
     ).toBe('/projects/marcus-chess');
     expect(
-      screen.getByRole('heading', { name: 'Marcus Chess', exact: true }),
+      screen.getByRole('heading', {
+        name: 'Marcus — Chess Learning Platform',
+        exact: true,
+      }),
     ).toBeTruthy();
     expect(
       screen

@@ -1,10 +1,10 @@
 import type { Project } from '@/types';
-import { verifiedProjectUrl } from './fats-vigil-access';
+import { fatsVigilAccess } from './fats-vigil-access';
 
 export const projects: Project[] = [
   {
     slug: 'vigil-financial-reconciliation',
-    demo: verifiedProjectUrl('vigil-financial-reconciliation'),
+    demo: fatsVigilAccess['vigil-financial-reconciliation'].url,
     caseStudy: {
       href: '/projects/flow-financial-reconciliation',
       image: '/evidence/fats-vigil-20261029/flow/overview-desktop.webp',
@@ -34,7 +34,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'fats-job-application-platform',
-    demo: verifiedProjectUrl('fats-job-application-platform'),
+    demo: fatsVigilAccess['fats-job-application-platform'].url,
     caseStudy: {
       href: '/projects/fats-pdf-tools',
       image: '/evidence/fats-vigil-20261029/fats/dashboard-desktop.webp',
@@ -63,13 +63,14 @@ export const projects: Project[] = [
   },
   {
     slug: 'pulse-hospital-devops-platform',
+    demo: 'https://abox.edtosoy.com',
     caseStudy: {
       href: '/projects/pulse-hospital-devops-platform',
       image: '/evidence/phase5d/hospital/overview-desktop.webp',
       alt: 'Current abox hospital administration dashboard with fictional patients and genuine PostgreSQL-backed workflow counts.',
       caption: 'Real local abox app; fictional patient records',
     },
-    title: 'Hospital Management Platform',
+    title: 'abox — Hospital Management Platform',
     shortDescription:
       'Manage patient records, appointments, queues and billing in abox, a full-stack healthcare administration app.',
     longDescription:
@@ -96,13 +97,14 @@ export const projects: Project[] = [
   },
   {
     slug: 'pixshare',
+    demo: 'https://pixshare.edtosoy.com',
     caseStudy: {
       href: '/projects/pixshare',
       image: '/evidence/phase5d/pixshare/home-desktop.webp',
       alt: 'PixShare photo album in its Atelier theme with real bundled photographs.',
       caption: 'Local demo; public frontend responds, gallery unavailable',
     },
-    title: 'PixShare',
+    title: 'PixShare — Online Photo Album',
     shortDescription:
       'A focused online photo album built with Next.js, FastAPI and PostgreSQL, with secure owner-only media changes and responsive image delivery.',
     longDescription:
@@ -129,7 +131,7 @@ export const projects: Project[] = [
   {
     slug: 'marcus-chess',
     demo: 'https://marcus.edtosoy.com',
-    title: 'Marcus Chess',
+    title: 'Marcus — Chess Learning Platform',
     shortDescription:
       'Learn to notice threats, practise chess decisions, play Stockfish, and reflect on a game. Technical checks are complete for Phase 2B; learning effectiveness is unproven.',
     longDescription:
