@@ -19,6 +19,7 @@ const nextConfig = {
       { source: "/certifications/:path*", headers: [{ key: "Cache-Control", value: "public, max-age=86400, stale-while-revalidate=604800" }] },
       { source: "/evidence/fats/:file.pdf", headers: [{ key: "X-Robots-Tag", value: "noindex, noarchive" }] },
       { source: "/Edberto_Tosoy_Resume.pdf", headers: [{ key: "Cache-Control", value: "public, max-age=0, must-revalidate" }] },
+      { source: "/Edberto_Tosoy_Resume_2026-11-02.pdf", headers: [{ key: "Cache-Control", value: "public, max-age=0, must-revalidate" }] },
     ];
   },
   experimental: {

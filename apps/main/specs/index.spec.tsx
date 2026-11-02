@@ -47,7 +47,7 @@ describe('Portfolio homepage', () => {
       screen
         .getByRole('link', { name: 'Resume', exact: true })
         .getAttribute('href'),
-    ).toBe('/Edberto_Tosoy_Resume.pdf');
+    ).toBe('/Edberto_Tosoy_Resume_2026-11-02.pdf');
     expect(
       screen.getByRole('heading', { name: 'Certifications', exact: true }),
     ).toBeTruthy();
