@@ -20,5 +20,5 @@ export const profile: Profile = {
 
   location: "Metro Manila, Philippines",
 
-  resume: "/Edberto_Tosoy_Resume.pdf",
+  resume: "/Edberto_Tosoy_Resume.pdf?v=ef8503ca",
 };
