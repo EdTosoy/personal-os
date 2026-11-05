@@ -8,7 +8,7 @@ export const profile: Profile = {
   headline: "Software Engineer · Full Stack · Cloud",
 
   summary:
-    "Software Engineer with production experience building and supporting enterprise banking applications. I work across frontend, backend, databases, and APIs, and have expanded into cloud-native development through hands-on work with AWS, Docker, Kubernetes, Terraform, CI/CD, and observability.",
+    "I'm a software engineer with production experience in enterprise banking and a focus on building full-stack applications. I work across frontend, backend, databases, and cloud infrastructure, independently taking projects from development to deployment. I'm particularly interested in opportunities where I can take ownership, solve real problems, and help turn ideas into working products.",
 
   email: "edberto@edtosoy.com",
 
